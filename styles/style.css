@@ -106,7 +106,6 @@ body {
 
 /* estilos main */
 .box {
-/*   background: var(--bg2); */
   max-width: 1000px;
   margin: 0px auto;
 }
@@ -402,6 +401,7 @@ input[type="submit"]:hover {
   background: var(--hex3);
   width: 100%;
   height: 400px;
+  margin: 90px 0 0 0;
 }
 
 .piepagina .box {
@@ -414,6 +414,15 @@ input[type="submit"]:hover {
   width: 20%;
   height: 40%;
   align-self: center;
+}
+
+.piepagina .box .logofooter .logo {
+  background: url('https://ln4fwg.sn.files.1drv.com/y4mtqnljLnaSjrf2vcGLPPNnnb5ELyLUIqf45eYIn0Yd_be7BO_hYsBGk0bdwTT1Qtqif_JtqAOajEGH11I3Z1JcsfC9-6pIrWc3RlIKDLv_gMzDdPphFg4om21vdJkgqL51HjNKyXiZ5b_C_CFlDbaEimIuj6FaZ6eJK61-jihdaJUaZWecDFiWH9HNzc4KtnNWCgSw12QYKpsizHcYRz5ww?width=312&height=312&cropmode=none');
+  width: 100px;
+  height: 90px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .menu-rrss-derechos {
@@ -476,6 +485,6 @@ input[type="submit"]:hover {
   border-radius: 8px;
 }
 .btn-signup:hover {
-  background: #ffffff;
+  background: var(--hex1);
   color: var(--hex3);
 }

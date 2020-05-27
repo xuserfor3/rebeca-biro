@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* variables */
+body {
+/*  fondos grises  */
+  --bg1: #B4B4B4;
+  --color1: rgb(189, 219, 199);
+  --color2: rgb(240, 200, 200);
+  --color3: rgb(103, 159, 170);
+/*  tipografia  */
+  --font: 'Nunito sans', sans-serif;
+  --h1: 55px;
+  --h1-weight: 800;
+  --h2: 34px;
+  --h2-weight: 600;
+  --p: 16px;
+  --p-weight: 600;
+/*  paleta de colores  */
+  --hex1: #3B5472;
+  --hex2: #7D9AB8;
+  --hex3: #E1E2DC;
+}
+
+body {
+  font-family: var(--font);
+  font-weight: var(--p-weight);
+  color: var(--hex1);
+}
+
+/* estilos menu */
+.menu {
+  background: #ffffff;
+  width: 100%;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar {
+  overflow: auto;
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
+.btn {
+  float: left;
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: var(--hex2);
+  font-size: var(--p);
+}
+
+.homelogo {
+  padding: 0;
+  margin: 8px 21px 8px 0px;
+}
+.logo {
+  background: url('https://oh4xwg.sn.files.1drv.com/y4mn6_suQyhAau3GM3GLC8x-KNEeYMDGMUoeQUCTdN5bReFIJYA2jSDdoEKgo4a8VMHM8QgEKQo05UWFAm5RzGCd668Rn1N0fpuHsSSZKOvI0BeozMOxR6E9_9SU-D9NvcYhvxeJSMSNgIhkh7hQYP3WGApTbvWJ8bhj5evheHJelNtLSF2DkLr9nA2zbZqCsBe-HHY50BqilJAnQjam0c2UA?width=312&height=312&cropmode=none');
+  width: 30px;
+  height: 60px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.servicios, .productos, .contacto, .blog {
+  margin: 21px 13px 21px 0px;
+}
+
+/* estilo botones tienda y registro */
+.tienda {
+  background: rgb(209,221,229);
+  background: linear-gradient(90deg, rgba(209,221,229,1) 0%, rgba(125,154,184,1) 100%);
+  color: #ffffff;
+  padding: 16px 24px;
+  margin: 12px 13px 12px 0px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+.signup {
+  border: 2px solid var(--hex2);
+  border-radius: 8px;
+  color: var(--hex2);
+  padding: 14px 24px;
+  margin: 12px 55px 12px 0px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.instagram, .facebook, .signup, .tienda {
+  float: right;
+}
+.instagram, .facebook {
+  padding: 0px 8px;
+  margin: 28px 0px;
+}
+
+/* MAIN - MAXWIDTH 1000PX */
+.box {
+  max-width: 1000px;
+  margin: 55px auto 0px auto;
+}
+
+.contacto-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 55px 0;
+}
+
+.box .contacto-box .titulo {
+  text-align: left;
+  font-size: var(--h2);
+  margin: 0 0 21px 0;
+}
+
+.box .contacto-box .descripcion .txt {
+  margin: 0 0 34px 0;
+}
+
+/* formulario estilos */
+.box .contacto-box .formulario {
+  width: 45%;
+  padding: 13px 21px;
+}
+
+.box .contacto-box .formulario label, input, textarea {
+  display: inline-block;
+  width: 100%;
+}
+
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+  max-height: 300px;
+}
+
+/* inputs y textarea estilos */
+input[type="text"], input[type="email"], textarea {
+  border: transparent;
+  border-bottom: 2px solid var(--hex1);
+  background: transparent;
+  padding: 12px 20px;
+  font-size: var(--p);
+  font-family: var(--font);
+  color: var(--hex2);
+  font-weight: var(--p-weight);
+  outline: none;
+}
+input[type="text"], input[type="email"] {
+  margin: 0 0 34px 0;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+  border: transparent;
+  border-bottom: 2px solid var(--hex1);
+}
+
+/* datos de contacto */
+.box .contacto-box .info {
+  margin: 0;
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.icono {
+  background: url('https://ox4dwg.sn.files.1drv.com/y4mH83tbvjtIXqgREsGvhorG1uf_1fuedIfrvISh53Udc2dlNWTN8sqexYOo1gUP-XOGWFap9TQ28QSIXZFXteG-KEmNpSUX3J5PUPF5PUcVWb967kY3Q9YnHfm1Jo78pvIman0LJRy75IhhZgAO4685Csw30MZ1C2lHYBQmeTh4fLYswuOBYDiWzoZ3f8D9jIDGJJS0pa0hZ2PPfe4VvNhTg?width=600&height=600&cropmode=none');
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.box .contacto-box .info .txt {
+  width: 90%;
+}
+
+.box .contacto-box .info .wa, .tel, .correos {
+  margin: 5px 0 0 0;
+}
+
+/* mapa estilos */
+.box .mapa {
+  margin: 89px 0 0 0;
+}
+
+.box .mapa .titulo {
+  text-align: center;
+  font-size: var(--h2);
+  margin: 0 0 21px 0;
+}
+
+.box .mapa .map {
+  width: 100%;
+}
+
+/* footer */
+.piepagina {
+  background: var(--hex3);
+  width: 100%;
+  height: 400px;
+  margin: 90px 0 0 0;
+}
+
+.piepagina .box {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+}
+
+.logofooter, .menu-rrss-derechos, .box-signup {
+  width: 20%;
+  height: 40%;
+  align-self: center;
+}
+
+.piepagina .box .logofooter .logo {
+  background: url('https://ln4fwg.sn.files.1drv.com/y4mtqnljLnaSjrf2vcGLPPNnnb5ELyLUIqf45eYIn0Yd_be7BO_hYsBGk0bdwTT1Qtqif_JtqAOajEGH11I3Z1JcsfC9-6pIrWc3RlIKDLv_gMzDdPphFg4om21vdJkgqL51HjNKyXiZ5b_C_CFlDbaEimIuj6FaZ6eJK61-jihdaJUaZWecDFiWH9HNzc4KtnNWCgSw12QYKpsizHcYRz5ww?width=312&height=312&cropmode=none');
+  width: 100px;
+  height: 90px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-rrss-derechos {
+  flex-grow: 1;
+  margin: 0 21px;
+}
+
+.logofooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-rrss-derechos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-rrss-derechos > .navbar, .rrss, .copyright {
+  width: 100%;
+}
+.menu-rrss-derechos > .navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.btn-servicios, .btn-productos, .btn-contacto, .btn-blog {
+  color: var(--hex1);
+  text-decoration: none;
+}
+.menu-rrss-derechos > .rrss {
+  margin: 34px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.menu-rrss-derechos > .rrss > .btn-facebook, .btn-instagram {
+  margin: 0px 8px;
+}
+.fab {
+  color: var(--hex1);
+}
+.menu-rrss-derechos > .copyright {
+  text-align: center;
+  color: var(--hex1);
+}
+
+.box-signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-signup {
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--hex1);
+  display: inline-block;
+  padding: 18px 32px;
+  border: 2px solid var(--hex1);
+  border-radius: 8px;
+}
+.btn-signup:hover {
+  background: var(--hex1);
+  color: var(--hex3);
+}
