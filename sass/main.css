@@ -1,0 +1,590 @@
+body {
+  font-family: "Nunito sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+.menu {
+  background: #ffffff;
+  width: 100%;
+  height: 80px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.menu .navbar {
+  overflow: auto;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.menu .navbar .btn, .menu .navbar .homelogo {
+  float: left;
+  padding: 8px 16px;
+  margin: 21px 13px 21px 0;
+  text-decoration: none;
+  color: #7d9ab8;
+  font-size: 16px;
+}
+
+.menu .navbar .btn .logo, .menu .navbar .homelogo .logo {
+  background: url("../rsrc/ico/Logo.svg");
+  width: 30px;
+  height: 60px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu .navbar .homelogo {
+  margin: 0 0 0 0;
+}
+
+.menu .navbar .instagram, .menu .navbar .facebook, .menu .navbar .signup, .menu .navbar .tienda {
+  float: right;
+  padding: 0 8px;
+  margin: 28px 0;
+}
+
+.menu .navbar .tienda {
+  background: #d1dde5;
+  background: -webkit-gradient(linear, left top, right top, from(#d1dde5), to(#7d9ab8));
+  background: linear-gradient(90deg, #d1dde5 0%, #7d9ab8 100%);
+  color: #ffffff;
+  padding: 16px 24px;
+  margin: 12px 13px 12px 0;
+  border-radius: 8px;
+  font-size: 16px;
+  float: right;
+}
+
+.menu .navbar .signup {
+  border: 2px solid #7d9ab8;
+  border-radius: 8px;
+  color: #7d9ab8;
+  padding: 14px 24px;
+  margin: 12px 55px 12px 0;
+  font-size: 16px;
+  float: right;
+}
+
+.box {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.box .cvrebeca {
+  max-width: 100%;
+  overflow: auto;
+  margin: 30px 0 0 0;
+}
+
+.box .cvrebeca .fotorebe {
+  background: url("../rsrc/img/rebe/rebe-web-tinypng.png");
+  width: 440px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  float: left;
+}
+
+.box .cvrebeca .cv {
+  width: 660px;
+  position: absolute;
+  margin: 50px 0 0 340px;
+  float: left;
+}
+
+.box .cvrebeca .cv .soyrebe {
+  color: #3b5472;
+  font-size: 55px;
+  line-height: 50px;
+  margin: 0 0;
+}
+
+.box .cvrebeca .cv .fraserebe {
+  color: #3b5472;
+  font-size: 18px;
+  margin: 0 0 30px 0;
+}
+
+.box .cvrebeca .cv .trayectoria {
+  color: #3b5472;
+  font-size: 16px;
+  margin: 0 0 0 50px;
+}
+
+.box .tratamiento {
+  margin: 30px 0 0 0;
+}
+
+.box .tratamiento .quetratamos {
+  font-size: 34px;
+  color: #3b5472;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+.box .tratamiento .cardtratamientos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-uno {
+  width: 100%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #3b5472;
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-uno .card-uno, .box .tratamiento .cardtratamientos .cardgroup-uno .card-dos, .box .tratamiento .cardtratamientos .cardgroup-uno .card-tres, .box .tratamiento .cardtratamientos .cardgroup-uno .card-cuatro, .box .tratamiento .cardtratamientos .cardgroup-uno .card-cinco, .box .tratamiento .cardtratamientos .cardgroup-uno .card-seis, .box .tratamiento .cardtratamientos .cardgroup-uno .card-siete {
+  width: 160px;
+  font-size: 0.86rem;
+  text-align: center;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-preferred-size: 50px;
+      flex-basis: 50px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-uno .card-uno .icon-sobrepeso, .box .tratamiento .cardtratamientos .cardgroup-uno .card-dos .icon-sobrepeso, .box .tratamiento .cardtratamientos .cardgroup-uno .card-tres .icon-sobrepeso, .box .tratamiento .cardtratamientos .cardgroup-uno .card-cuatro .icon-sobrepeso, .box .tratamiento .cardtratamientos .cardgroup-uno .card-cinco .icon-sobrepeso, .box .tratamiento .cardtratamientos .cardgroup-uno .card-seis .icon-sobrepeso, .box .tratamiento .cardtratamientos .cardgroup-uno .card-siete .icon-sobrepeso, .box .tratamiento .cardtratamientos .cardgroup-uno .card-dos .icon-alimentacion, .box .tratamiento .cardtratamientos .cardgroup-uno .card-tres .icon-intolerancias, .box .tratamiento .cardtratamientos .cardgroup-uno .card-cuatro .icon-deportistas, .box .tratamiento .cardtratamientos .cardgroup-uno .card-cinco .icon-cirugia, .box .tratamiento .cardtratamientos .cardgroup-uno .card-seis .icon-cancer, .box .tratamiento .cardtratamientos .cardgroup-uno .card-siete .icon-intuitiva {
+  background: url("../rsrc/ico/Sobrepeso.svg");
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  margin: 5px auto;
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-uno .card-dos {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-preferred-size: 140px;
+      flex-basis: 140px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-uno .card-dos .icon-alimentacion {
+  background: url("../rsrc/ico/Alimentacionplantas.svg");
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-uno .card-tres {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-preferred-size: 140px;
+      flex-basis: 140px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-uno .card-tres .icon-intolerancias {
+  background: url("../rsrc/ico/Intolerancias.svg");
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-uno .card-cuatro {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-preferred-size: 160px;
+      flex-basis: 160px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-uno .card-cuatro .icon-deportistas {
+  background: url("../rsrc/ico/Deportistas.svg");
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-uno .card-cinco {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-preferred-size: 110px;
+      flex-basis: 110px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-uno .card-cinco .icon-cirugia {
+  background: url("../rsrc/ico/Cirugiabariatrica.svg");
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-uno .card-seis {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-uno .card-seis .icon-cancer {
+  background: url("../rsrc/ico/Cancer.svg");
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-uno .card-siete {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-preferred-size: 80px;
+      flex-basis: 80px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-uno .card-siete .icon-intuitiva {
+  background: url("../rsrc/ico/Alimentacionintuitiva.svg");
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-dos {
+  width: 100%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #3b5472;
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-dos .card-ocho, .box .tratamiento .cardtratamientos .cardgroup-dos .card-nueve, .box .tratamiento .cardtratamientos .cardgroup-dos .card-diez, .box .tratamiento .cardtratamientos .cardgroup-dos .card-once, .box .tratamiento .cardtratamientos .cardgroup-dos .card-doce, .box .tratamiento .cardtratamientos .cardgroup-dos .card-trece {
+  width: 160px;
+  font-size: 0.86rem;
+  text-align: center;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-preferred-size: 100px;
+      flex-basis: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-dos .card-ocho .icon-veganismo, .box .tratamiento .cardtratamientos .cardgroup-dos .card-nueve .icon-veganismo, .box .tratamiento .cardtratamientos .cardgroup-dos .card-diez .icon-veganismo, .box .tratamiento .cardtratamientos .cardgroup-dos .card-once .icon-veganismo, .box .tratamiento .cardtratamientos .cardgroup-dos .card-doce .icon-veganismo, .box .tratamiento .cardtratamientos .cardgroup-dos .card-trece .icon-veganismo, .box .tratamiento .cardtratamientos .cardgroup-dos .card-nueve .icon-mindfuleating, .box .tratamiento .cardtratamientos .cardgroup-dos .card-diez .icon-desordenmetabolico, .box .tratamiento .cardtratamientos .cardgroup-dos .card-once .icon-problemadigestivo, .box .tratamiento .cardtratamientos .cardgroup-dos .card-doce .icon-cetosis, .box .tratamiento .cardtratamientos .cardgroup-dos .card-trece .icon-enfermedadautoinmune {
+  background: url("../rsrc/ico/Veganismo.svg");
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  margin: 5px auto;
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-dos .card-nueve {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-preferred-size: 125px;
+      flex-basis: 125px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-dos .card-nueve .icon-mindfuleating {
+  background: url("../rsrc/ico/Minfuleating.svg");
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-dos .card-diez {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-preferred-size: 130px;
+      flex-basis: 130px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-dos .card-diez .icon-desordenmetabolico {
+  background: url("../rsrc/ico/Desordenmetabolico.svg");
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-dos .card-once {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-preferred-size: 150px;
+      flex-basis: 150px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-dos .card-once .icon-problemadigestivo {
+  background: url("../rsrc/ico/Problemadigestivos.svg");
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-dos .card-doce {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-preferred-size: 160px;
+      flex-basis: 160px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-dos .card-doce .icon-cetosis {
+  background: url("../rsrc/ico/Cetosis.svg");
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-dos .card-trece {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-preferred-size: 120px;
+      flex-basis: 120px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.box .tratamiento .cardtratamientos .cardgroup-dos .card-trece .icon-enfermedadautoinmune {
+  background: url("../rsrc/ico/Enfermedadesautoinmunes.svg");
+}
+
+.box .pruebas {
+  margin: 90px 0 0 0;
+}
+
+.box .pruebas .icon-plicometro {
+  background: url("../rsrc/ico/Plicometro.svg");
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  margin: 5px auto;
+}
+
+.box .pruebas .evaluacion1 {
+  text-align: center;
+  font-size: 34px;
+  margin: 21px 0 0 0;
+}
+
+.box .pruebas .txt {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 800;
+  margin: 13px 0 0 0;
+}
+
+.box .pruebas .form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.box .pruebas .form .card-sexo, .box .pruebas .form .card-estatura, .box .pruebas .form .card-peso, .box .pruebas .form .card-grasa, .box .pruebas .form .card-musculo {
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 0 34px 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.box .pruebas .form .card-sexo label[for="sexo"], .box .pruebas .form .card-estatura label[for="sexo"], .box .pruebas .form .card-peso label[for="sexo"], .box .pruebas .form .card-grasa label[for="sexo"], .box .pruebas .form .card-musculo label[for="sexo"] {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.box .pruebas .form .card-sexo .mujer, .box .pruebas .form .card-estatura .mujer, .box .pruebas .form .card-peso .mujer, .box .pruebas .form .card-grasa .mujer, .box .pruebas .form .card-musculo .mujer {
+  margin: 0 0 0 0;
+}
+
+.box .pruebas .form .card-sexo .mujer .icon-mujer, .box .pruebas .form .card-estatura .mujer .icon-mujer, .box .pruebas .form .card-peso .mujer .icon-mujer, .box .pruebas .form .card-grasa .mujer .icon-mujer, .box .pruebas .form .card-musculo .mujer .icon-mujer {
+  background: url("../rsrc/ico/Mujer.svg");
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+
+.box .pruebas .form .card-sexo .mujer input[type="radio"], .box .pruebas .form .card-estatura .mujer input[type="radio"], .box .pruebas .form .card-peso .mujer input[type="radio"], .box .pruebas .form .card-grasa .mujer input[type="radio"], .box .pruebas .form .card-musculo .mujer input[type="radio"] {
+  margin: 0 0 0 13px;
+}
+
+.box .pruebas .form .card-sexo .hombre .icon-hombre, .box .pruebas .form .card-estatura .hombre .icon-hombre, .box .pruebas .form .card-peso .hombre .icon-hombre, .box .pruebas .form .card-grasa .hombre .icon-hombre, .box .pruebas .form .card-musculo .hombre .icon-hombre {
+  background: url("../rsrc/ico/Hombre.svg");
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+
+.box .pruebas .form .card-sexo .hombre input[type="radio"], .box .pruebas .form .card-estatura .hombre input[type="radio"], .box .pruebas .form .card-peso .hombre input[type="radio"], .box .pruebas .form .card-grasa .hombre input[type="radio"], .box .pruebas .form .card-musculo .hombre input[type="radio"] {
+  margin: 0 0 0 13px;
+}
+
+.box .pruebas .form .card-estatura label[for="estatura"] {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.box .pruebas .form .card-estatura .icon-estatura {
+  background: url("../rsrc/ico/Estatura.svg");
+  width: 50px;
+  height: 50px;
+}
+
+.box .pruebas .form .card-estatura .input-num::-webkit-inner-spin-button,
+.box .pruebas .form .card-estatura .input-num::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.box .pruebas .form .card-estatura .input-num {
+  -moz-appearance: textfield;
+  width: 60%;
+  border: none;
+  border-bottom: 2px solid #3b5472;
+  padding: 3px 8px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-family: "Nunito sans", sans-serif;
+  font-weight: 800;
+  text-align: left;
+}
+
+.box .pruebas .form .card-estatura label[for="m"] {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.box .pruebas .form .card-peso label[for="peso"] {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.box .pruebas .form .card-peso .icon-peso {
+  background: url("../rsrc/ico/Peso.svg");
+  width: 50px;
+  height: 50px;
+}
+
+.box .pruebas .form .card-peso .input-num::-webkit-inner-spin-button,
+.box .pruebas .form .card-peso .input-num::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.box .pruebas .form .card-peso .input-num {
+  -moz-appearance: textfield;
+  width: 60%;
+  border: none;
+  border-bottom: 2px solid #3b5472;
+  padding: 3px 8px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-family: "Nunito sans", sans-serif;
+  font-weight: 800;
+  text-align: left;
+}
+
+.box .pruebas .form .card-peso label[for="kg"] {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.box .pruebas .form .card-grasa label[for="grasa"] {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.box .pruebas .form .card-grasa .icon-grasa {
+  background: url("../rsrc/ico/Grasa.svg");
+  width: 50px;
+  height: 50px;
+}
+
+.box .pruebas .form .card-grasa input[type="text"] {
+  width: 80%;
+  border: none;
+  border-bottom: 2px solid #3b5472;
+  padding: 3px 8px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-family: "Nunito sans", sans-serif;
+  font-weight: 800;
+  text-align: left;
+}
+
+.box .pruebas .form .card-musculo label[for="musculo"] {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.box .pruebas .form .card-musculo .icon-musculo {
+  background: url("../rsrc/ico/Masamuscular.svg");
+  width: 50px;
+  height: 50px;
+}
+
+.box .pruebas .form .card-musculo input[type="text"] {
+  width: 80%;
+  border: none;
+  border-bottom: 2px solid #3b5472;
+  padding: 3px 8px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-family: "Nunito sans", sans-serif;
+  font-weight: 800;
+  text-align: left;
+}
+
+.box .pruebas .form input[type="submit"] {
+  background: #3b5472;
+  width: 100%;
+  padding: 18px 32px;
+  color: #ffffff;
+  font-variant: small-caps;
+  font-size: 18px;
+  font-weight: 800;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.box .pruebas .form input[type="submit"]:hover {
+  background: #7d9ab8;
+}
+/*# sourceMappingURL=main.css.map */

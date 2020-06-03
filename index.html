@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <script src="https://kit.fontawesome.com/e4d8bca606.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="sass/main.css">
   <link rel="stylesheet" href="styles/node_modules/normalize.css/normalize.css">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,600;0,800;1,300;1,600&display=swap"
     rel="stylesheet">
@@ -56,59 +56,59 @@
       <div class="tratamiento">
         <h2 class="quetratamos">¿Qué tratamos?</h2>
         <div class="cardtratamientos">
-          <div class="cardgroup uno">
-            <div class="card sobrepeso">
-              <div class="icon"></div>
+          <div class="cardgroup-uno">
+            <div class="card-uno">
+              <div class="icon-sobrepeso"></div>
               <p class="txt">Sobrepeso</p>
             </div>
-            <div class="card alimentacionplantas">
-              <div class="icon"></div>
+            <div class="card-dos">
+              <div class="icon-alimentacion"></div>
               <p class="txt">Alimentación basada en plantas</p>
             </div>
-            <div class="card intolerancias">
-              <div class="icon"></div>
+            <div class="card-tres">
+              <div class="icon-intolerancias"></div>
               <p class="txt">Intolerancias y alergias alimentarias</p>
             </div>
-            <div class="card deportistas">
-              <div class="icon"></div>
+            <div class="card-cuatro">
+              <div class="icon-deportistas"></div>
               <p class="txt">Deportistas, rendimiento y composición corporal</p>
             </div>
-            <div class="card cirugiabariatrica">
-              <div class="icon"></div>
+            <div class="card-cinco">
+              <div class="icon-cirugia"></div>
               <p class="txt">Cirugía bariátrica</p>
             </div>
-            <div class="card cancer">
-              <div class="icon"></div>
+            <div class="card-seis">
+              <div class="icon-cancer"></div>
               <p class="txt">Cancer</p>
             </div>
-            <div class="card alimentacionintuitiva">
-              <div class="icon"></div>
+            <div class="card-siete">
+              <div class="icon-intuitiva"></div>
               <p class="txt">Alimentación intuitiva</p>
             </div>
           </div>
-          <div class="cardgroup dos">
-            <div class="card veganismo">
-              <div class="icon"></div>
+          <div class="cardgroup-dos">
+            <div class="card-ocho">
+              <div class="icon-veganismo"></div>
               <p class="txt">Veganismo</p>
             </div>
-            <div class="card mindfuleating">
-              <div class="icon"></div>
+            <div class="card-nueve">
+              <div class="icon-mindfuleating"></div>
               <p class="txt">Mindful eating</p>
             </div>
-            <div class="card desordenmetabolico">
-              <div class="icon"></div>
+            <div class="card-diez">
+              <div class="icon-desordenmetabolico"></div>
               <p class="txt">Desordenes metabólicos</p>
             </div>
-            <div class="card problemadigestivo">
-              <div class="icon"></div>
+            <div class="card-once">
+              <div class="icon-problemadigestivo"></div>
               <p class="txt">Problemas digestivos</p>
             </div>
-            <div class="card cetosis">
-              <div class="icon"></div>
+            <div class="card-doce">
+              <div class="icon-cetosis"></div>
               <p class="txt">Dieta de aporte proteico / cetosis</p>
             </div>
-            <div class="card enfermedadautoinmune">
-              <div class="icon"></div>
+            <div class="card-trece">
+              <div class="icon-enfermedadautoinmune"></div>
               <p class="txt">Enfermedades autoinmunes</p>
             </div>
           </div>
@@ -116,45 +116,57 @@
       </div>
 
       <section class="pruebas">
-        <div class="icon plicometro"></div>
+
+        <div class="icon-plicometro"></div>
         <h2 class="evaluacion1">Evaluemos su estado de salud actual</h2>
         <p class="txt">Ingrese los siguientes datos.</p>
-        <form action="$" class="form evaluacion">
-          <div class="card sexo">
-            <label for="sexo" class="tipo">Sexo</label>
+
+        <form action="$" class="form">
+
+          <div class="card-sexo">
+            <label for="sexo">Sexo</label>
+
             <div class="mujer">
-              <div class="icon mujer margin"></div>
-              <input type="radio" name="genero" class="radio">
+              <div class="icon-mujer"></div>
+              <input type="radio" name="genero">
             </div>
+
             <div class="hombre">
-              <div class="icon hombre margin"></div>
-              <input type="radio" name="genero" class="radio">
+              <div class="icon-hombre"></div>
+              <input type="radio" name="genero">
             </div>
           </div>
-          <div class="card estatura">
+
+          <div class="card-estatura">
             <label for="estatura" name="estatura">Estatura</label>
-            <div class="icon margin"></div>
-            <input type="text" name="kg" id="m" placeholder="1.50">
+            <div class="icon-estatura"></div>
+            <input type="number" name="m" id="m" placeholder="1.50" class="input-num">
             <label for="m">m</label>
           </div>
-          <div class="card peso">
+
+          <div class="card-peso">
             <label for="peso" name="peso">Peso</label>
-            <div class="icon margin"></div>
-            <input type="text" name="kg" id="kg" placeholder="60">
+            <div class="icon-peso"></div>
+            <input type="text" name="kg" id="kg" placeholder="60" class="input-num">
             <label for="kg">kg</label>
           </div>
-          <div class="card grasa">
+
+          <div class="card-grasa">
             <label for="grasa" name="grasa">% de grasa</label>
-            <div class="icon margin"></div>
+            <div class="icon-grasa"></div>
             <input type="text" name="grasa" id="grasa">
           </div>
-          <div class="card musculo">
+
+          <div class="card-musculo">
             <label for="musculo" name="musculo">Masa muscular</label>
-            <div class="icon margin"></div>
+            <div class="icon-musculo"></div>
             <input type="text" name="musculo" id="musculo">
           </div>
+
           <input type="submit" name="calcular" value="calcular" id="calcular">
+
         </form>
+
       </section>
 
       <section class="instalaciones">
