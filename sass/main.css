@@ -3,6 +3,7 @@ body {
   font-size: 16px;
   font-weight: 600;
   line-height: 21px;
+  color: #3b5472;
 }
 
 .menu {
@@ -380,6 +381,7 @@ body {
 .box .pruebas .evaluacion1 {
   text-align: center;
   font-size: 34px;
+  color: #3b5472;
   margin: 21px 0 0 0;
 }
 
@@ -387,6 +389,7 @@ body {
   text-align: center;
   font-size: 16px;
   font-weight: 800;
+  color: #3b5472;
   margin: 13px 0 0 0;
 }
 
@@ -421,6 +424,7 @@ body {
   font-size: 16px;
   font-weight: 600;
   text-align: center;
+  color: #3b5472;
 }
 
 .box .pruebas .form .card-sexo .mujer, .box .pruebas .form .card-estatura .mujer, .box .pruebas .form .card-peso .mujer, .box .pruebas .form .card-grasa .mujer, .box .pruebas .form .card-musculo .mujer {
@@ -454,6 +458,7 @@ body {
   font-size: 16px;
   font-weight: 600;
   text-align: center;
+  color: #3b5472;
 }
 
 .box .pruebas .form .card-estatura .icon-estatura {
@@ -586,5 +591,53 @@ body {
 
 .box .pruebas .form input[type="submit"]:hover {
   background: #7d9ab8;
+}
+
+.box .instalaciones {
+  background: #c69af9;
+  margin: 144px 0 0 0;
+}
+
+.box .instalaciones .conoce {
+  width: 100%;
+  text-align: center;
+  font-size: 34px;
+  margin: 0;
+}
+
+.box .instalaciones .galeria {
+  background: #64ff66;
+  width: 100%;
+  overflow: auto;
+}
+
+.box .instalaciones .galeria .img1, .box .instalaciones .galeria .img2, .box .instalaciones .galeria .img3, .box .instalaciones .galeria .img4, .box .instalaciones .galeria .img5, .box .instalaciones .galeria .img6 {
+  background: url("../rsrc/img/consulting-room/Consultorio1.jpg");
+  width: 600px;
+  height: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+}
+
+.box .instalaciones .galeria .img2 {
+  border: 1px solid #c69af9;
+}
+
+.box .instalaciones .galeria .img3 {
+  border: 1px solid #c69af9;
+}
+
+.box .instalaciones .galeria .img4 {
+  border: 1px solid #c69af9;
+}
+
+.box .instalaciones .galeria .img5 {
+  border: 1px solid #c69af9;
+}
+
+.box .instalaciones .galeria .img6 {
+  border: 1px solid #c69af9;
 }
 /*# sourceMappingURL=main.css.map */
