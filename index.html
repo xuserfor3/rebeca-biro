@@ -190,13 +190,76 @@
 
       <div class="testimonios">
         <h2 class="title">Testimonios</h2>
-        <div class="persona"></div>
-        <div class="opinion">
-          <h3 class="nombre">Alejandro Zapata</h3>
-          <p class="txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum quis, accusamus voluptatibus
-            nisi placeat ipsa laboriosam consectetur quam officiis incidunt cumque soluta deleniti ad quidem sed nobis,
-            repellat ipsam aperiam.</p>
-        </div>
+
+        <section class="slides">
+
+          <div class="slide1"><a
+              href="https://www.facebook.com/RebecaBiroNutricion/reviews/referrer=page_recommendations_see_all&amp%3Bref=page_internal"
+              target="_blank" class="fb-comentarios">
+              <div class="foto1"></div>
+              <div class="nombre-txt">
+                <h3 class="nombre">Pat Hedz Matz</h3>
+                <p class="txt">Rebe es la mejor ! Llevo casi 5 meses de dieta con ella, hebajado más de 20 kilos y me
+                  ha
+                  dado un acompañamiento extraordinario. Cuando inicias un proceso de cambio dehábitos es súper
+                  importante tener a un profesional guiándote para que no sólo bajes de peso, sino APRENDAS a comer, ya
+                  que este proceso es temporal pero el cambio de hábitos debe de ser permanente.Rebe está al pendiente
+                  todo el tiempo y te da unos muy buenos consejos, te apoya y te da ánimoscuando sientes que no
+                  avanzas.
+                  De verdad es lo mejor que pudo pasarme en este proceso. Gracias x todo Rebe !<p>
+              </div>
+            </a></div>
+
+          <div class="slide1"><a
+              href="https://www.facebook.com/RebecaBiroNutricion/reviews/?referrer=page_recommendations_see_all&amp%3Bref=page_internal"
+              target="_blank" class="fb-comentarios">
+              <div class="foto2"></div>
+              <div class="nombre-txt">
+                <h3 class="nombre">George M. Domínguez</h3>
+                <p class="txt">La mejor nutriologa de todo Cancún y de todo México. No hay duda que rebeca es una
+                  profesional y muy dedicada en su traba, atiende todas tus dudas siempre te explica de la mejor manera
+                  y es super amable...yo llevo con ella 15 dias se plan nutricional y mis resultados en peso, musco e
+                  imc han sido espectaculares...gracias Rebe... la recomiendo al 10000000%</p>
+              </div>
+            </a></div>
+
+          <div class="slide1"><a
+              href="https://www.facebook.com/RebecaBiroNutricion/reviews/?referrer=page_recommendations_see_all&amp%3Bref=page_internal"
+              target="_blank" class="fb-comentarios">
+              <div class="foto3"></div>
+              <div class="nombre-txt">
+                <h3 class="nombre">Ramon Vazquez</h3>
+                <p class="txt">Sin duda alguna la mejor opción para programas de nutrición !!!</p>
+              </div>
+            </a></div>
+
+          <div class="slide1"><a
+              href="https://www.facebook.com/RebecaBiroNutricion/reviews/?referrer=page_recommendations_see_all&amp%3Bref=page_internal"
+              target="_blank" class="fb-comentarios">
+              <div class="foto4"></div>
+              <div class="nombre-txt">
+                <h3 class="nombre">María Pia Mier</h3>
+                <p class="txt">Llegué con Rebeca por un problema de intestino irritable. Llevaba meses con esa
+                  incomodidad y ya había consultado un doctor previamente y yo seguía igual. Todo el tiempo estaba
+                  inflamada del intestino, unos días más que otros, pero en general siempre. Con Rebeca vi resultados
+                  muy rápidos con su régimen de alimentación. El intestino se me desinflamó de inmediato, bajé medidas
+                  considerablemente y me dio una dieta balanceada adecuada super bien a mi postura ética vegana. La
+                  Super recomiendo.</p>
+              </div>
+            </a></div>
+
+          <div class="slide1"><a
+              href="https://www.facebook.com/RebecaBiroNutricion/reviews/?referrer=page_recommendations_see_all&amp%3Bref=page_internal"
+              target="_blank" class="fb-comentarios">
+              <div class="foto5"></div>
+              <div class="nombre-txt">
+                <h3 class="nombre">Jose Perales</h3>
+                <p class="txt">Muy buena gente y mejores personas! Ánimo y a tope</p>
+              </div>
+            </a></div>
+
+        </section>
+
       </div>
     </div>
     <!--    Footer    -->
@@ -232,6 +295,33 @@
 
     </footer>
   </main>
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/jquery.slides.js"></script>
+  <script>
+    $(function () {
+      $(".slides").slidesjs({
+        play: {
+          active: true,
+          // [boolean] Generate the play and stop buttons.
+          // You cannot use your own buttons. Sorry.
+          effect: "slide",
+          // [string] Can be either "slide" or "fade".
+          interval: 9000,
+          // [number] Time spent on each slide in milliseconds.
+          auto: true,
+          // [boolean] Start playing the slideshow on load.
+          swap: true,
+          // [boolean] show/hide stop and play buttons
+          pauseOnHover: false,
+          // [boolean] pause a playing slideshow on hover
+          restartDelay: 2500
+          // [number] restart delay on inactive slideshow
+        }
+      });
+    });
+  </script>
+
 </body>
 
 

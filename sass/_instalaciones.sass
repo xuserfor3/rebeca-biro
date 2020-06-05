@@ -1,0 +1,65 @@
+.instalaciones
+    margin: 144px 0 0 0
+
+    .conoce
+        width: 100%
+        text-align: center
+        font-size: $h34
+        margin: 0 0 34px 0
+
+    .galeria
+        width: 100%
+        overflow: auto
+
+        @mixin imgbg($img, $width)
+            background: $img
+            width: $width
+            height: 400px
+            background-size: cover
+            background-repeat: no-repeat
+            background-position: center
+            float: left
+        .img1
+            margin: 0 21px 21px 0
+            @include imgbg(url('../rsrc/img/consulting-room/Consultorio1.jpg'),600px)
+        .img2
+            @include imgbg(url('../rsrc/img/consulting-room/Consultorio2.jpg'),379px)
+        .img3
+            margin: 0 21px 21px 0
+            @include imgbg(url('../rsrc/img/consulting-room/Consultorio3.jpg'),379px)
+        .img4
+            @include imgbg(url('../rsrc/img/consulting-room/Consultorio4.jpg'),600px)
+        .img5
+            margin: 0 0 21px 0
+            @include imgbg(url('../rsrc/img/consulting-room/Consultorio5.jpg'),100%)
+        .img6
+            @include imgbg(url('../rsrc/img/consulting-room/Consultorio6.jpg'),600px)
+
+        .descripcion
+            width: 379px
+            height: 400px
+            box-sizing: border-box
+            padding: 0 13px
+            float: right
+            display: flex
+            flex-wrap: wrap
+            align-content: center
+
+            .txt
+                margin: 0 0 34px 0
+                text-align: left
+                line-height: $LH-21
+
+            .agendarcita
+                background: $mainColor
+                width: 100%
+                display: inline-block
+                padding: 16px 32px
+                border-radius: 8px
+                text-decoration: none
+                color: #ffffff
+                text-align: center
+                font-size: 18px
+                box-sizing: border-box
+            .agendarcita:hover
+                background: $secondColor

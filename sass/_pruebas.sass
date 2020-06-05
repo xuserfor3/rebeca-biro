@@ -1,0 +1,195 @@
+.pruebas
+    margin: 90px 0 0 0
+
+    .icon-plicometro
+        background: url('../rsrc/ico/Plicometro.svg')
+        width: 80px
+        height: 80px
+        background-size: cover
+        margin: 5px auto
+
+    .evaluacion1
+        text-align: center
+        font-size: $h34
+        color: $mainColor
+        margin: 21px 0 0 0
+
+    .txt
+        text-align: center
+        font-size: $fs16
+        font-weight: $fw800
+        color: $mainColor
+        margin: 13px 0 0 0
+
+    .form
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+        .card-sexo
+            width: 15%
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-around
+            margin: 0 0 34px 0
+            align-self: flex-start
+
+            label[for="sexo"]
+                width: 100%
+                font-size: $fs16
+                font-weight: $fw600
+                text-align: center
+                color: $mainColor
+
+            .mujer
+                margin: 0 0 0 0
+
+                .icon-mujer
+                    background: url('../rsrc/ico/Mujer.svg')
+                    width: 50px
+                    height: 50px
+                    background-size: cover
+
+                input[type="radio"]
+                    margin: 0 0 0 13px
+
+            .hombre
+                margin: 0 0 0 0
+
+                .icon-hombre
+                    background: url('../rsrc/ico/Hombre.svg')
+                    width: 50px
+                    height: 50px
+                    background-size: cover
+
+                input[type="radio"]
+                    margin: 0 0 0 13px
+
+        .card-estatura
+            @extend .card-sexo
+
+            label[for="estatura"]
+                width: 100%
+                font-size: $fs16
+                font-weight: $fw600
+                text-align: center
+                color: $mainColor
+
+            .icon-estatura
+                background: url('../rsrc/ico/Estatura.svg')
+                width: 50px
+                height: 50px
+
+            .input-num::-webkit-inner-spin-button,
+            .input-num::-webkit-outer-spin-button
+                -webkit-appearance: none
+
+            .input-num
+                -moz-appearance: textfield
+                width: 60%
+                border: none
+                border-bottom: 2px solid $mainColor
+                padding: 3px 8px
+                box-shadow: none
+                font-family: $Nunitosans
+                font-weight: $fw800
+                text-align: left
+
+            label[for="m"]
+                align-self: flex-end
+
+        .card-peso
+            @extend .card-sexo
+
+            label[for="peso"]
+                width: 100%
+                font-size: $fs16
+                font-weight: $fw600
+                text-align: center
+
+            .icon-peso
+                background: url('../rsrc/ico/Peso.svg')
+                width: 50px
+                height: 50px
+
+            .input-num::-webkit-inner-spin-button,
+            .input-num::-webkit-outer-spin-button
+                -webkit-appearance: none
+
+            .input-num
+                -moz-appearance: textfield
+                width: 60%
+                border: none
+                border-bottom: 2px solid $mainColor
+                padding: 3px 8px
+                box-shadow: none
+                font-family: $Nunitosans
+                font-weight: $fw800
+                text-align: left
+
+            label[for="kg"]
+                align-self: flex-end
+
+        .card-grasa
+            @extend .card-sexo
+
+            label[for="grasa"]
+                width: 100%
+                font-size: $fs16
+                font-weight: $fw600
+                text-align: center
+
+            .icon-grasa
+                background: url('../rsrc/ico/Grasa.svg')
+                width: 50px
+                height: 50px
+
+            input[type="text"]
+                width: 80%
+                border: none
+                border-bottom: 2px solid $mainColor
+                padding: 3px 8px
+                box-shadow: none
+                font-family: $Nunitosans
+                font-weight: $fw800
+                text-align: left
+
+        .card-musculo
+            @extend .card-sexo
+
+            label[for="musculo"]
+                width: 100%
+                font-size: $fs16
+                font-weight: $fw600
+                text-align: center
+
+            .icon-musculo
+                background: url('../rsrc/ico/Masamuscular.svg')
+                width: 50px
+                height: 50px
+
+            input[type="text"]
+                width: 80%
+                border: none
+                border-bottom: 2px solid $mainColor
+                padding: 3px 8px
+                box-shadow: none
+                font-family: $Nunitosans
+                font-weight: $fw800
+                text-align: left
+
+        input[type="submit"]
+            background: $mainColor
+            width: 100%
+            padding: 18px 32px
+            color: #ffffff
+            font-variant: small-caps
+            font-size: 18px
+            font-weight: $fw800
+            border: none
+            border-radius: 8px
+            cursor: pointer
+
+        input[type="submit"]:hover
+            background: $secondColor

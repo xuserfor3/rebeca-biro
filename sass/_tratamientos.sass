@@ -1,0 +1,170 @@
+.tratamiento
+    margin: 30px 0 0 0
+
+    .quetratamos
+        font-size: $h34
+        color: $mainColor
+        text-align: center
+        margin: 0 0 30px 0
+
+    .cardtratamientos
+        display: flex
+        flex-wrap: wrap
+
+        .cardgroup-uno
+            width: 100%
+            height: 150px
+            display: flex
+            justify-content: space-between
+            border-bottom: 1px solid $mainColor
+
+            .card-uno
+                width: 160px
+                font-size: 0.86rem
+                text-align: center
+                flex-grow: 0
+                flex-basis: 50px
+                align-self: flex-end
+
+                .icon-sobrepeso
+                    background: url('../rsrc/ico/Sobrepeso.svg')
+                    width: 50px
+                    height: 50px
+                    background-size: cover
+                    margin: 5px auto
+
+            .card-dos
+                @extend .card-uno
+                flex-grow: 0
+                flex-basis: 140px
+                align-self: center
+
+                .icon-alimentacion
+                    @extend .icon-sobrepeso
+                    background: url('../rsrc/ico/Alimentacionplantas.svg')
+
+            .card-tres
+                @extend .card-uno
+                flex-grow: 0
+                flex-basis: 140px
+                align-self: flex-end
+
+                .icon-intolerancias
+                    @extend .icon-sobrepeso
+                    background: url('../rsrc/ico/Intolerancias.svg')
+
+            .card-cuatro
+                @extend .card-uno
+                flex-grow: 0
+                flex-basis: 160px
+                align-self: flex-start
+
+                .icon-deportistas
+                    @extend .icon-sobrepeso
+                    background: url('../rsrc/ico/Deportistas.svg')
+                        
+
+            .card-cinco
+                @extend .card-uno
+                flex-grow: 0
+                flex-basis: 110px
+                align-self: flex-end
+
+                .icon-cirugia
+                    @extend .icon-sobrepeso
+                    background: url('../rsrc/ico/Cirugiabariatrica.svg')
+            
+            .card-seis
+                @extend .card-uno
+                flex-grow: 0
+                flex-basis: 100px
+                align-self: flex-start
+
+                .icon-cancer
+                    @extend .icon-sobrepeso
+                    background: url('../rsrc/ico/Cancer.svg')
+
+            .card-siete
+                @extend .card-uno
+                flex-grow: 0
+                flex-basis: 80px
+                align-self: flex-end
+
+                .icon-intuitiva
+                    @extend .icon-sobrepeso
+                    background: url('../rsrc/ico/Alimentacionintuitiva.svg')
+
+
+        .cardgroup-dos
+            width: 100%
+            height: 150px
+            display: flex
+            justify-content: space-between
+            border-top: 1px solid $mainColor
+
+            .card-ocho
+                width: 160px
+                font-size: 0.86rem
+                text-align: center
+                flex-grow: 0
+                flex-basis: 100px
+                display: flex
+                flex-direction: column-reverse
+                align-self: center
+
+                .icon-veganismo
+                    background: url('../rsrc/ico/Veganismo.svg')
+                    width: 50px
+                    height: 50px
+                    background-size: cover
+                    margin: 5px auto
+
+            .card-nueve
+                @extend .card-ocho
+                flex-grow: 0
+                flex-basis: 125px
+                align-self: flex-start
+
+                .icon-mindfuleating
+                    @extend .icon-veganismo
+                    background: url('../rsrc/ico/Minfuleating.svg')
+
+            .card-diez
+                @extend .card-ocho
+                flex-grow: 0
+                flex-basis: 130px
+                align-self: flex-end
+
+                .icon-desordenmetabolico
+                    @extend .icon-veganismo
+                    background: url('../rsrc/ico/Desordenmetabolico.svg')
+
+            .card-once
+                @extend .card-ocho
+                flex-grow: 0
+                flex-basis: 150px
+                align-self: flex-start
+
+                .icon-problemadigestivo
+                    @extend .icon-veganismo
+                    background: url('../rsrc/ico/Problemadigestivos.svg')
+
+            .card-doce
+                @extend .card-ocho
+                flex-grow: 0
+                flex-basis: 160px
+                align-self: flex-end
+
+                .icon-cetosis
+                    @extend .icon-veganismo
+                    background: url('../rsrc/ico/Cetosis.svg')
+
+            .card-trece
+                @extend .card-ocho
+                flex-grow: 0
+                flex-basis: 120px
+                align-self: flex-start
+
+                .icon-enfermedadautoinmune
+                    @extend .icon-veganismo
+                    background: url('../rsrc/ico/Enfermedadesautoinmunes.svg')
