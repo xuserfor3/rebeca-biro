@@ -7,50 +7,87 @@
     z-index: 10
     
     .navbar
-        overflow: auto
+        background: $bg1
         max-width: 1000px
+        height: 100%
         margin: 0 auto
+        overflow: auto
 
-        .btn
-            float: left
-            padding: 8px 16px
-            margin: 21px 13px 21px 0
+        @mixin btn($color, $float)
             text-decoration: none
-            color: $secondColor
-            font-size: $fs16
+            color: $color
+            float: $float
+            box-sizing: border-box
+            padding: 8px 16px
+            margin: 21px 0 0 0
+
+        @mixin btn-before($bg)
+            content: $bg
+            display: inline-block
+            width: 19px
+            height: 19px
+            position: relative
+            top: 4px
+            right: 5px
+
+        .btn-homelogo
+            background: 
+            float: left
+            margin: 9px 0 0 0
 
             .logo
                 background: url('../rsrc/ico/Logo.svg')
-                width: 30px
+                width: 60px
                 height: 60px
                 background-size: cover
                 background-repeat: no-repeat
                 background-position: center
-        
-        .homelogo
-            @extend .btn
-            margin: 0 0 0 0
-    
-        .instagram, .facebook, .signup, .tienda
-            float: right
-            padding: 0 8px
-            margin: 28px 0
-    
-        .tienda
-            background: rgb(209, 221, 229)
-            background: linear-gradient(90deg, rgba(209, 221, 229, 1) 0%, rgba(125, 154, 184, 1) 100%)
-            color: #ffffff
-            padding: 16px 24px
-            margin: 12px 13px 12px 0
-            border-radius: 8px
-            font-size: $fs16
-            float: right
 
-        .signup
-            border: 2px solid $secondColor
-            border-radius: 8px
-            color: $secondColor
-            padding: 14px 24px
-            margin: 12px 55px 12px 0
-            font-size: $fs16
+        .btn-servicios
+            @include btn($secondColor, left)
+        .btn-servicios::before
+            @include btn-before(url('../rsrc/ico/Servicios.svg'))
+            
+        .btn-productos
+            @include btn($secondColor, left)
+        .btn-productos::before
+            @include btn-before(url('../rsrc/ico/Productos.svg'))
+
+        .btn-contacto
+            @include btn($secondColor, left)
+        .btn-contacto::before
+            @include btn-before(url('../rsrc/ico/Contacto.svg'))
+
+        .btn-blog
+            @include btn($secondColor, left)
+        .btn-blog::before
+            @include btn-before(url('../rsrc/ico/Blog.svg'))
+
+        .btn-instagram
+            
+
+        .btn-facebook
+            
+
+        .btn-signup
+            
+        
+        .btn-tienda
+            background: $mainColor
             float: right
+            padding: 13px 32px
+            text-decoration: none
+            color: #ffffff
+            border-radius: 8px
+            box-sizing: border-box
+            border: 0px
+
+        .btn-tienda::before
+            content: url('../rsrc/ico/Carrito.svg')
+            display: inline-block
+            width: 19px
+            height: 19px
+            position: relative
+            top: 4px
+            right: 5px
+            box-sizing: border-box

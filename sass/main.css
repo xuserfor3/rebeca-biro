@@ -25,59 +25,129 @@ body {
 }
 
 .menu .navbar {
-  overflow: auto;
+  background: #c69af9;
   max-width: 1000px;
+  height: 100%;
   margin: 0 auto;
+  overflow: auto;
 }
 
-.menu .navbar .btn, .menu .navbar .homelogo {
+.menu .navbar .btn-homelogo {
   float: left;
-  padding: 8px 16px;
-  margin: 21px 13px 21px 0;
-  text-decoration: none;
-  color: #7d9ab8;
-  font-size: 16px;
+  margin: 9px 0 0 0;
 }
 
-.menu .navbar .btn .logo, .menu .navbar .homelogo .logo {
+.menu .navbar .btn-homelogo .logo {
   background: url("../rsrc/ico/Logo.svg");
-  width: 30px;
+  width: 60px;
   height: 60px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.menu .navbar .homelogo {
-  margin: 0 0 0 0;
-}
-
-.menu .navbar .instagram, .menu .navbar .facebook, .menu .navbar .signup, .menu .navbar .tienda {
-  float: right;
-  padding: 0 8px;
-  margin: 28px 0;
-}
-
-.menu .navbar .tienda {
-  background: #d1dde5;
-  background: -webkit-gradient(linear, left top, right top, from(#d1dde5), to(#7d9ab8));
-  background: linear-gradient(90deg, #d1dde5 0%, #7d9ab8 100%);
-  color: #ffffff;
-  padding: 16px 24px;
-  margin: 12px 13px 12px 0;
-  border-radius: 8px;
-  font-size: 16px;
-  float: right;
-}
-
-.menu .navbar .signup {
-  border: 2px solid #7d9ab8;
-  border-radius: 8px;
+.menu .navbar .btn-servicios {
+  text-decoration: none;
   color: #7d9ab8;
-  padding: 14px 24px;
-  margin: 12px 55px 12px 0;
-  font-size: 16px;
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 8px 16px;
+  margin: 21px 0 0 0;
+}
+
+.menu .navbar .btn-servicios::before {
+  content: url("../rsrc/ico/Servicios.svg");
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  position: relative;
+  top: 4px;
+  right: 5px;
+}
+
+.menu .navbar .btn-productos {
+  text-decoration: none;
+  color: #7d9ab8;
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 8px 16px;
+  margin: 21px 0 0 0;
+}
+
+.menu .navbar .btn-productos::before {
+  content: url("../rsrc/ico/Productos.svg");
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  position: relative;
+  top: 4px;
+  right: 5px;
+}
+
+.menu .navbar .btn-contacto {
+  text-decoration: none;
+  color: #7d9ab8;
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 8px 16px;
+  margin: 21px 0 0 0;
+}
+
+.menu .navbar .btn-contacto::before {
+  content: url("../rsrc/ico/Contacto.svg");
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  position: relative;
+  top: 4px;
+  right: 5px;
+}
+
+.menu .navbar .btn-blog {
+  text-decoration: none;
+  color: #7d9ab8;
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 8px 16px;
+  margin: 21px 0 0 0;
+}
+
+.menu .navbar .btn-blog::before {
+  content: url("../rsrc/ico/Blog.svg");
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  position: relative;
+  top: 4px;
+  right: 5px;
+}
+
+.menu .navbar .btn-tienda {
+  background: #3b5472;
   float: right;
+  padding: 13px 32px;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0px;
+}
+
+.menu .navbar .btn-tienda::before {
+  content: url("../rsrc/ico/Carrito.svg");
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  position: relative;
+  top: 4px;
+  right: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .cvrebeca {
@@ -902,7 +972,7 @@ body {
           box-sizing: border-box;
 }
 
-.piepagina .box .menu-rrss-derechos .navbar .btn, .piepagina .box .menu-rrss-derechos .menu .navbar .homelogo, .menu .piepagina .box .menu-rrss-derechos .navbar .homelogo {
+.piepagina .box .menu-rrss-derechos .navbar .btn {
   text-decoration: none;
   color: #3b5472;
 }
@@ -939,7 +1009,7 @@ body {
   margin: 0;
 }
 
-.piepagina .box .box-signup .btn, .piepagina .box .box-signup .menu .navbar .homelogo, .menu .navbar .piepagina .box .box-signup .homelogo {
+.piepagina .box .box-signup .btn {
   background: #3b5472;
   display: inline-block;
   padding: 16px 32px;
