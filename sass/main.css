@@ -4,6 +4,9 @@ body {
   font-weight: 600;
   line-height: 21px;
   color: #3b5472;
+  background: url("../rsrc/texture/marble19201.jpg");
+  background-size: 75%;
+  background-position: 130% 0%;
 }
 
 .box {
@@ -716,6 +719,10 @@ body {
   background: #7d9ab8;
 }
 
+.testimonios {
+  margin: 0 0 55px 0;
+}
+
 .testimonios .title {
   width: 100%;
   text-align: center;
@@ -808,6 +815,10 @@ body {
   margin: 0 auto;
 }
 
+.testimonios .slides .fb-comentarios .fas::after {
+  content: fas fa-star;
+}
+
 .testimonios .slides .slidesjs-pagination {
   display: none;
 }
@@ -826,5 +837,99 @@ body {
 
 .testimonios .slides .slidesjs-stop {
   color: #ffffff;
+}
+
+.piepagina {
+  background: #e1e2dc;
+  padding: 55px 0;
+}
+
+.piepagina .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.piepagina .box .logofooter {
+  display: inline-block;
+}
+
+.piepagina .box .logofooter .logo {
+  background: url("../rsrc/logo-color1.svg");
+  width: 100px;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.piepagina .box .menu-rrss-derechos {
+  width: 50%;
+}
+
+.piepagina .box .menu-rrss-derechos .navbar {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 8px 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.piepagina .box .menu-rrss-derechos .navbar .btn, .piepagina .box .menu-rrss-derechos .menu .navbar .homelogo, .menu .piepagina .box .menu-rrss-derechos .navbar .homelogo {
+  text-decoration: none;
+  color: #3b5472;
+}
+
+.piepagina .box .menu-rrss-derechos .rrss {
+  width: 20%;
+  margin: 34px auto;
+  text-align: center;
+}
+
+.piepagina .box .menu-rrss-derechos .rrss .facebook {
+  text-decoration: none;
+  margin: 0 3px 0 0;
+}
+
+.piepagina .box .menu-rrss-derechos .rrss .facebook .fab {
+  font-size: 21px;
+  color: #3b5472;
+}
+
+.piepagina .box .menu-rrss-derechos .rrss .instagram {
+  text-decoration: none;
+  margin: 0 0 0 3px;
+}
+
+.piepagina .box .menu-rrss-derechos .rrss .instagram .fab {
+  font-size: 21px;
+  color: #3b5472;
+}
+
+.piepagina .box .menu-rrss-derechos .copyright {
+  text-align: center;
+  color: #3b5472;
+  margin: 0;
+}
+
+.piepagina .box .box-signup .btn, .piepagina .box .box-signup .menu .navbar .homelogo, .menu .navbar .piepagina .box .box-signup .homelogo {
+  background: #3b5472;
+  display: inline-block;
+  padding: 16px 32px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  color: #e1e2dc;
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
