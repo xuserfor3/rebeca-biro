@@ -815,6 +815,22 @@ body {
   margin: 0 auto;
 }
 
+.testimonios .slides .fb-comentarios .stars {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.testimonios .slides .fb-comentarios .stars .fas {
+  color: #dad60d;
+  margin: 0 13px 0 0;
+  font-size: 34px;
+}
+
 .testimonios .slides .slidesjs-pagination {
   display: none;
 }
@@ -833,6 +849,11 @@ body {
 
 .testimonios .slides .slidesjs-stop {
   color: #ffffff;
+}
+
+.instagram-card {
+  width: 400px;
+  margin: 0 auto;
 }
 
 .piepagina {
