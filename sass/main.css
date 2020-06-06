@@ -815,10 +815,6 @@ body {
   margin: 0 auto;
 }
 
-.testimonios .slides .fb-comentarios .fas::after {
-  content: fas fa-star;
-}
-
 .testimonios .slides .slidesjs-pagination {
   display: none;
 }
