@@ -25,7 +25,6 @@ body {
 }
 
 .menu .navbar {
-  background: #c69af9;
   max-width: 1000px;
   height: 100%;
   margin: 0 auto;
@@ -126,28 +125,62 @@ body {
   right: 5px;
 }
 
-.menu .navbar .btn-tienda {
-  background: #3b5472;
+.menu .navbar .btn-instagram {
   float: right;
-  padding: 13px 32px;
   text-decoration: none;
-  color: #ffffff;
-  border-radius: 8px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 0px;
+  color: #7d9ab8;
+  font-size: 21px;
+  margin: 30px 0 0 13px;
 }
 
-.menu .navbar .btn-tienda::before {
-  content: url("../rsrc/ico/Carrito.svg");
+.menu .navbar .btn-facebook {
+  float: right;
+  text-decoration: none;
+  color: #7d9ab8;
+  font-size: 21px;
+  margin: 30px 0 0 55px;
+}
+
+.menu .navbar .btn-signup {
+  background: transparent;
+  float: right;
+  padding: 13px 32px;
+  margin: 14px 0 0 13px;
+  text-decoration: none;
+  color: #7d9ab8;
+  border-radius: 8px;
+  border: 2px solid #7d9ab8;
+}
+
+.menu .navbar .btn-signup::before {
+  content: url("../rsrc/ico/Usuario.svg");
   display: inline-block;
   width: 19px;
   height: 19px;
   position: relative;
   top: 4px;
   right: 5px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+}
+
+.menu .navbar .btn-tienda {
+  background: #3b5472;
+  float: right;
+  padding: 13px 32px;
+  margin: 14px 0 0 13px;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 8px;
+  border: 3px solid #3b5472;
+}
+
+.menu .navbar .btn-tienda::before {
+  content: url("../rsrc/ico/Tienda-white.svg");
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  position: relative;
+  top: 4px;
+  right: 5px;
 }
 
 .cvrebeca {

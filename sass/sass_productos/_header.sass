@@ -35,7 +35,7 @@
             margin: 9px 0 0 0
 
             .logo
-                background: url('../rsrc/ico/Logo.svg')
+                background: url('../../rsrc/ico/Logo.svg')
                 width: 60px
                 height: 60px
                 background-size: cover
@@ -45,22 +45,22 @@
         .btn-servicios
             @include btn($secondColor, left)
         .btn-servicios::before
-            @include btn-before(url('../rsrc/ico/Servicios.svg'))
+            @include btn-before(url('../../rsrc/ico/Servicios.svg'))
             
         .btn-productos
             @include btn($secondColor, left)
         .btn-productos::before
-            @include btn-before(url('../rsrc/ico/Productos.svg'))
+            @include btn-before(url('../../rsrc/ico/Productos.svg'))
 
         .btn-contacto
             @include btn($secondColor, left)
         .btn-contacto::before
-            @include btn-before(url('../rsrc/ico/Contacto.svg'))
+            @include btn-before(url('../../rsrc/ico/Contacto.svg'))
 
         .btn-blog
             @include btn($secondColor, left)
         .btn-blog::before
-            @include btn-before(url('../rsrc/ico/Blog.svg'))
+            @include btn-before(url('../../rsrc/ico/Blog.svg'))
 
         @mixin redes($float, $marginTop, $marginLeft)
             float: $float
@@ -98,10 +98,10 @@
         .btn-signup
             @include btn-cta(transparent, right, 14px, 13px, $secondColor, 2px solid $secondColor)
         .btn-signup::before
-            @include btn-cta-before(url('../rsrc/ico/Usuario.svg'))
+            @include btn-cta-before(url('../../rsrc/ico/Usuario.svg'))
             
         
         .btn-tienda
             @include btn-cta($mainColor, right, 14px, 13px, #ffffff, 3px solid $mainColor)
         .btn-tienda::before
-            @include btn-cta-before(url('../rsrc/ico/Tienda-white.svg'))
+            @include btn-cta-before(url('../../rsrc/ico/Tienda-white.svg'))

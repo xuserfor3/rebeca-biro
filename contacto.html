@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,600;0,800;1,300;1,600&display=swap"
     rel="stylesheet">
   <title>Rebeca Biro | Nutriciòn</title>
-  <link rel="stylesheet" href="styles/contacto.css">
+  <link rel="stylesheet" href="sass/sass_contacto/mains.css">
 
 </head>
 
@@ -17,70 +17,70 @@
     <!--    HEADER - MENU DE NAVEGACION PRINCIPAL    -->
     <header class="menu">
       <nav class="navbar">
-        <a href="index.html" class="btn homelogo">
+        <a href="index.html" class="btn-homelogo">
           <div class="logo"></div>
         </a>
-        <a href="servicios.html" class="btn servicios">Servicios </a>
-        <a href="productos.html" class="btn productos">Productos</a>
-        <a href="contacto.html" class="btn contacto">Contacto</a>
-        <a href="$" class="btn blog">Blog</a>
-        <a href="https://www.instagram.com/rebebiro.nutricion/" target="_blank" class="btn instagram">
+        <a href="servicios.html" class="btn-servicios">Servicios </a>
+        <a href="productos.html" class="btn-productos">Productos</a>
+        <a href="contacto.html" class="btn-contacto">Contacto</a>
+        <a href="$" class="btn-blog">Blog</a>
+        <a href="https://www.instagram.com/rebebiro.nutricion/" target="_blank" class="btn-instagram">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://www.facebook.com/RebecaBiroNutricion/" target="_blank" class="btn facebook">
+        <a href="https://www.facebook.com/RebecaBiroNutricion/" target="_blank" class="btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
-        <a href="$" class="btn signup">Registrarme</a>
-        <a href="$" class="btn tienda">Tienda</a>
+        <a href="$" class="btn-signup">Registrarme</a>
+        <a href="$" class="btn-tienda">Tienda</a>
       </nav>
     </header>
 
     <!--   MAIN SERVICIOS     -->
     <main class="box">
 
-      <div class="contacto-box">
-        <section class="descripcion">
-          <h2 class="titulo">¡Queremos saber que es lo que piensas!</h2>
-          <p class="txt">Si tienes alguna duda o simplemente deseas expresar si te fue de utilidad la información en
-            este sitio, estaremos contentos de recibir tus mensajes, con dudas, comentarios y ¿Por qué no? También
-            saludos, siempre serán bienvenidos.</p>
-        </section>
+      <section class="contacto">
 
-        <form action="$" class="formulario">
-          <label for="nombre" name="nombre" class="nombre">Nombre</label>
-          <input type="text" name="nombre">
-          <label for="correo" name="correo" class="correo">Correo</label>
-          <input type="email" name="correo">
-          <label for="mensaje" name="mensaje" class="mensaje">Mensaje</label>
-          <textarea name="mensaje" id="mensaje" class="mensaje"></textarea>
-        </form>
+        <div class="contacto-box">
+          <section class="descripcion">
+            <h2 class="titulo">¡Queremos saber que es lo que piensas!</h2>
+            <p class="txt">Si tienes alguna duda o simplemente deseas expresar si te fue de utilidad la información en
+              este sitio, estaremos contentos de recibir tus mensajes, con dudas, comentarios y ¿Por qué no? También
+              saludos, siempre serán bienvenidos.</p>
+          </section>
 
-        <section class="info contacto">
-          <div class="icono"></div>
-          <p class="txt wa">998 884 8112</p>
-          <div class="icono"></div>
-          <p class="txt tel">998 100 1193</p>
-          <div class="icono"></div>
-          <p class="txt correos">rbiro.nutricion@gmail.com</p>
-          <div class="icono"></div>
-          <p class="txt">Av. Yaxchilán 164 A S.M. 20 Manzana 17 Lote 21 Col. Centro</p>
-          <div class="icono"></div>
-          <p class="txt">Horario de citas: <br>
-            Lunes a Jueves: 9 am - 2 pm | 4 pm - 8 pm. <br>
-            Viernes: 9 am - 2 pm. <br>
-            Sábado: 9 am - 5 pm.</p>
-        </section>
-      </div>
+          <form action="$" class="formulario">
+            <label for="nombre" name="nombre" value="nombre" class="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="correo" name="correo" class="correo">Correo</label>
+            <input type="email" id="correo" name="correo">
+            <label for="mensaje" name="mensaje" class="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje" class=""></textarea>
+            <input type="submit" value="enviar">
+          </form>
 
-      <div class="mapa">
-        <h2 class="titulo">Aquí estamos</h2>
-        <section class="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1074.7516881027768!2d-86.82968770004481!3d21.154487711606922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2e96545ab841%3A0x1c0c4c89b985592d!2sPodinteg!5e0!3m2!1ses!2smx!4v1590538628894!5m2!1ses!2smx"
-            width="1000" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-            tabindex="0"></iframe>
-        </section>
-      </div>
+          <section class="info-contacto">
+            <p class="txt-wa">998 884 8112</p>
+            <p class="txt-tel">998 100 1193</p>
+            <p class="txt-correo">rbiro.nutricion@gmail.com</p>
+            <p class="txt-direccion">Av. Yaxchilán 164 A S.M. 20 Manzana 17 Lote 21 Col. Centro</p>
+            <p class="txt-horario">Horario de citas: <br>
+              Lunes a Jueves: 9 am - 2 pm | 4 pm - 8 pm. <br>
+              Viernes: 9 am - 2 pm. <br>
+              Sábado: 9 am - 5 pm.</p>
+          </section>
+        </div>
+
+        <div class="mapa">
+          <h2 class="titulo">Aquí estamos</h2>
+          <section class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1074.7516881027768!2d-86.82968770004481!3d21.154487711606922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2e96545ab841%3A0x1c0c4c89b985592d!2sPodinteg!5e0!3m2!1ses!2smx!4v1590538628894!5m2!1ses!2smx"
+              width="1000" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
+          </section>
+        </div>
+
+      </section>
 
     </main>
 
@@ -94,16 +94,16 @@
 
         <div class="menu-rrss-derechos">
           <nav class="navbar">
-            <a href="servicios.html" class="btn-servicios">Servicios </a>
-            <a href="productos.html" class="btn-productos">Productos</a>
-            <a href="servicios.html" class="btn-contacto">Contacto</a>
-            <a href="$" class="btn-blog">Blog</a>
+            <a href="servicios.html" class="btn">Servicios </a>
+            <a href="productos.html" class="btn">Productos</a>
+            <a href="servicios.html" class="btn">Contacto</a>
+            <a href="$" class="btn">Blog</a>
           </nav>
           <div class="rrss">
-            <a href="https://www.facebook.com/RebecaBiroNutricion/" target="_blank" class="btn-facebook">
+            <a href="https://www.facebook.com/RebecaBiroNutricion/" target="_blank" class="facebook">
               <i class="fab fa-facebook"></i>
             </a>
-            <a href="https://www.instagram.com/rebebiro.nutricion/" target="_blank" class="btn-facebook">
+            <a href="https://www.instagram.com/rebebiro.nutricion/" target="_blank" class="instagram">
               <i class="fab fa-instagram"></i>
             </a>
           </div>
@@ -111,7 +111,7 @@
         </div>
 
         <div class="box-signup">
-          <a href="$" class="btn-signup">Registrarme</a>
+          <a href="$" class="btn">Registrarme</a>
         </div>
       </div>
 

@@ -1,0 +1,117 @@
+.contacto
+    margin: 55px 0
+
+    .contacto-box
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+        .descripcion
+            margin: 0 0 34px 0
+
+            .titulo
+                width: 100%
+                text-align: left
+                margin: 0 0 21px 0
+
+            .txt
+                line-height: $LH-21
+                margin: 0
+
+        .formulario
+            width: 48%
+            margin: 0
+            padding: 13px 21px
+            box-sizing: border-box
+
+            .nombre
+                color: $mainColor
+                width: 100%
+                margin: 0
+                display: inline-block
+
+            input[type="text"]
+                width: 100%
+                display: inline-block
+                font-size: $fs16
+                font-family: $Nunitosans
+                color: $secondColor
+                font-weight: $fw800
+                outline: none
+                box-sizing: border-box
+                border: transparent
+                border-bottom: 2px solid $mainColor
+                padding: 12px 20px
+                margin: 0 0 13px 0
+
+            .correo
+                @extend .nombre
+
+            input[type="email"]
+                @extend input[type="text"]
+
+            .mensaje
+                @extend .nombre
+
+            textarea[name="mensaje"]
+                min-width: 100%
+                max-width: 100%
+                min-height: 100px
+                max-height: 100px
+                @extend input[type="text"]
+
+            input[type="submit"]
+                width: 100%
+                background: $mainColor
+                border: 0
+                border-radius: 8px
+                display: inline-block
+                padding: 16px 32px
+                color: #ffffff
+                font-size: 18px
+                font-variant: small-caps
+                font-weight: $fw800
+                font-family: $Nunitosans
+                cursor: pointer
+
+            input[type="submit"]:hover
+                background: $secondColor
+
+        .info-contacto
+            width: 48%
+            // padding: 13px 21px
+            margin: 0
+            box-sizing: border-box
+
+            .txt-wa
+
+            @mixin txt-wa($bg)
+                content: $bg
+                display: inline-block
+                width: 19px
+                height: 19px
+                padding: 0 8px
+                position: relative
+                top: 4px
+
+            .txt-wa::before
+                @include txt-wa(url(../../rsrc/ico/Whatsapp.svg))
+            .txt-tel::before
+                @include txt-wa(url(../../rsrc/ico/Telfijo.svg))
+            .txt-correo::before
+                @include txt-wa(url(../../rsrc/ico/Correo.svg))
+            .txt-direccion::before
+                @include txt-wa(url(../../rsrc/ico/Direccion.svg))
+            .txt-horario::before
+                @include txt-wa(url(../../rsrc/ico/Cita.svg))
+
+    .mapa
+        margin: 89px 0 34px 0
+
+        .titulo
+            width: 100%
+            text-align: center
+            margin: 0 0 34px
+
+        .map
+            margin: 0
