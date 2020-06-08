@@ -313,6 +313,7 @@ body {
 }
 
 .piepagina {
+  width: 100%;
   background: #e1e2dc;
   padding: 55px 0;
   margin: 0;
