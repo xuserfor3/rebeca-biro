@@ -145,57 +145,54 @@ body {
 .menu .navbar .btn-signup {
   background: transparent;
   float: right;
-  padding: 13px 32px;
-  margin: 14px 0 0 13px;
+  padding: 16px 30px;
+  margin: 10px 0 0 13px;
   text-decoration: none;
   color: #7d9ab8;
   border-radius: 8px;
   border: 2px solid #7d9ab8;
 }
 
-.menu .navbar .btn-signup::before {
-  content: url("../../rsrc/ico/Usuario.svg");
-  display: inline-block;
-  width: 19px;
-  height: 19px;
-  position: relative;
-  top: 4px;
-  right: 5px;
-}
-
 .menu .navbar .btn-tienda {
-  background: #3b5472;
+  background: -webkit-gradient(linear, left top, right top, from(#d1dde5), to(#7d9ab8));
+  background: linear-gradient(90deg, #d1dde5 0%, #7d9ab8 100%);
   float: right;
-  padding: 13px 32px;
-  margin: 14px 0 0 13px;
+  padding: 18px 32px;
+  margin: 10px 0 0 13px;
   text-decoration: none;
   color: #ffffff;
   border-radius: 8px;
-  border: 3px solid #3b5472;
+  border: 0px;
 }
 
-.menu .navbar .btn-tienda::before {
+.menu .navbar .btn-tienda::after {
   content: url("../../rsrc/ico/Tienda-white.svg");
-  display: inline-block;
+  float: right;
   width: 19px;
   height: 19px;
   position: relative;
-  top: 4px;
-  right: 5px;
+  top: 3px;
+  right: px;
+  padding: 0px 8px;
 }
 
 .servicios {
+  margin: 55px 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 89px 0 144px 0;
 }
 
 .servicios .card-servicios, .servicios .card-programas, .servicios .card-cursos {
-  width: 320px;
+  width: 32%;
+  margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,112 +201,137 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .servicios .card-servicios .img, .servicios .card-programas .img, .servicios .card-cursos .img {
-  background: url("../../rsrc/img/servicios/consulta.jpg");
+  background: url(../../rsrc/img/servicios/consulta.jpg);
   width: 100%;
   height: 250px;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: right;
+  margin: 0;
+  padding: 0;
 }
 
 .servicios .card-servicios .icono-consulta, .servicios .card-programas .icono-consulta, .servicios .card-cursos .icono-consulta {
-  background: url("../../rsrc/ico/Consultalineapresencial.svg");
-  width: 50px;
-  height: 50px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 13px 0 8px 0;
+  background: url(../../rsrc/ico/Consulta.svg);
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  margin: 8px 0;
 }
 
 .servicios .card-servicios .consulta, .servicios .card-programas .consulta, .servicios .card-cursos .consulta, .servicios .card-programas .paquetes, .servicios .card-cursos .cursos {
-  margin: 0;
   width: 100%;
+  margin: 0 0 13px 0;
+  padding: 0;
   text-align: center;
-  font-size: 34px;
   line-height: 34px;
-  margin: 0 0 34px 0;
+  font-size: 34px;
 }
 
-.servicios .card-servicios .btn-consulta, .servicios .card-programas .btn-consulta, .servicios .card-cursos .btn-consulta, .servicios .card-programas .btn-paquetes, .servicios .card-cursos .btn-cursos {
-  background: #3b5472;
+.servicios .card-servicios .btn-consulta, .servicios .card-programas .btn-consulta, .servicios .card-cursos .btn-consulta {
   display: inline-block;
-  padding: 16px 32px;
-  text-decoration: none;
-  color: #ffffff;
+  padding: 16px 30px;
+  margin: 34px 0 0 0;
+  border: 2px solid #3b5472;
   border-radius: 8px;
-  margin: 21px 0 0 0;
+  color: #3b5472;
+  text-decoration: none;
 }
 
-.servicios .card-servicios .btn-consulta::before, .servicios .card-programas .btn-consulta::before, .servicios .card-cursos .btn-consulta::before, .servicios .card-programas .btn-paquetes::before, .servicios .card-cursos .btn-cursos::before {
-  content: url("../../rsrc/ico/Tienda-white.svg");
+.servicios .card-servicios .btn-consulta::before, .servicios .card-programas .btn-consulta::before, .servicios .card-cursos .btn-consulta::before {
+  content: url(../../rsrc/ico/Carrito.svg);
   display: inline-block;
-  width: 19px;
-  height: 19px;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0 5px 0 0;
   position: relative;
-  top: 3px;
-  right: 5px;
+  top: 4px;
 }
 
 .servicios .card-programas .img {
-  background: url("../../rsrc/img/servicios/programas.jpg");
+  background: url(../../rsrc/img/servicios/programas.jpg);
   width: 100%;
   height: 250px;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: right;
+  margin: 0;
+  padding: 0;
 }
 
 .servicios .card-programas .icono-paquetes {
-  background: url("../../rsrc/ico/Programaspaquetes.svg");
-  width: 50px;
-  height: 50px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 13px 0 8px 0;
+  background: url(../../rsrc/ico/Programaspaquetes.svg);
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  margin: 8px 0;
+}
+
+.servicios .card-programas .btn-paquetes {
+  display: inline-block;
+  padding: 16px 30px;
+  margin: 34px 0 0 0;
+  border: 2px solid #3b5472;
+  border-radius: 8px;
+  color: #3b5472;
+  text-decoration: none;
 }
 
 .servicios .card-programas .btn-paquetes::before {
-  content: url("../../rsrc/ico/Tienda-white.svg");
+  content: url(../../rsrc/ico/Carrito.svg);
   display: inline-block;
-  width: 19px;
-  height: 19px;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0 5px 0 0;
   position: relative;
-  top: 3px;
-  right: 5px;
+  top: 4px;
 }
 
 .servicios .card-cursos .img {
-  background: url("../../rsrc/img/servicios/cursos.jpg");
+  background: url(../../rsrc/img/servicios/cursos.jpg);
   width: 100%;
   height: 250px;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: right;
+  margin: 0;
+  padding: 0;
 }
 
 .servicios .card-cursos .icono-cursos {
-  background: url("../../rsrc/ico/Programaspaquetes.svg");
-  width: 50px;
-  height: 50px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 13px 0 8px 0;
+  background: url(../../rsrc/ico/Cursostalleres.svg);
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  margin: 8px 0;
+}
+
+.servicios .card-cursos .btn-cursos {
+  display: inline-block;
+  padding: 16px 30px;
+  margin: 34px 0 0 0;
+  border: 2px solid #3b5472;
+  border-radius: 8px;
+  color: #3b5472;
+  text-decoration: none;
 }
 
 .servicios .card-cursos .btn-cursos::before {
-  content: url("../../rsrc/ico/Tienda-white.svg");
+  content: url(../../rsrc/ico/Carrito.svg);
   display: inline-block;
-  width: 19px;
-  height: 19px;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0 5px 0 0;
   position: relative;
-  top: 3px;
-  right: 5px;
+  top: 4px;
 }
 
 .piepagina {
@@ -336,7 +358,7 @@ body {
 }
 
 .piepagina .box .logofooter .logo {
-  background: url("../../rsrc/logo-color1.svg");
+  background: url("../../rsrc/logo-white1.svg");
   width: 100px;
   height: 90px;
   background-size: contain;
@@ -362,7 +384,7 @@ body {
 
 .piepagina .box .menu-rrss-derechos .navbar .btn {
   text-decoration: none;
-  color: #3b5472;
+  color: #ffffff;
 }
 
 .piepagina .box .menu-rrss-derechos .rrss {
@@ -378,7 +400,7 @@ body {
 
 .piepagina .box .menu-rrss-derechos .rrss .facebook .fab {
   font-size: 21px;
-  color: #3b5472;
+  color: #ffffff;
 }
 
 .piepagina .box .menu-rrss-derechos .rrss .instagram {
@@ -388,23 +410,23 @@ body {
 
 .piepagina .box .menu-rrss-derechos .rrss .instagram .fab {
   font-size: 21px;
-  color: #3b5472;
+  color: #ffffff;
 }
 
 .piepagina .box .menu-rrss-derechos .copyright {
   text-align: center;
-  color: #3b5472;
+  color: #ffffff;
   margin: 0;
 }
 
 .piepagina .box .box-signup .btn {
-  background: #3b5472;
   display: inline-block;
   padding: 16px 32px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border: 2px solid #ffffff;
   border-radius: 8px;
-  color: #e1e2dc;
+  color: #ffffff;
   text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */

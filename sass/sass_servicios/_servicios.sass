@@ -1,150 +1,126 @@
 .servicios
+    margin: 55px 0
+    padding: 0
     display: flex
+    flex-wrap: wrap
     justify-content: space-between
-    margin: 89px 0 144px 0
-            
-    .card-servicios
-        width: 320px
+
+    // MIXINS-------------
+    @mixin cards 
+        width: 32%
+        margin: 0
+        padding: 0
         display: flex
         flex-wrap: wrap
         justify-content: center
+        align-self: flex-start
 
-        @mixin img-card($bg)
-            background: $bg
-            width: 100%
-            height: 250px
-            background-size: cover
-            background-repeat: no-repeat
-            background-position: right
+    @mixin img-card($img)
+        background: $img
+        width: 100%
+        height: 250px
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: right
+        margin: 0
+        padding: 0
 
-        @mixin icon($bg)
-            background: $bg
-            width: 50px
-            height: 50px
-            background-size: cover
-            background-repeat: no-repeat
-            background-position: center
-            margin: 13px 0 8px 0
+    @mixin iconos($icon-svg)
+        background: $icon-svg
+        width: 60px
+        height: 60px
+        padding: 0
+        margin: 8px 0
+
+    @mixin titulo-card($fs)
+        width: 100%
+        margin: 0 0 13px 0
+        padding: 0
+        text-align: center
+        line-height: 34px
+        font-size: $fs
+
+    @mixin botones($color)
+        display: inline-block
+        padding: 16px 30px
+        margin: 34px 0 0 0
+        border: 2px solid $mainColor
+        border-radius: 8px
+        color: $color
+        text-decoration: none
+    // --------------------------
+
+    // CARD SERVICIOS------------
+    .card-servicios
+        @include cards 
 
         .img
-            @include img-card(url('../../rsrc/img/servicios/consulta.jpg'))
-        
+            @include img-card(url(../../rsrc/img/servicios/consulta.jpg))
+
         .icono-consulta
-            @include icon(url('../../rsrc/ico/Consultalineapresencial.svg'))
+            @include iconos(url(../../rsrc/ico/Consulta.svg))
 
         .consulta
-            margin: 0
-            width: 100%
-            text-align: center
-            font-size: $h34
-            line-height: 34px
-            margin: 0 0 34px 0
+            @include titulo-card($h34)
 
         .btn-consulta
-            background: $mainColor
-            display: inline-block
-            padding: 16px 32px
-            text-decoration: none
-            color: #ffffff
-            border-radius: 8px
-            margin: 21px 0 0 0
+            @include botones($mainColor)
+            &::before
+                content: url(../../rsrc/ico/Carrito.svg)
+                display: inline-block
+                width: 20px
+                height: 20px
+                margin: 0
+                padding: 0 5px 0 0
+                position: relative
+                top: 4px
 
-        @mixin btn-cta-before($bg)
-            content: $bg
-            display: inline-block
-            width: 19px
-            height: 19px
-            position: relative
-            top: 3px
-            right: 5px
-
-        .btn-consulta::before
-            @include btn-cta-before(url('../../rsrc/ico/Tienda-white.svg'))
-
+    // CARD PROGRAMAS------------------
     .card-programas
         @extend .card-servicios
-
-        @mixin img-card($bg)
-            background: $bg
-            width: 100%
-            height: 250px
-            background-size: cover
-            background-repeat: no-repeat
-            background-position: right
-
-        @mixin icon($bg)
-            background: $bg
-            width: 50px
-            height: 50px
-            background-size: cover
-            background-repeat: no-repeat
-            background-position: center
-            margin: 13px 0 8px 0
-
+            
         .img
-            @include img-card(url('../../rsrc/img/servicios/programas.jpg'))
+            @include img-card(url(../../rsrc/img/servicios/programas.jpg))
 
         .icono-paquetes
-            @include icon(url('../../rsrc/ico/Programaspaquetes.svg'))
+            @include iconos(url(../../rsrc/ico/Programaspaquetes.svg))
 
         .paquetes
             @extend .consulta
 
         .btn-paquetes
-            @extend .btn-consulta
+            @include botones($mainColor)
+            &::before
+                content: url(../../rsrc/ico/Carrito.svg)
+                display: inline-block
+                width: 20px
+                height: 20px
+                margin: 0
+                padding: 0 5px 0 0
+                position: relative
+                top: 4px
 
-        @mixin btn-cta-before($bg)
-            content: $bg
-            display: inline-block
-            width: 19px
-            height: 19px
-            position: relative
-            top: 3px
-            right: 5px
-
-        .btn-paquetes::before
-            @include btn-cta-before(url('../../rsrc/ico/Tienda-white.svg'))
-
+    // CARD CURSOS Y TALLERES--------------
     .card-cursos
         @extend .card-servicios
 
-        @mixin img-card($bg)
-            background: $bg
-            width: 100%
-            height: 250px
-            background-size: cover
-            background-repeat: no-repeat
-            background-position: right
-
-        @mixin icon($bg)
-            background: $bg
-            width: 50px
-            height: 50px
-            background-size: cover
-            background-repeat: no-repeat
-            background-position: center
-            margin: 13px 0 8px 0
-
         .img
-            @include img-card(url('../../rsrc/img/servicios/cursos.jpg'))
+            @include img-card(url(../../rsrc/img/servicios/cursos.jpg))
 
         .icono-cursos
-            @include icon(url('../../rsrc/ico/Programaspaquetes.svg'))
+            @include iconos(url(../../rsrc/ico/Cursostalleres.svg))
 
         .cursos
             @extend .consulta
-
+        
         .btn-cursos
-            @extend .btn-consulta
-
-        @mixin btn-cta-before($bg)
-            content: $bg
-            display: inline-block
-            width: 19px
-            height: 19px
-            position: relative
-            top: 3px
-            right: 5px
-
-        .btn-cursos::before
-            @include btn-cta-before(url('../../rsrc/ico/Tienda-white.svg'))
+            @include botones($mainColor)
+            &::before
+                content: url(../../rsrc/ico/Carrito.svg)
+                display: inline-block
+                width: 20px
+                height: 20px
+                margin: 0
+                padding: 0 5px 0 0
+                position: relative
+                top: 4px

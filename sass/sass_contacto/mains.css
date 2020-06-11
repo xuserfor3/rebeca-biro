@@ -145,43 +145,35 @@ body {
 .menu .navbar .btn-signup {
   background: transparent;
   float: right;
-  padding: 13px 32px;
-  margin: 14px 0 0 13px;
+  padding: 16px 30px;
+  margin: 10px 0 0 13px;
   text-decoration: none;
   color: #7d9ab8;
   border-radius: 8px;
   border: 2px solid #7d9ab8;
 }
 
-.menu .navbar .btn-signup::before {
-  content: url("../../rsrc/ico/Usuario.svg");
-  display: inline-block;
-  width: 19px;
-  height: 19px;
-  position: relative;
-  top: 4px;
-  right: 5px;
-}
-
 .menu .navbar .btn-tienda {
-  background: #3b5472;
+  background: -webkit-gradient(linear, left top, right top, from(#d1dde5), to(#7d9ab8));
+  background: linear-gradient(90deg, #d1dde5 0%, #7d9ab8 100%);
   float: right;
-  padding: 13px 32px;
-  margin: 14px 0 0 13px;
+  padding: 18px 32px;
+  margin: 10px 0 0 13px;
   text-decoration: none;
   color: #ffffff;
   border-radius: 8px;
-  border: 3px solid #3b5472;
+  border: 0px;
 }
 
-.menu .navbar .btn-tienda::before {
+.menu .navbar .btn-tienda::after {
   content: url("../../rsrc/ico/Tienda-white.svg");
-  display: inline-block;
+  float: right;
   width: 19px;
   height: 19px;
   position: relative;
-  top: 4px;
-  right: 5px;
+  top: 3px;
+  right: px;
+  padding: 0px 8px;
 }
 
 .contacto {
@@ -367,7 +359,7 @@ body {
 }
 
 .piepagina .box .logofooter .logo {
-  background: url("../../rsrc/logo-color1.svg");
+  background: url("../../rsrc/logo-white1.svg");
   width: 100px;
   height: 90px;
   background-size: contain;
@@ -393,7 +385,7 @@ body {
 
 .piepagina .box .menu-rrss-derechos .navbar .btn {
   text-decoration: none;
-  color: #3b5472;
+  color: #ffffff;
 }
 
 .piepagina .box .menu-rrss-derechos .rrss {
@@ -409,7 +401,7 @@ body {
 
 .piepagina .box .menu-rrss-derechos .rrss .facebook .fab {
   font-size: 21px;
-  color: #3b5472;
+  color: #ffffff;
 }
 
 .piepagina .box .menu-rrss-derechos .rrss .instagram {
@@ -419,23 +411,23 @@ body {
 
 .piepagina .box .menu-rrss-derechos .rrss .instagram .fab {
   font-size: 21px;
-  color: #3b5472;
+  color: #ffffff;
 }
 
 .piepagina .box .menu-rrss-derechos .copyright {
   text-align: center;
-  color: #3b5472;
+  color: #ffffff;
   margin: 0;
 }
 
 .piepagina .box .box-signup .btn {
-  background: #3b5472;
   display: inline-block;
   padding: 16px 32px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border: 2px solid #ffffff;
   border-radius: 8px;
-  color: #e1e2dc;
+  color: #ffffff;
   text-decoration: none;
 }
 /*# sourceMappingURL=mains.css.map */

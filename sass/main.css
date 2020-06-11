@@ -5,6 +5,7 @@ body {
   line-height: 21px;
   color: #3b5472;
   background: url("../rsrc/texture/marble19201.jpg");
+  background-attachment: fixed;
   background-size: 75%;
   background-position: 130% 0%;
 }
@@ -144,43 +145,35 @@ body {
 .menu .navbar .btn-signup {
   background: transparent;
   float: right;
-  padding: 13px 32px;
-  margin: 14px 0 0 13px;
+  padding: 16px 30px;
+  margin: 10px 0 0 13px;
   text-decoration: none;
   color: #7d9ab8;
   border-radius: 8px;
   border: 2px solid #7d9ab8;
 }
 
-.menu .navbar .btn-signup::before {
-  content: url("../rsrc/ico/Usuario.svg");
-  display: inline-block;
-  width: 19px;
-  height: 19px;
-  position: relative;
-  top: 4px;
-  right: 5px;
-}
-
 .menu .navbar .btn-tienda {
-  background: #3b5472;
+  background: -webkit-gradient(linear, left top, right top, from(#d1dde5), to(#7d9ab8));
+  background: linear-gradient(90deg, #d1dde5 0%, #7d9ab8 100%);
   float: right;
-  padding: 13px 32px;
-  margin: 14px 0 0 13px;
+  padding: 18px 32px;
+  margin: 10px 0 0 13px;
   text-decoration: none;
   color: #ffffff;
   border-radius: 8px;
-  border: 3px solid #3b5472;
+  border: 0px;
 }
 
-.menu .navbar .btn-tienda::before {
+.menu .navbar .btn-tienda::after {
   content: url("../rsrc/ico/Tienda-white.svg");
-  display: inline-block;
+  float: right;
   width: 19px;
   height: 19px;
   position: relative;
-  top: 4px;
-  right: 5px;
+  top: 3px;
+  right: px;
+  padding: 0px 8px;
 }
 
 .cvrebeca {
@@ -488,7 +481,7 @@ body {
   text-align: center;
   font-size: 34px;
   color: #3b5472;
-  margin: 21px 0 0 0;
+  margin: 41px 0 0 0;
 }
 
 .pruebas .txt {
@@ -496,11 +489,12 @@ body {
   font-size: 16px;
   font-weight: 800;
   color: #3b5472;
-  margin: 13px 0 0 0;
+  margin: 30px 0 0 0;
 }
 
 .pruebas .form {
   width: 100%;
+  margin: 50px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -512,14 +506,15 @@ body {
 }
 
 .pruebas .form .card-sexo, .pruebas .form .card-estatura, .pruebas .form .card-peso, .pruebas .form .card-grasa, .pruebas .form .card-musculo {
-  width: 15%;
+  width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 0 34px 0;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -539,9 +534,10 @@ body {
 
 .pruebas .form .card-sexo .mujer .icon-mujer, .pruebas .form .card-estatura .mujer .icon-mujer, .pruebas .form .card-peso .mujer .icon-mujer, .pruebas .form .card-grasa .mujer .icon-mujer, .pruebas .form .card-musculo .mujer .icon-mujer {
   background: url("../rsrc/ico/Mujer.svg");
+  background-size: cover;
   width: 50px;
   height: 50px;
-  background-size: cover;
+  margin: 0 13px 0 0;
 }
 
 .pruebas .form .card-sexo .mujer input[type="radio"], .pruebas .form .card-estatura .mujer input[type="radio"], .pruebas .form .card-peso .mujer input[type="radio"], .pruebas .form .card-grasa .mujer input[type="radio"], .pruebas .form .card-musculo .mujer input[type="radio"] {
@@ -554,13 +550,14 @@ body {
 
 .pruebas .form .card-sexo .hombre .icon-hombre, .pruebas .form .card-estatura .hombre .icon-hombre, .pruebas .form .card-peso .hombre .icon-hombre, .pruebas .form .card-grasa .hombre .icon-hombre, .pruebas .form .card-musculo .hombre .icon-hombre {
   background: url("../rsrc/ico/Hombre.svg");
+  background-size: cover;
   width: 50px;
   height: 50px;
-  background-size: cover;
+  margin: 0 0 0 13px;
 }
 
 .pruebas .form .card-sexo .hombre input[type="radio"], .pruebas .form .card-estatura .hombre input[type="radio"], .pruebas .form .card-peso .hombre input[type="radio"], .pruebas .form .card-grasa .hombre input[type="radio"], .pruebas .form .card-musculo .hombre input[type="radio"] {
-  margin: 0 0 0 13px;
+  margin: 0 0 0 30px;
 }
 
 .pruebas .form .card-estatura label[for="estatura"] {
@@ -573,7 +570,9 @@ body {
 
 .pruebas .form .card-estatura .icon-estatura {
   background: url("../rsrc/ico/Estatura.svg");
-  width: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
   height: 50px;
 }
 
@@ -609,7 +608,9 @@ body {
 
 .pruebas .form .card-peso .icon-peso {
   background: url("../rsrc/ico/Peso.svg");
-  width: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
   height: 50px;
 }
 
@@ -619,6 +620,7 @@ body {
 }
 
 .pruebas .form .card-peso .input-num {
+  background: none;
   -moz-appearance: textfield;
   width: 60%;
   border: none;
@@ -650,6 +652,7 @@ body {
 }
 
 .pruebas .form .card-grasa input[type="text"] {
+  background: none;
   width: 80%;
   border: none;
   border-bottom: 2px solid #3b5472;
@@ -675,6 +678,7 @@ body {
 }
 
 .pruebas .form .card-musculo input[type="text"] {
+  background: none;
   width: 80%;
   border: none;
   border-bottom: 2px solid #3b5472;
@@ -687,20 +691,19 @@ body {
 }
 
 .pruebas .form input[type="submit"] {
-  background: #3b5472;
-  width: 100%;
+  background: #ffffff;
+  width: 20%;
   padding: 18px 32px;
-  color: #ffffff;
+  margin: 0 auto;
+  color: #3b5472;
   font-variant: small-caps;
   font-size: 18px;
   font-weight: 800;
-  border: none;
+  border: 2px solid #3b5472;
   border-radius: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   cursor: pointer;
-}
-
-.pruebas .form input[type="submit"]:hover {
-  background: #7d9ab8;
 }
 
 .instalaciones {
@@ -805,10 +808,13 @@ body {
 }
 
 .instalaciones .galeria .descripcion .agendarcita {
-  background: #3b5472;
-  width: 100%;
+  background: #d1dde5;
+  background: -webkit-gradient(linear, left top, right top, from(#d1dde5), to(#7d9ab8));
+  background: linear-gradient(90deg, #d1dde5 0%, #7d9ab8 100%);
+  width: 50%;
   display: inline-block;
   padding: 16px 32px;
+  margin: 0 auto;
   border-radius: 8px;
   text-decoration: none;
   color: #ffffff;
@@ -816,10 +822,6 @@ body {
   font-size: 18px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-.instalaciones .galeria .descripcion .agendarcita:hover {
-  background: #7d9ab8;
 }
 
 .testimonios {
@@ -954,11 +956,6 @@ body {
   color: #ffffff;
 }
 
-.instagram-card {
-  width: 400px;
-  margin: 0 auto;
-}
-
 .piepagina {
   width: 100%;
   background: #e1e2dc;
@@ -983,7 +980,7 @@ body {
 }
 
 .piepagina .box .logofooter .logo {
-  background: url("../rsrc/logo-color1.svg");
+  background: url("../rsrc/logo-white1.svg");
   width: 100px;
   height: 90px;
   background-size: contain;
@@ -1009,7 +1006,7 @@ body {
 
 .piepagina .box .menu-rrss-derechos .navbar .btn {
   text-decoration: none;
-  color: #3b5472;
+  color: #ffffff;
 }
 
 .piepagina .box .menu-rrss-derechos .rrss {
@@ -1025,7 +1022,7 @@ body {
 
 .piepagina .box .menu-rrss-derechos .rrss .facebook .fab {
   font-size: 21px;
-  color: #3b5472;
+  color: #ffffff;
 }
 
 .piepagina .box .menu-rrss-derechos .rrss .instagram {
@@ -1035,23 +1032,23 @@ body {
 
 .piepagina .box .menu-rrss-derechos .rrss .instagram .fab {
   font-size: 21px;
-  color: #3b5472;
+  color: #ffffff;
 }
 
 .piepagina .box .menu-rrss-derechos .copyright {
   text-align: center;
-  color: #3b5472;
+  color: #ffffff;
   margin: 0;
 }
 
 .piepagina .box .box-signup .btn {
-  background: #3b5472;
   display: inline-block;
   padding: 16px 32px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border: 2px solid #ffffff;
   border-radius: 8px;
-  color: #e1e2dc;
+  color: #ffffff;
   text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */

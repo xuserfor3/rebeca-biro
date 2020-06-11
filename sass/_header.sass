@@ -75,10 +75,10 @@
         .btn-facebook
             @include redes(right, 30px, 55px)
 
-        @mixin btn-cta($bg, $float, $marginTop, $marginLeft, $color, $border)
+        @mixin btn-cta($bg, $float, $padTop, $padBotm, $marginTop, $marginLeft, $color, $border)
             background: $bg
             float: $float
-            padding: 13px 32px
+            padding: $padTop $padBotm
             margin: $marginTop 0 0 $marginLeft
             text-decoration: none
             color: $color
@@ -86,22 +86,20 @@
             border: $border
             
 
-        @mixin btn-cta-before($bg)
+        @mixin btn-cta-before($bg, $padTop, $padBotm)
             content: $bg
-            display: inline-block
+            float: right
             width: 19px
             height: 19px
             position: relative
-            top: 4px
-            right: 5px
+            top: 3px
+            right: px
+            padding: $padTop $padBotm
 
         .btn-signup
-            @include btn-cta(transparent, right, 14px, 13px, $secondColor, 2px solid $secondColor)
-        .btn-signup::before
-            @include btn-cta-before(url('../rsrc/ico/Usuario.svg'))
-            
+            @include btn-cta(transparent, right, 16px, 30px, 10px, 13px, $secondColor, 2px solid $secondColor)
         
         .btn-tienda
-            @include btn-cta($mainColor, right, 14px, 13px, #ffffff, 3px solid $mainColor)
-        .btn-tienda::before
-            @include btn-cta-before(url('../rsrc/ico/Tienda-white.svg'))
+            @include btn-cta(linear-gradient(90deg, rgba(209,221,229,1) 0%, rgba(125,154,184,1) 100%), right, 18px, 32px, 10px, 13px, #ffffff, 0px)
+        .btn-tienda::after
+            @include btn-cta-before(url('../rsrc/ico/Tienda-white.svg'), 0px, 8px)
