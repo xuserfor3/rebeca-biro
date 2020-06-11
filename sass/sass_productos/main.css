@@ -15,7 +15,7 @@ body {
   margin: 0 auto;
 }
 
-.menu, .productos .card-complementos .complementos, .productos .card-micronutricion .micronutricion {
+.menu {
   background: #ffffff;
   width: 100%;
   height: 80px;
@@ -25,19 +25,19 @@ body {
   z-index: 10;
 }
 
-.menu .navbar, .productos .card-complementos .complementos .navbar, .productos .card-micronutricion .micronutricion .navbar {
+.menu .navbar {
   max-width: 1000px;
   height: 100%;
   margin: 0 auto;
   overflow: auto;
 }
 
-.menu .navbar .btn-homelogo, .productos .card-complementos .complementos .navbar .btn-homelogo, .productos .card-micronutricion .micronutricion .navbar .btn-homelogo {
+.menu .navbar .btn-homelogo {
   float: left;
   margin: 9px 0 0 0;
 }
 
-.menu .navbar .btn-homelogo .logo, .productos .card-complementos .complementos .navbar .btn-homelogo .logo, .productos .card-micronutricion .micronutricion .navbar .btn-homelogo .logo {
+.menu .navbar .btn-homelogo .logo {
   background: url("../../rsrc/ico/Logo.svg");
   width: 60px;
   height: 60px;
@@ -46,7 +46,7 @@ body {
   background-position: center;
 }
 
-.menu .navbar .btn-servicios, .productos .card-complementos .complementos .navbar .btn-servicios, .productos .card-micronutricion .micronutricion .navbar .btn-servicios {
+.menu .navbar .btn-servicios {
   text-decoration: none;
   color: #7d9ab8;
   float: left;
@@ -56,7 +56,7 @@ body {
   margin: 21px 0 0 0;
 }
 
-.menu .navbar .btn-servicios::before, .productos .card-complementos .complementos .navbar .btn-servicios::before, .productos .card-micronutricion .micronutricion .navbar .btn-servicios::before {
+.menu .navbar .btn-servicios::before {
   content: url("../../rsrc/ico/Servicios.svg");
   display: inline-block;
   width: 19px;
@@ -66,7 +66,7 @@ body {
   right: 5px;
 }
 
-.menu .navbar .btn-productos, .productos .card-complementos .complementos .navbar .btn-productos, .productos .card-micronutricion .micronutricion .navbar .btn-productos {
+.menu .navbar .btn-productos {
   text-decoration: none;
   color: #7d9ab8;
   float: left;
@@ -76,7 +76,7 @@ body {
   margin: 21px 0 0 0;
 }
 
-.menu .navbar .btn-productos::before, .productos .card-complementos .complementos .navbar .btn-productos::before, .productos .card-micronutricion .micronutricion .navbar .btn-productos::before {
+.menu .navbar .btn-productos::before {
   content: url("../../rsrc/ico/Productos.svg");
   display: inline-block;
   width: 19px;
@@ -86,7 +86,7 @@ body {
   right: 5px;
 }
 
-.menu .navbar .btn-contacto, .productos .card-complementos .complementos .navbar .btn-contacto, .productos .card-micronutricion .micronutricion .navbar .btn-contacto {
+.menu .navbar .btn-contacto {
   text-decoration: none;
   color: #7d9ab8;
   float: left;
@@ -96,7 +96,7 @@ body {
   margin: 21px 0 0 0;
 }
 
-.menu .navbar .btn-contacto::before, .productos .card-complementos .complementos .navbar .btn-contacto::before, .productos .card-micronutricion .micronutricion .navbar .btn-contacto::before {
+.menu .navbar .btn-contacto::before {
   content: url("../../rsrc/ico/Contacto.svg");
   display: inline-block;
   width: 19px;
@@ -106,7 +106,7 @@ body {
   right: 5px;
 }
 
-.menu .navbar .btn-blog, .productos .card-complementos .complementos .navbar .btn-blog, .productos .card-micronutricion .micronutricion .navbar .btn-blog {
+.menu .navbar .btn-blog {
   text-decoration: none;
   color: #7d9ab8;
   float: left;
@@ -116,7 +116,7 @@ body {
   margin: 21px 0 0 0;
 }
 
-.menu .navbar .btn-blog::before, .productos .card-complementos .complementos .navbar .btn-blog::before, .productos .card-micronutricion .micronutricion .navbar .btn-blog::before {
+.menu .navbar .btn-blog::before {
   content: url("../../rsrc/ico/Blog.svg");
   display: inline-block;
   width: 19px;
@@ -126,7 +126,7 @@ body {
   right: 5px;
 }
 
-.menu .navbar .btn-instagram, .productos .card-complementos .complementos .navbar .btn-instagram, .productos .card-micronutricion .micronutricion .navbar .btn-instagram {
+.menu .navbar .btn-instagram {
   float: right;
   text-decoration: none;
   color: #7d9ab8;
@@ -134,7 +134,7 @@ body {
   margin: 30px 0 0 13px;
 }
 
-.menu .navbar .btn-facebook, .productos .card-complementos .complementos .navbar .btn-facebook, .productos .card-micronutricion .micronutricion .navbar .btn-facebook {
+.menu .navbar .btn-facebook {
   float: right;
   text-decoration: none;
   color: #7d9ab8;
@@ -142,7 +142,7 @@ body {
   margin: 30px 0 0 55px;
 }
 
-.menu .navbar .btn-signup, .productos .card-complementos .complementos .navbar .btn-signup, .productos .card-micronutricion .micronutricion .navbar .btn-signup {
+.menu .navbar .btn-signup {
   background: transparent;
   float: right;
   padding: 16px 30px;
@@ -153,7 +153,7 @@ body {
   border: 2px solid #7d9ab8;
 }
 
-.menu .navbar .btn-tienda, .productos .card-complementos .complementos .navbar .btn-tienda, .productos .card-micronutricion .micronutricion .navbar .btn-tienda {
+.menu .navbar .btn-tienda {
   background: -webkit-gradient(linear, left top, right top, from(#d1dde5), to(#7d9ab8));
   background: linear-gradient(90deg, #d1dde5 0%, #7d9ab8 100%);
   float: right;
@@ -165,7 +165,7 @@ body {
   border: 0px;
 }
 
-.menu .navbar .btn-tienda::after, .productos .card-complementos .complementos .navbar .btn-tienda::after, .productos .card-micronutricion .micronutricion .navbar .btn-tienda::after {
+.menu .navbar .btn-tienda::after {
   content: url("../../rsrc/ico/Tienda-white.svg");
   float: right;
   width: 19px;
@@ -177,17 +177,20 @@ body {
 }
 
 .productos {
+  margin: 55px 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 89px 0 144px 0;
 }
 
-.productos .card-menu, .productos .card-complementos, .productos .card-micronutricion {
-  width: 320px;
+.productos .card-menu {
+  width: 32%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -196,112 +199,150 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
-.productos .card-menu .img, .productos .card-complementos .img, .productos .card-micronutricion .img {
-  background: url("../../rsrc/img/productos/menu.jpg");
+.productos .card-menu .img {
+  background: url(../../rsrc/img/productos/menu.jpg);
   width: 100%;
   height: 250px;
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
-}
-
-.productos .card-menu .icono-menu, .productos .card-complementos .icono-menu, .productos .card-micronutricion .icono-menu {
-  background: url("../../rsrc/ico/Menudomicilio.svg");
-  width: 50px;
-  height: 50px;
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
-  margin: 13px 0 8px 0;
+  margin: 0;
+  padding: 0;
 }
 
-.productos .card-menu .menu, .productos .card-complementos .menu, .productos .card-micronutricion .menu, .productos .card-complementos .complementos, .productos .card-micronutricion .micronutricion {
-  margin: 0;
+.productos .card-menu .icono-menu {
+  background: url(../../rsrc/ico/Menudomicilio.svg);
+  width: 60px;
+  height: 60px;
+  margin: 8px 0;
+  padding: 0;
+}
+
+.productos .card-menu .titulo-card {
   width: 100%;
-  text-align: center;
   font-size: 34px;
   line-height: 34px;
-  margin: 0 0 34px 0;
+  text-align: center;
+  margin: 0 0 13px 0;
+  padding: 0;
 }
 
-.productos .card-menu .btn-menu, .productos .card-complementos .btn-menu, .productos .card-micronutricion .btn-menu, .productos .card-complementos .btn-complementos, .productos .card-micronutricion .btn-micronutricion {
-  background: #3b5472;
+.productos .card-menu .btn-menu {
   display: inline-block;
-  padding: 16px 32px;
-  text-decoration: none;
-  color: #ffffff;
+  padding: 16px 30px;
+  margin: 34px 0 0 0;
+  border: 2px solid #3b5472;
   border-radius: 8px;
-  margin: 21px 0 0 0;
+  color: #3b5472;
+  text-decoration: none;
 }
 
-.productos .card-menu .btn-menu::before, .productos .card-complementos .btn-menu::before, .productos .card-micronutricion .btn-menu::before, .productos .card-complementos .btn-complementos::before, .productos .card-micronutricion .btn-micronutricion::before {
-  content: url("../../rsrc/ico/Tienda-white.svg");
-  display: inline-block;
-  width: 19px;
-  height: 19px;
-  position: relative;
-  top: 3px;
-  right: 5px;
+.productos .card-complementos {
+  width: 32%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .productos .card-complementos .img {
-  background: url("../../rsrc/img/productos/proteifine.png");
+  background: url(../../rsrc/img/productos/proteifine.png);
   width: 100%;
   height: 250px;
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
 }
 
 .productos .card-complementos .icono-complementos {
-  background: url("../../rsrc/ico/Suplementos.svg");
-  width: 50px;
-  height: 50px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 13px 0 8px 0;
+  background: url(../../rsrc/ico/Suplementos.svg);
+  width: 60px;
+  height: 60px;
+  margin: 8px 0;
+  padding: 0;
 }
 
-.productos .card-complementos .btn-complementos::before {
-  content: url("../../rsrc/ico/Tienda-white.svg");
+.productos .card-complementos .titulo-card {
+  width: 100%;
+  font-size: 34px;
+  line-height: 34px;
+  text-align: center;
+  margin: 0 0 13px 0;
+  padding: 0;
+}
+
+.productos .card-complementos .btn-complementos {
   display: inline-block;
-  width: 19px;
-  height: 19px;
-  position: relative;
-  top: 3px;
-  right: 5px;
+  padding: 16px 30px;
+  margin: 34px 0 0 0;
+  border: 2px solid #3b5472;
+  border-radius: 8px;
+  color: #3b5472;
+  text-decoration: none;
+}
+
+.productos .card-micronutricion {
+  width: 32%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .productos .card-micronutricion .img {
-  background: url("../../rsrc/img/productos/candi5.png");
+  background: url(../../rsrc/img/productos/candi5.png);
   width: 100%;
   height: 250px;
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
 }
 
 .productos .card-micronutricion .icono-micronutricion {
-  background: url("../../rsrc/ico/Postresketo2.svg");
-  width: 50px;
-  height: 50px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: 13px 0 8px 0;
+  background: url(../../rsrc/ico/Postresketo2.svg);
+  width: 60px;
+  height: 60px;
+  margin: 8px 0;
+  padding: 0;
 }
 
-.productos .card-micronutricion .btn-micronutricion::before {
-  content: url("../../rsrc/ico/Tienda-white.svg");
+.productos .card-micronutricion .titulo-card {
+  width: 100%;
+  font-size: 34px;
+  line-height: 34px;
+  text-align: center;
+  margin: 0 0 13px 0;
+  padding: 0;
+}
+
+.productos .card-micronutricion .btn-micronutricion {
   display: inline-block;
-  width: 19px;
-  height: 19px;
-  position: relative;
-  top: 3px;
-  right: 5px;
+  padding: 16px 30px;
+  margin: 34px 0 0 0;
+  border: 2px solid #3b5472;
+  border-radius: 8px;
+  color: #3b5472;
+  text-decoration: none;
 }
 
 .piepagina {

@@ -1,150 +1,92 @@
 .productos
+    margin: 55px 0
+    padding: 0
     display: flex
+    flex-wrap: wrap 
     justify-content: space-between
-    margin: 89px 0 144px 0
-            
-    .card-menu
-        width: 320px
+
+    @mixin cards()
+        width: 32%
         display: flex
-        flex-wrap: wrap
+        flex-wrap: wrap 
         justify-content: center
+        align-self: flex-start
 
-        @mixin img-card($bg)
-            background: $bg
-            width: 100%
-            height: 250px
-            background-size: cover
-            background-repeat: no-repeat
-            background-position: right
+    @mixin img-card($fondo)
+        background: $fondo
+        width: 100%
+        height: 250px
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+        margin: 0
+        padding: 0
 
-        @mixin icon($bg)
-            background: $bg
-            width: 50px
-            height: 50px
-            background-size: cover
-            background-repeat: no-repeat
-            background-position: center
-            margin: 13px 0 8px 0
+    @mixin icono-card($icon)
+        background: $icon
+        width: 60px
+        height: 60px 
+        margin: 8px 0
+        padding: 0
+
+    @mixin titulo($fontsize)
+        width: 100%
+        font-size: $fontsize
+        line-height: 34px
+        text-align: center
+        margin: 0 0 13px 0
+        padding: 0
+
+    @mixin boton-card()
+        display: inline-block
+        padding: 16px 30px
+        margin: 34px 0 0 0
+        border: 2px solid $mainColor
+        border-radius: 8px
+        color: $mainColor
+        text-decoration: none
+
+    .card-menu
+        @include cards
 
         .img
-            @include img-card(url('../../rsrc/img/productos/menu.jpg'))
-        
+            @include img-card(url(../../rsrc/img/productos/menu.jpg))
+
         .icono-menu
-            @include icon(url('../../rsrc/ico/Menudomicilio.svg'))
+            @include icono-card(url(../../rsrc/ico/Menudomicilio.svg))
 
-        .menu
-            margin: 0
-            width: 100%
-            text-align: center
-            font-size: $h34
-            line-height: 34px
-            margin: 0 0 34px 0
-
+        .titulo-card
+            @include titulo($h34)
+        
         .btn-menu
-            background: $mainColor
-            display: inline-block
-            padding: 16px 32px
-            text-decoration: none
-            color: #ffffff
-            border-radius: 8px
-            margin: 21px 0 0 0
-
-        @mixin btn-cta-before($bg)
-            content: $bg
-            display: inline-block
-            width: 19px
-            height: 19px
-            position: relative
-            top: 3px
-            right: 5px
-
-        .btn-menu::before
-            @include btn-cta-before(url('../../rsrc/ico/Tienda-white.svg'))
+            @include boton-card
 
     .card-complementos
-        @extend .card-menu
+        @include cards
 
-        @mixin img-card($bg)
-            background: $bg
-            width: 100%
-            height: 250px
-            background-size: cover
-            background-repeat: no-repeat
-            background-position: right
-
-        @mixin icon($bg)
-            background: $bg
-            width: 50px
-            height: 50px
-            background-size: cover
-            background-repeat: no-repeat
-            background-position: center
-            margin: 13px 0 8px 0
-
-        .img
-            @include img-card(url('../../rsrc/img/productos/proteifine.png'))
+        .img 
+            @include img-card(url(../../rsrc/img/productos/proteifine.png))
 
         .icono-complementos
-            @include icon(url('../../rsrc/ico/Suplementos.svg'))
+            @include icono-card(url(../../rsrc/ico/Suplementos.svg))
 
-        .complementos
-            @extend .menu
+        .titulo-card
+            @include titulo($h34)
 
         .btn-complementos
-            @extend .btn-menu
-
-        @mixin btn-cta-before($bg)
-            content: $bg
-            display: inline-block
-            width: 19px
-            height: 19px
-            position: relative
-            top: 3px
-            right: 5px
-
-        .btn-complementos::before
-            @include btn-cta-before(url('../../rsrc/ico/Tienda-white.svg'))
+            @include boton-card()
 
     .card-micronutricion
-        @extend .card-menu
-
-        @mixin img-card($bg)
-            background: $bg
-            width: 100%
-            height: 250px
-            background-size: cover
-            background-repeat: no-repeat
-            background-position: right
-
-        @mixin icon($bg)
-            background: $bg
-            width: 50px
-            height: 50px
-            background-size: cover
-            background-repeat: no-repeat
-            background-position: center
-            margin: 13px 0 8px 0
+        @include cards
 
         .img
-            @include img-card(url('../../rsrc/img/productos/candi5.png'))
+            @include img-card(url(../../rsrc/img/productos/candi5.png))
 
         .icono-micronutricion
-            @include icon(url('../../rsrc/ico/Postresketo2.svg'))
+            @include icono-card(url(../../rsrc/ico/Postresketo2.svg))
 
-        .micronutricion
-            @extend .menu
+        .titulo-card
+            @include titulo($h34)
 
         .btn-micronutricion
-            @extend .btn-menu
-
-        @mixin btn-cta-before($bg)
-            content: $bg
-            display: inline-block
-            width: 19px
-            height: 19px
-            position: relative
-            top: 3px
-            right: 5px
-
-        .btn-micronutricion::before
-            @include btn-cta-before(url('../../rsrc/ico/Tienda-white.svg'))
+            @include boton-card()
