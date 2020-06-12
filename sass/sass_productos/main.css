@@ -241,6 +241,16 @@ body {
   text-decoration: none;
 }
 
+.productos .card-menu .btn-menu::before {
+  content: url(../../rsrc/ico/Carrito.svg);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 4px;
+  padding: 0 3px;
+}
+
 .productos .card-complementos {
   width: 32%;
   display: -webkit-box;
@@ -293,6 +303,16 @@ body {
   text-decoration: none;
 }
 
+.productos .card-complementos .btn-complementos::before {
+  content: url(../../rsrc/ico/Carrito.svg);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 4px;
+  padding: 0 3px;
+}
+
 .productos .card-micronutricion {
   width: 32%;
   display: -webkit-box;
@@ -343,6 +363,16 @@ body {
   border-radius: 8px;
   color: #3b5472;
   text-decoration: none;
+}
+
+.productos .card-micronutricion .btn-micronutricion::before {
+  content: url(../../rsrc/ico/Carrito.svg);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 4px;
+  padding: 0 3px;
 }
 
 .piepagina {

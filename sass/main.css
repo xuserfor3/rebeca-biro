@@ -824,7 +824,6 @@ body {
           box-sizing: border-box;
 }
 
-<<<<<<< HEAD
 .testimonios {
   margin: 0 0 55px 0;
 }
@@ -957,17 +956,6 @@ body {
   color: #ffffff;
 }
 
-=======
-.instalaciones .galeria .descripcion .agendarcita:hover {
-  background: #7d9ab8;
-}
-
-.instagram-card {
-  width: 400px;
-  margin: 0 auto;
-}
-
->>>>>>> 01989253fa0956102de2884a8e068abf274a19a7
 .piepagina {
   width: 100%;
   background: #e1e2dc;

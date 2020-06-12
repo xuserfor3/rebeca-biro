@@ -5,6 +5,7 @@
     flex-wrap: wrap 
     justify-content: space-between
 
+    // MIXINS--------------
     @mixin cards()
         width: 32%
         display: flex
@@ -45,7 +46,9 @@
         border-radius: 8px
         color: $mainColor
         text-decoration: none
+    // ----------------------
 
+    // CARD MENU-----------------
     .card-menu
         @include cards
 
@@ -60,7 +63,16 @@
         
         .btn-menu
             @include boton-card
+            &::before
+                content: url(../../rsrc/ico/Carrito.svg)
+                display: inline-block 
+                width: 20px
+                height: 20px
+                position: relative 
+                top: 4px
+                padding: 0 3px
 
+    // CARD COMPLEMENTOS ALIMENTICIOS ESPECIALIZADOS-------
     .card-complementos
         @include cards
 
@@ -74,8 +86,17 @@
             @include titulo($h34)
 
         .btn-complementos
-            @include boton-card()
+            @include boton-card
+            &::before
+                content: url(../../rsrc/ico/Carrito.svg)
+                display: inline-block 
+                width: 20px
+                height: 20px
+                position: relative 
+                top: 4px
+                padding: 0 3px
 
+    // CARD MICRONUTRICION--------------------
     .card-micronutricion
         @include cards
 
@@ -89,4 +110,12 @@
             @include titulo($h34)
 
         .btn-micronutricion
-            @include boton-card()
+            @include boton-card
+            &::before
+                content: url(../../rsrc/ico/Carrito.svg)
+                display: inline-block 
+                width: 20px
+                height: 20px
+                position: relative 
+                top: 4px
+                padding: 0 3px
