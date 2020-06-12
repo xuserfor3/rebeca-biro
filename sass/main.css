@@ -957,98 +957,165 @@ body {
 }
 
 .piepagina {
-  width: 100%;
   background: #e1e2dc;
   padding: 55px 0;
-  margin: 0;
 }
 
 .piepagina .box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.piepagina .box .logofooter {
-  display: inline-block;
-}
-
-.piepagina .box .logofooter .logo {
-  background: url("../rsrc/logo-white1.svg");
-  width: 100px;
-  height: 90px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.piepagina .box .menu-rrss-derechos {
-  width: 50%;
-}
-
-.piepagina .box .menu-rrss-derechos .navbar {
-  width: 100%;
+.piepagina .column1 {
+  width: 20%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 8px 8px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 
-.piepagina .box .menu-rrss-derechos .navbar .btn {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.piepagina .box .menu-rrss-derechos .rrss {
-  width: 20%;
-  margin: 34px auto;
-  text-align: center;
-}
-
-.piepagina .box .menu-rrss-derechos .rrss .facebook {
-  text-decoration: none;
-  margin: 0 3px 0 0;
-}
-
-.piepagina .box .menu-rrss-derechos .rrss .facebook .fab {
-  font-size: 21px;
-  color: #ffffff;
-}
-
-.piepagina .box .menu-rrss-derechos .rrss .instagram {
-  text-decoration: none;
-  margin: 0 0 0 3px;
-}
-
-.piepagina .box .menu-rrss-derechos .rrss .instagram .fab {
-  font-size: 21px;
-  color: #ffffff;
-}
-
-.piepagina .box .menu-rrss-derechos .copyright {
-  text-align: center;
-  color: #ffffff;
+.piepagina .column1 .logo {
+  background: url(../rsrc/ico/Logo-blanco.svg);
+  width: 100px;
+  height: 100px;
   margin: 0;
+  padding: 0;
 }
 
-.piepagina .box .box-signup .btn {
-  display: inline-block;
-  padding: 16px 32px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 2px solid #ffffff;
-  border-radius: 8px;
+.piepagina .column1 .info-contacto .whatsapp {
+  width: 100%;
   color: #ffffff;
-  text-decoration: none;
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+
+.piepagina .column1 .info-contacto .whatsapp::before {
+  content: url(../rsrc/ico/Whatsapp.svg);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  -webkit-transform: translate(-27px, 0px);
+          transform: translate(-27px, 0px);
+}
+
+.piepagina .column1 .info-contacto .telefono {
+  width: 100%;
+  color: #ffffff;
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+
+.piepagina .column1 .info-contacto .telefono::before {
+  content: url(../rsrc/ico/Telfijo.svg);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  -webkit-transform: translate(-27px, 0px);
+          transform: translate(-27px, 0px);
+}
+
+.piepagina .column1 .info-contacto .correo {
+  width: 100%;
+  color: #ffffff;
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+
+.piepagina .column1 .info-contacto .correo::before {
+  content: url(../rsrc/ico/Correo.svg);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  -webkit-transform: translate(-27px, 0px);
+          transform: translate(-27px, 0px);
+}
+
+.piepagina .column1 .info-contacto .direccion {
+  width: 100%;
+  color: #ffffff;
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+
+.piepagina .column1 .info-contacto .direccion::before {
+  content: url(../rsrc/ico/Direccion.svg);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  -webkit-transform: translate(-27px, 5px);
+          transform: translate(-27px, 5px);
+}
+
+.piepagina .column1 .info-contacto .horarios {
+  width: 100%;
+  color: #ffffff;
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+
+.piepagina .column1 .info-contacto .horarios::before {
+  content: url(../rsrc/ico/Cita.svg);
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  -webkit-transform: translate(-27px, 4px);
+          transform: translate(-27px, 4px);
+}
+
+.piepagina .column2 {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.piepagina .column2 .sub-servicios {
+  width: 100%;
+  margin: 55px 0 21px 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+.piepagina .column2 .btn {
+  color: #ffffff;
+  margin: 5px 0;
+}
+
+.piepagina .column3 {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
 }
 /*# sourceMappingURL=main.css.map */
