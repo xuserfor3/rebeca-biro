@@ -994,6 +994,10 @@ body {
   padding: 0;
 }
 
+.piepagina .column1 .info-contacto {
+  margin: 34px 0 0 0;
+}
+
 .piepagina .column1 .info-contacto .whatsapp {
   width: 100%;
   color: #ffffff;
@@ -1100,7 +1104,7 @@ body {
   color: #ffffff;
 }
 
-.piepagina .column2 .btn {
+.piepagina .column2 .btn2 {
   color: #ffffff;
   margin: 5px 0;
 }
@@ -1117,5 +1121,43 @@ body {
           justify-content: flex-start;
   -ms-flex-line-pack: start;
       align-content: flex-start;
+}
+
+.piepagina .column3 .sub-productos {
+  width: 100%;
+  margin: 55px 0 21px 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+.piepagina .column3 .btn {
+  color: #ffffff;
+  margin: 5px 0;
+}
+
+.piepagina .column4 {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.piepagina .column4 .facebook, .piepagina .column4 .instagram, .piepagina .column4 .youtube {
+  width: 12%;
+  margin: 55px 0 29px 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+.piepagina .column4 .servicios, .piepagina .column4 .productos, .piepagina .column4 .contacto, .piepagina .column4 .blog {
+  width: 100%;
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */
