@@ -958,7 +958,19 @@ body {
 
 .piepagina {
   background: #e1e2dc;
-  padding: 55px 0;
+  padding: 0px 0;
+  overflow: auto;
+}
+
+.piepagina::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../rsrc/texture/marble19201.jpg");
+  background-size: contain;
+  position: absolute;
+  opacity: 0.5;
 }
 
 .piepagina .box {
@@ -973,7 +985,7 @@ body {
 }
 
 .piepagina .column1 {
-  width: 20%;
+  width: 23%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -984,6 +996,7 @@ body {
           justify-content: center;
   -ms-flex-line-pack: start;
       align-content: flex-start;
+  z-index: 1;
 }
 
 .piepagina .column1 .logo {
@@ -1084,7 +1097,7 @@ body {
 }
 
 .piepagina .column2 {
-  width: 20%;
+  width: 23%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1095,6 +1108,7 @@ body {
           justify-content: flex-start;
   -ms-flex-line-pack: start;
       align-content: flex-start;
+  z-index: 1;
 }
 
 .piepagina .column2 .sub-servicios {
@@ -1110,7 +1124,7 @@ body {
 }
 
 .piepagina .column3 {
-  width: 20%;
+  width: 23%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1121,6 +1135,7 @@ body {
           justify-content: flex-start;
   -ms-flex-line-pack: start;
       align-content: flex-start;
+  z-index: 1;
 }
 
 .piepagina .column3 .sub-productos {
@@ -1136,7 +1151,7 @@ body {
 }
 
 .piepagina .column4 {
-  width: 20%;
+  width: 23%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1147,11 +1162,12 @@ body {
           justify-content: flex-start;
   -ms-flex-line-pack: start;
       align-content: flex-start;
+  z-index: 1;
 }
 
 .piepagina .column4 .facebook, .piepagina .column4 .instagram, .piepagina .column4 .youtube {
   width: 12%;
-  margin: 55px 0 29px 0;
+  margin: 55px 0 26px 0;
   padding: 0;
   color: #ffffff;
 }
@@ -1159,5 +1175,6 @@ body {
 .piepagina .column4 .servicios, .piepagina .column4 .productos, .piepagina .column4 .contacto, .piepagina .column4 .blog {
   width: 100%;
   color: #ffffff;
+  margin: 0 0 8px 0;
 }
 /*# sourceMappingURL=main.css.map */
