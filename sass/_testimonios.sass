@@ -1,76 +1,153 @@
 .testimonios
-    margin: 0 0 55px 0
+    margin: 255px 0 0 0
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
 
-    .title
+    .sub-titulo
+        font-size: $h34
         width: 100%
         text-align: center
-        font-size: $h34
-        margin: 144px 0 0 0
-    .slides
-        margin: 55px 0 0 0
+        margin: 0 0 55px 0
+
+    @mixin beforeafter($img)
+        background: $img
+        width: 32%
+        height: 300px
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+
+    .beforeafter1
+        @include beforeafter(url('../rsrc/img/antes-despues/img1.jpg'))
+    .beforeafter2
+        @include beforeafter(url('../rsrc/img/antes-despues/img2.jpg'))
+    .beforeafter3
+        @include beforeafter(url('../rsrc/img/antes-despues/img3.jpg'))
+    .beforeafter4
+        @include beforeafter(url('../rsrc/img/antes-despues/img4.jpg'))
+    .beforeafter5
+        @include beforeafter(url('../rsrc/img/antes-despues/img5.jpg'))
+    .beforeafter6
+        @include beforeafter(url('../rsrc/img/antes-despues/img6.jpg'))
+    .beforeafter7
+        @include beforeafter(url('../rsrc/img/antes-despues/img7.jpg'))
+    .beforeafter8
+        @include beforeafter(url('../rsrc/img/antes-despues/img8.jpg'))
+    .beforeafter9
+        @include beforeafter(url('../rsrc/img/antes-despues/img9.jpg'))
+
+    @mixin filas-coment
+        width: 100%
+        margin: 55px 0
+        border-top: 2px solid $thirdColor
+        border-bottom: 2px solid $thirdColor
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+
+    @mixin card-testimonio($order)
+        background: #ffffff
+        width: 32%
+        margin: 55px 0
+        padding: 0 21px 13px 21px
+        box-sizing: border-box
+        order: $order
+        border-radius: 8px
+        box-shadow: 0 13px 34px rgba(59, 84, 114, 0.1)
+
+    @mixin nombre
+        width: 100%
+        margin: 0 0 13px 0
+        text-align: center
+        color: $secondColor
+        font-size: 24px
+
+    @mixin before
+        content: ',,'
+        display: block
+        width: 30px
+        height: 30px
+        margin: 0 auto 8px auto
+            // position: absolute
+        transform: translate(0, -34px)
+        font-family: 'Times New Roman'
+        font-size: 89px
+
+    @mixin texto
+        width: 100%
+        margin: 0
+        color: $secondColor
+
+    .fila-coment1
+        @include filas-coment
+
+        .testimonio1
+            @include card-testimonio(1)
             
-        .slide1
-            // background: $bg2
-        .fb-comentarios
-            text-decoration: none
+            .nombre
+                @include nombre
+                &::before
+                    @include before
+                
+            .txt
+                @include texto
 
-            @mixin foto($url)
-                background: $url
-                width: 400px
-                height: 350px
-                background-size: cover
-                background-repeat: no-repeat
-                background-position: top
-                margin: 0 auto
-            .foto1
-                @include foto(url('../rsrc/img/antes-despues/IMG-20200529-WA0010.jpg'))
+        .testimonio2
+            @include card-testimonio(3)
+            
+            .nombre
+                @include nombre
+                &::before
+                    @include before
+            
+            .txt
+                @include texto
+
+        .testimonio3
+            @include card-testimonio(2)
+            
+            .nombre
+                @include nombre
+                &::before
+                    @include before
                     
+            .txt
+                @include texto
 
-            .nombre-txt
-                width: 100%
-                display: flex
-                flex-wrap: wrap
-                justify-content: center
-
-                .nombre
-                    width: 100%
-                    margin: 30px 0 8px 0
-                    text-align: center
-                    color: $mainColor
-                    font-size: 21px
-
-                .txt
-                    width: 80%
-                    margin: 0
-                    text-align: center
-                    color: $mainColor
-
-            .foto2
-                @include foto(url('../rsrc/img/antes-despues/IMG-20200529-WA0011.jpg'))
-            .foto3
-                @include foto(url('../rsrc/img/antes-despues/IMG-20200529-WA0012.jpg'))
-            .foto4
-                @include foto(url('../rsrc/img/antes-despues/IMG-20200529-WA0014.jpg'))
-            .foto5
-                @include foto(url('../rsrc/img/antes-despues/IMG-20200529-WA0015.jpg'))
-
-            .stars
-                width: 100%
-                display: flex
-                justify-content: center
-
-                .fas
-                    color: #dad60d
-                    margin: 0 13px 0 0
-                    font-size: 34px
-
-        .slidesjs-pagination
-            display: none
-        .slidesjs-previous
-            display: none
-        .slidesjs-next
-            display: none
-        .slidesjs-play
-            display: none
-        .slidesjs-stop
-            color: #ffffff
+    .fila-coment2
+        @include filas-coment
+        
+        .testimonio4
+            @include card-testimonio(3)
+            
+            .nombre
+                @include nombre
+                &::before
+                    @include before
+                    
+            .txt
+                @include texto
+        
+        .testimonio5
+            @include card-testimonio(2)
+            
+            .nombre
+                @include nombre
+                &::before
+                    @include before
+                    
+            .txt
+                @include texto
+                
+        .testimonio6
+            @include card-testimonio(1)
+            
+            .nombre
+                @include nombre
+                &::before
+                    @include before
+                    
+            .txt
+                @include texto
