@@ -474,10 +474,13 @@ body {
   width: 80px;
   height: 80px;
   background-size: cover;
-  margin: 5px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
 }
 
 .pruebas .evaluacion1 {
+  width: 100%;
   text-align: center;
   font-size: 34px;
   color: #3b5472;
@@ -485,6 +488,7 @@ body {
 }
 
 .pruebas .txt {
+  width: 100%;
   text-align: center;
   font-size: 16px;
   font-weight: 800;
@@ -494,7 +498,16 @@ body {
 
 .pruebas .form {
   width: 100%;
-  margin: 50px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pruebas .form .div-imc {
+  background: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -505,8 +518,15 @@ body {
           justify-content: space-between;
 }
 
-.pruebas .form .card-sexo, .pruebas .form .card-estatura, .pruebas .form .card-peso, .pruebas .form .card-grasa, .pruebas .form .card-musculo {
-  width: 20%;
+.pruebas .form .div-imc .titulo {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+.pruebas .form .div-imc .estatura-imc {
+  width: 48%;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -515,195 +535,81 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 0 34px 0;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
 }
 
-.pruebas .form .card-sexo label[for="sexo"], .pruebas .form .card-estatura label[for="sexo"], .pruebas .form .card-peso label[for="sexo"], .pruebas .form .card-grasa label[for="sexo"], .pruebas .form .card-musculo label[for="sexo"] {
+.pruebas .form .div-imc .estatura-imc .label-pseudo {
   width: 100%;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-  color: #3b5472;
-}
-
-.pruebas .form .card-sexo .mujer, .pruebas .form .card-estatura .mujer, .pruebas .form .card-peso .mujer, .pruebas .form .card-grasa .mujer, .pruebas .form .card-musculo .mujer {
-  margin: 0 0 0 0;
-}
-
-.pruebas .form .card-sexo .mujer .icon-mujer, .pruebas .form .card-estatura .mujer .icon-mujer, .pruebas .form .card-peso .mujer .icon-mujer, .pruebas .form .card-grasa .mujer .icon-mujer, .pruebas .form .card-musculo .mujer .icon-mujer {
-  background: url("../rsrc/ico/Mujer.svg");
-  background-size: cover;
-  width: 50px;
-  height: 50px;
-  margin: 0 13px 0 0;
-}
-
-.pruebas .form .card-sexo .mujer input[type="radio"], .pruebas .form .card-estatura .mujer input[type="radio"], .pruebas .form .card-peso .mujer input[type="radio"], .pruebas .form .card-grasa .mujer input[type="radio"], .pruebas .form .card-musculo .mujer input[type="radio"] {
-  margin: 0 0 0 13px;
-}
-
-.pruebas .form .card-sexo .hombre, .pruebas .form .card-estatura .hombre, .pruebas .form .card-peso .hombre, .pruebas .form .card-grasa .hombre, .pruebas .form .card-musculo .hombre {
-  margin: 0 0 0 0;
-}
-
-.pruebas .form .card-sexo .hombre .icon-hombre, .pruebas .form .card-estatura .hombre .icon-hombre, .pruebas .form .card-peso .hombre .icon-hombre, .pruebas .form .card-grasa .hombre .icon-hombre, .pruebas .form .card-musculo .hombre .icon-hombre {
-  background: url("../rsrc/ico/Hombre.svg");
-  background-size: cover;
-  width: 50px;
-  height: 50px;
-  margin: 0 0 0 13px;
-}
-
-.pruebas .form .card-sexo .hombre input[type="radio"], .pruebas .form .card-estatura .hombre input[type="radio"], .pruebas .form .card-peso .hombre input[type="radio"], .pruebas .form .card-grasa .hombre input[type="radio"], .pruebas .form .card-musculo .hombre input[type="radio"] {
-  margin: 0 0 0 30px;
-}
-
-.pruebas .form .card-estatura label[for="estatura"] {
-  width: 100%;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-  color: #3b5472;
-}
-
-.pruebas .form .card-estatura .icon-estatura {
-  background: url("../rsrc/ico/Estatura.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 50px;
-}
-
-.pruebas .form .card-estatura .input-num::-webkit-inner-spin-button,
-.pruebas .form .card-estatura .input-num::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-}
-
-.pruebas .form .card-estatura .input-num {
-  -moz-appearance: textfield;
-  width: 60%;
-  border: none;
-  border-bottom: 2px solid #3b5472;
-  padding: 3px 8px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  font-family: "Nunito sans", sans-serif;
-  font-weight: 800;
-  text-align: left;
-}
-
-.pruebas .form .card-estatura label[for="m"] {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-
-.pruebas .form .card-peso label[for="peso"] {
-  width: 100%;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-}
-
-.pruebas .form .card-peso .icon-peso {
-  background: url("../rsrc/ico/Peso.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 50px;
-}
-
-.pruebas .form .card-peso .input-num::-webkit-inner-spin-button,
-.pruebas .form .card-peso .input-num::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-}
-
-.pruebas .form .card-peso .input-num {
-  background: none;
-  -moz-appearance: textfield;
-  width: 60%;
-  border: none;
-  border-bottom: 2px solid #3b5472;
-  padding: 3px 8px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  font-family: "Nunito sans", sans-serif;
-  font-weight: 800;
-  text-align: left;
-}
-
-.pruebas .form .card-peso label[for="kg"] {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-
-.pruebas .form .card-grasa label[for="grasa"] {
-  width: 100%;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-}
-
-.pruebas .form .card-grasa .icon-grasa {
-  background: url("../rsrc/ico/Grasa.svg");
-  width: 50px;
-  height: 50px;
-}
-
-.pruebas .form .card-grasa input[type="text"] {
-  background: none;
-  width: 80%;
-  border: none;
-  border-bottom: 2px solid #3b5472;
-  padding: 3px 8px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  font-family: "Nunito sans", sans-serif;
-  font-weight: 800;
-  text-align: left;
-}
-
-.pruebas .form .card-musculo label[for="musculo"] {
-  width: 100%;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-}
-
-.pruebas .form .card-musculo .icon-musculo {
-  background: url("../rsrc/ico/Masamuscular.svg");
-  width: 50px;
-  height: 50px;
-}
-
-.pruebas .form .card-musculo input[type="text"] {
-  background: none;
-  width: 80%;
-  border: none;
-  border-bottom: 2px solid #3b5472;
-  padding: 3px 8px;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  font-family: "Nunito sans", sans-serif;
-  font-weight: 800;
-  text-align: left;
-}
-
-.pruebas .form input[type="submit"] {
-  background: #ffffff;
-  width: 20%;
-  padding: 18px 32px;
-  margin: 0 auto;
-  color: #3b5472;
-  font-variant: small-caps;
-  font-size: 18px;
-  font-weight: 800;
-  border: 2px solid #3b5472;
-  border-radius: 8px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  cursor: pointer;
+  text-align: center;
+}
+
+.pruebas .form .div-imc .estatura-imc .label-pseudo::after {
+  content: '';
+  display: block;
+  background: url("../rsrc/ico/Estatura.svg");
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.pruebas .form .div-imc .estatura-imc .input-num::-webkit-inner-spin-button,
+.pruebas .form .div-imc .estatura-imc .input-num::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.pruebas .form .div-imc .estatura-imc .input-num {
+  background: none;
+  width: 40%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  color: #7d9ab8;
+  font-style: italic;
+  font-weight: 600;
+  border: 0;
+  border-bottom: 2px solid #3b5472;
+  -moz-appearance: textfield;
+}
+
+.pruebas .form .div-imc .estatura-imc::after {
+  content: "cm";
+  margin: auto 0;
+}
+
+.pruebas .form .div-imc .peso-imc {
+  margin: 0;
+  width: 48%;
+}
+
+.pruebas .form .div-grasa {
+  background: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pruebas .form .div-musculo {
+  background: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .instalaciones {

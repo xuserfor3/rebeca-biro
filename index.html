@@ -129,47 +129,54 @@
 
         <form action="$" class="form">
 
-          <div class="card-sexo">
-            <label for="sexo">Sexo</label>
+          <div class="div-imc">
 
-            <div class="mujer">
-              <div class="icon-mujer"></div>
-              <input type="radio" name="genero">
+            <h3 class="titulo">Calcular IMC</h3>
+            <div class="estatura-imc">
+              <label for="estaturaimc" class="label-pseudo">Estatura</label>
+              <input type="number" name="estaturaimc" id="estaturaimc" class="input-num" placeholder="159">
             </div>
-
-            <div class="hombre">
-              <div class="icon-hombre"></div>
-              <input type="radio" name="genero">
+            <div class="peso-imc">
+              <label for="pesoimc">Peso</label>
+              <input type="number" name="pesoimc" id="pesoimc" class="input-num">
             </div>
           </div>
 
-          <div class="card-estatura">
-            <label for="estatura" name="m">Estatura</label>
-            <div class="icon-estatura"></div>
-            <input type="number" name="m" id="m" placeholder="1.50" class="input-num">
-            <label for="m">m</label>
+          <div class="div-grasa">
+
+            <h3 class="titulo">Calcular % de grasa</h3>
+            <div class="sexo">
+              <label for="sexo-grasa">Sexo</label>
+              <input type="radio" name="sexo-grasa" id="mujer-grasa" class="mujer">
+              <input type="radio" name="sexo-grasa" id="hombre-grasa" class="hombre">
+            </div>
+            <div class="porcentaje-grasa">
+              <label for="grasa">% de grasa</label>
+              <input type="number" name="porcent-grasa" id="grasa" class="percent-grasa">
+            </div>
+            <div class="edad">
+              <label for="edad-grasa">Edad</label>
+              <input type="number" name="edad-grasa" id="edad-grasa">
+            </div>
           </div>
 
-          <div class="card-peso">
-            <label for="peso" name="kg">Peso</label>
-            <div class="icon-peso"></div>
-            <input type="number" name="kg" id="kg" placeholder="60" class="input-num">
-            <label for="kg">kg</label>
-          </div>
+          <div class="div-musculo">
 
-          <div class="card-grasa">
-            <label for="grasa" name="grasa">% de grasa</label>
-            <div class="icon-grasa"></div>
-            <input type="text" name="grasa" id="grasa">
+            <h3 class="titulo">Calcular % de grasa</h3>
+            <div class="sexo">
+              <label for="sexo-musculo">Sexo</label>
+              <input type="radio" name="sexo-musculo" id="mujer-musculo" class="mujer">
+              <input type="radio" name="sexo-musculo" id="hombre-musculo" class="hombre">
+            </div>
+            <div class="musculo">
+              <label for="musculo">% de músculo</label>
+              <input type="number" name="porcent-musculo" id="musculo" class="percent-musculo">
+            </div>
+            <div class="edad">
+              <label for="edad-musculo">Edad</label>
+              <input type="number" name="edad-musculo" id="edad-musculo">
+            </div>
           </div>
-
-          <div class="card-musculo">
-            <label for="musculo" name="musculo">Masa muscular</label>
-            <div class="icon-musculo"></div>
-            <input type="text" name="musculo" id="musculo">
-          </div>
-
-          <input type="submit" name="calcular" value="calcular" id="calcular">
 
         </form>
 
