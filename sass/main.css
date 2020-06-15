@@ -513,19 +513,18 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.pruebas .form .div-imc .titulo {
+.pruebas .form .div-imc .titulo-imc {
   width: 100%;
   text-align: center;
-  margin: 0;
+  margin: 0 0 21px 0;
 }
 
 .pruebas .form .div-imc .estatura-imc {
-  width: 48%;
+  width: 47%;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -550,7 +549,7 @@ body {
   background: url("../rsrc/ico/Estatura.svg");
   width: 50px;
   height: 50px;
-  margin: 0 auto;
+  margin: 0 auto 8px auto;
 }
 
 .pruebas .form .div-imc .estatura-imc .input-num::-webkit-inner-spin-button,
@@ -578,8 +577,84 @@ body {
 }
 
 .pruebas .form .div-imc .peso-imc {
+  width: 47%;
   margin: 0;
-  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pruebas .form .div-imc .peso-imc .label-pseudo {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+.pruebas .form .div-imc .peso-imc .label-pseudo::after {
+  content: '';
+  display: block;
+  background: url("../rsrc/ico/Peso.svg");
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 8px auto;
+}
+
+.pruebas .form .div-imc .peso-imc .input-num::-webkit-inner-spin-buttom,
+.pruebas .form .div-imc .peso-imc .input-num::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.pruebas .form .div-imc .peso-imc .input-num {
+  background: none;
+  width: 40%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  color: #7d9ab8;
+  font-style: italic;
+  font-weight: 600;
+  border: 0;
+  border-bottom: 2px solid #3b5472;
+  -moz-appearance: textfield;
+}
+
+.pruebas .form .div-imc .peso-imc::after {
+  content: "kg";
+  margin: auto 0;
+}
+
+.pruebas .form .div-imc input[type="button"] {
+  background: none;
+  border: 2px solid #3b5472;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 34px 0 21px 0;
+  padding: 12px 21px;
+  color: #3b5472;
+  font-variant: small-caps;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.pruebas .form .div-imc input[name="resultado-imc"] {
+  width: 50%;
+  background: none;
+  border: 0;
+  border-bottom: 2px solid #3b5472;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 800;
+  margin: 0 25%;
 }
 
 .pruebas .form .div-grasa {
@@ -592,9 +667,14 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.pruebas .form .div-grasa .titulo-grasa {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 21px 0;
 }
 
 .pruebas .form .div-musculo {
@@ -607,9 +687,8 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .instalaciones {

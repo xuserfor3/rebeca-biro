@@ -131,20 +131,22 @@
 
           <div class="div-imc">
 
-            <h3 class="titulo">Calcular IMC</h3>
+            <h3 class="titulo-imc">Calcular IMC</h3>
             <div class="estatura-imc">
               <label for="estaturaimc" class="label-pseudo">Estatura</label>
               <input type="number" name="estaturaimc" id="estaturaimc" class="input-num" placeholder="159">
             </div>
             <div class="peso-imc">
-              <label for="pesoimc">Peso</label>
-              <input type="number" name="pesoimc" id="pesoimc" class="input-num">
+              <label for="pesoimc" class="label-pseudo">Peso</label>
+              <input type="number" name="pesoimc" id="pesoimc" class="input-num" placeholder="48">
             </div>
+            <input type="button" value="calcular" id="calcular-imc">
+            <input type="text" name="resultado-imc" id="resultado-imc" readonly>
           </div>
 
           <div class="div-grasa">
 
-            <h3 class="titulo">Calcular % de grasa</h3>
+            <h3 class="titulo-grasa">Calcular % de grasa</h3>
             <div class="sexo">
               <label for="sexo-grasa">Sexo</label>
               <input type="radio" name="sexo-grasa" id="mujer-grasa" class="mujer">

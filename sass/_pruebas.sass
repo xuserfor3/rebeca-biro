@@ -236,10 +236,15 @@
         flex: $flex
         display: flex
         flex-wrap: wrap
-        justify-content: space-between
+        justify-content: space-around
+
+    @mixin titulo
+        width: 100%
+        text-align: center
+        margin: 0 0 21px 0
 
     @mixin div-estatura
-        width: 48%
+        width: 47%
         margin: 0
         display: flex
         flex-wrap: wrap
@@ -250,13 +255,13 @@
         box-sizing: border-box
         text-align: center
 
-    @mixin pseudo
+    @mixin pseudo($icono)
         content: ''
         display: block
-        background: url('../rsrc/ico/Estatura.svg')
+        background: $icono
         width: 50px
         height: 50px
-        margin: 0 auto
+        margin: 0 auto 8px auto
 
     @mixin input
         background: none
@@ -282,10 +287,8 @@
         .div-imc
             @include divs(none, 1)
 
-            .titulo
-                width: 100%
-                text-align: center
-                margin: 0
+            .titulo-imc
+                @include titulo
 
             .estatura-imc
                 @include div-estatura
@@ -293,9 +296,9 @@
                 .label-pseudo
                     @include label
                     &::after
-                        @include pseudo
+                        @include pseudo(url('../rsrc/ico/Estatura.svg'))
 
-                // QUITAR EL SPIN DEL INPUT DE TIPO NUMBER---
+                // QUITANDO EL SPIN DEL INPUT DE TIPO NUMBER---
                 .input-num::-webkit-inner-spin-button,
                 .input-num::-webkit-outer-spin-button
                     -webkit-appearance: none
@@ -305,11 +308,50 @@
                     @include pseudo2('cm')
 
             .peso-imc
-                margin: 0
-                width: 48%
+                @include div-estatura
+
+                .label-pseudo
+                    @include label
+                    &::after
+                        @include pseudo(url('../rsrc/ico/Peso.svg'))
+
+                .input-num::-webkit-inner-spin-buttom,
+                .input-num::-webkit-outer-spin-button
+                    -webkit-appearance: none
+                .input-num
+                    @include input
+                &::after
+                    @include pseudo2('kg')
+
+            input[type="button"]
+                background: none
+                border: 2px solid $mainColor
+                border-radius: 8px
+                box-sizing: border-box
+                margin: 34px 0 21px 0
+                padding: 12px 21px
+                color: $mainColor
+                font-variant: small-caps
+                font-size: 16px
+                font-weight: 800
+                cursor: pointer
+
+            input[name="resultado-imc"]
+                width: 50%
+                background: none
+                border: 0
+                border-bottom: 2px solid $mainColor
+                box-sizing: border-box
+                text-align: center
+                font-size: 16px
+                font-weight: 800
+                margin: 0 25%
 
         .div-grasa
             @include divs(none, 1)
+
+            .titulo-grasa
+                @include titulo
 
         .div-musculo
             @include divs(none, 1)
