@@ -1,73 +1,119 @@
 .piepagina
-    width: 100%
     background: $thirdColor
+    width: 100%
     padding: 55px 0
-    margin: 0
 
     .box
         display: flex
+        flex-wrap: wrap
         justify-content: space-between
-        align-items: center
 
-        .logofooter
-            display: inline-block
+    @mixin columns($justifycontent)
+        width: 23%
+        display: flex
+        flex-wrap: wrap
+        justify-content: $justifycontent
+        align-content: flex-start
+        z-index: 1
 
-            .logo
-                background: url('../../rsrc/logo-white1.svg')
-                width: 100px
-                height: 90px
-                background-size: contain
-                background-repeat: no-repeat
-                background-position: center
+    @mixin items-contacto
+        width: 100%
+        color: #ffffff
+        margin: 0 0 8px 0
+        padding: 0
+
+    @mixin before-content($content, $translate)
+        content: $content
+        display: inline-block
+        width: 20px
+        height: 20px
+        position: absolute
+        transform: $translate
+
+    .column1
+        @include columns(center)
+
+        .logo
+            background: url(../../rsrc/ico/Logo-blanco.svg)
+            width: 100px
+            height: 100px
+            margin: 0
+            padding: 0
         
-        .menu-rrss-derechos
-            width: 50%
+        .info-contacto
+            margin: 34px 0 0 0
 
-            .navbar
-                width: 100%
-                display: flex
-                justify-content: space-around
-                padding: 8px 8px
-                box-sizing: border-box
+            .whatsapp
+                @include items-contacto
+                &::before
+                    @include before-content(url(../../rsrc/ico/Whatsapp.svg), translate(-27px, 0px))
 
-                .btn
-                    text-decoration: none
-                    color: #ffffff
+            .telefono
+                @include items-contacto
+                &::before
+                    @include before-content(url(../../rsrc/ico/Telfijo.svg), translate(-27px, 0px))
 
-            .rrss
-                width: 20%
-                margin: 34px auto
-                text-align: center
+            .correo
+                @include items-contacto
+                &::before
+                    @include before-content(url(../../rsrc/ico/Correo.svg), translate(-27px, 0px))
 
-                .facebook
-                    text-decoration: none
-                    margin: 0 3px 0 0
+            .direccion
+                @include items-contacto
+                &::before
+                    @include before-content(url(../../rsrc/ico/Direccion.svg), translate(-27px, 5px))
 
-                    .fab
-                        font-size: 21px
-                        color: #ffffff
+            .horarios
+                @include items-contacto
+                &::before
+                    @include before-content(url(../../rsrc/ico/Cita.svg), translate(-27px, 4px))
 
-                .instagram
-                    text-decoration: none
-                    margin: 0 0 0 3px
+    .column2
+        @include columns(flex-start)
 
-                    .fab
-                        font-size: 21px
-                        color: #ffffff
+        .sub-servicios
+            width: 100%
+            margin: 55px 0 21px 0
+            padding: 0
+            color: #ffffff
 
-            .copyright
-                text-align: center
-                color: #ffffff
-                margin: 0
+        .btn2
+            color: #ffffff
+            margin: 5px 0
 
-        .box-signup
-            
+    .column3
+        @include columns(flex-start)
 
-            .btn
-                display: inline-block
-                padding: 16px 32px
-                box-sizing: border-box
-                border: 2px solid #ffffff
-                border-radius: 8px
-                color: #ffffff
-                text-decoration: none
+        .sub-productos
+            width: 100%
+            margin: 55px 0 21px 0
+            padding: 0
+            color: #ffffff
+
+        .btn
+            color: #ffffff
+            margin: 5px 0
+
+    .column4
+        @include columns(flex-start)
+
+        .facebook
+            width: 12%
+            margin: 55px 0 26px 0
+            padding: 0
+            color: #ffffff
+        .instagram
+            @extend .facebook
+        .youtube
+            @extend .facebook
+
+        .servicios
+            width: 100%
+            color: #ffffff
+            margin: 0 0 8px 0
+        .productos
+            @extend .servicios
+        .contacto
+            @extend .servicios
+        .blog
+            @extend .servicios

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Nunito sans", sans-serif;
   font-size: 16px;
@@ -501,13 +502,16 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .pruebas .form .div-imc {
-  background: none;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  background: #ffffff;
+  width: 32%;
+  margin: 21px 0 0 0;
+  padding: 21px 8px 34px 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -515,6 +519,12 @@ body {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #f5f5f5;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 13px 21px 0 rgba(15, 15, 15, 0.1);
+          box-shadow: 0 13px 21px 0 rgba(15, 15, 15, 0.1);
 }
 
 .pruebas .form .div-imc .titulo-imc {
@@ -534,6 +544,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .pruebas .form .div-imc .estatura-imc .label-pseudo {
@@ -587,6 +598,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .pruebas .form .div-imc .peso-imc .label-pseudo {
@@ -658,10 +670,10 @@ body {
 }
 
 .pruebas .form .div-grasa {
-  background: none;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  background: #ffffff;
+  width: 32%;
+  margin: 21px 0 0 0;
+  padding: 21px 8px 34px 8px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -669,6 +681,12 @@ body {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #f5f5f5;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 13px 21px 0 rgba(15, 15, 15, 0.1);
+          box-shadow: 0 13px 21px 0 rgba(15, 15, 15, 0.1);
 }
 
 .pruebas .form .div-grasa .titulo-grasa {
@@ -677,11 +695,9 @@ body {
   margin: 0 0 21px 0;
 }
 
-.pruebas .form .div-musculo {
-  background: none;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+.pruebas .form .div-grasa .sexo-grasa {
+  width: 30%;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -689,6 +705,372 @@ body {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  position: relative;
+}
+
+.pruebas .form .div-grasa .sexo-grasa .label-sexo {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+.pruebas .form .div-grasa .sexo-grasa .input-mujer {
+  margin: 13px 0 0 0;
+}
+
+.pruebas .form .div-grasa .sexo-grasa::after {
+  content: '';
+  background: url("../rsrc/ico/Mujer.svg");
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  -webkit-transform: translate(-28px, 21px);
+          transform: translate(-28px, 21px);
+}
+
+.pruebas .form .div-grasa .sexo-grasa .input-hombre {
+  margin: 13px 0 0 0;
+}
+
+.pruebas .form .div-grasa .sexo-grasa::before {
+  content: '';
+  background: url("../rsrc/ico/Hombre.svg");
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  -webkit-transform: translate(28px, 21px);
+          transform: translate(28px, 21px);
+}
+
+.pruebas .form .div-grasa .porcentaje-grasa {
+  width: 30%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.pruebas .form .div-grasa .porcentaje-grasa .label-grasa {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+.pruebas .form .div-grasa .porcentaje-grasa .label-grasa::after {
+  content: '';
+  display: block;
+  background: url("../rsrc/ico/Grasa.svg");
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 8px auto;
+}
+
+.pruebas .form .div-grasa .porcentaje-grasa .input-grasa {
+  background: none;
+  width: 40%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  color: #7d9ab8;
+  font-style: italic;
+  font-weight: 600;
+  border: 0;
+  border-bottom: 2px solid #3b5472;
+  -moz-appearance: textfield;
+}
+
+.pruebas .form .div-grasa .porcentaje-grasa::after {
+  content: "%";
+  margin: auto 0;
+}
+
+.pruebas .form .div-grasa .edad-grasa {
+  width: 30%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.pruebas .form .div-grasa .edad-grasa .label-edad {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+.pruebas .form .div-grasa .edad-grasa .label-edad::after {
+  content: '';
+  display: block;
+  background: rgba(123, 123, 123, 0);
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 8px auto;
+}
+
+.pruebas .form .div-grasa .edad-grasa .input-edad1 {
+  background: none;
+  width: 40%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  color: #7d9ab8;
+  font-style: italic;
+  font-weight: 600;
+  border: 0;
+  border-bottom: 2px solid #3b5472;
+  -moz-appearance: textfield;
+}
+
+.pruebas .form .div-grasa .edad-grasa::after {
+  content: "años";
+  margin: auto 0;
+}
+
+.pruebas .form .div-grasa input[type="button"] {
+  background: none;
+  border: 2px solid #3b5472;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 34px 0 21px 0;
+  padding: 12px 21px;
+  color: #3b5472;
+  font-variant: small-caps;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.pruebas .form .div-grasa input[type="text"] {
+  width: 50%;
+  background: none;
+  border: 0;
+  border-bottom: 2px solid #3b5472;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 800;
+  margin: 0 25%;
+}
+
+.pruebas .form .div-musculo {
+  background: #ffffff;
+  width: 32%;
+  margin: 21px 0 0 0;
+  padding: 21px 8px 34px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #f5f5f5;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 13px 21px 0 rgba(15, 15, 15, 0.1);
+          box-shadow: 0 13px 21px 0 rgba(15, 15, 15, 0.1);
+}
+
+.pruebas .form .div-musculo .titulo-musculo {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 21px 0;
+}
+
+.pruebas .form .div-musculo .sexo-musculo {
+  width: 30%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+}
+
+.pruebas .form .div-musculo .sexo-musculo .label-sexo {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+.pruebas .form .div-musculo .sexo-musculo .input-mujer {
+  margin: 13px 0 0 0;
+}
+
+.pruebas .form .div-musculo .sexo-musculo::after {
+  content: '';
+  background: url("../rsrc/ico/Mujer.svg");
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  -webkit-transform: translate(-28px, 21px);
+          transform: translate(-28px, 21px);
+}
+
+.pruebas .form .div-musculo .sexo-musculo .input-hombre {
+  margin: 13px 0 0 0;
+}
+
+.pruebas .form .div-musculo .sexo-musculo::before {
+  content: '';
+  background: url("../rsrc/ico/Hombre.svg");
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  -webkit-transform: translate(28px, 21px);
+          transform: translate(28px, 21px);
+}
+
+.pruebas .form .div-musculo .porcentaje-musculo {
+  width: 30%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.pruebas .form .div-musculo .porcentaje-musculo .label-porcentaje {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+.pruebas .form .div-musculo .porcentaje-musculo .label-porcentaje::after {
+  content: '';
+  display: block;
+  background: url("../rsrc/ico/Masamuscular.svg");
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 8px auto;
+}
+
+.pruebas .form .div-musculo .porcentaje-musculo .input-musculo {
+  background: none;
+  width: 40%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  color: #7d9ab8;
+  font-style: italic;
+  font-weight: 600;
+  border: 0;
+  border-bottom: 2px solid #3b5472;
+  -moz-appearance: textfield;
+}
+
+.pruebas .form .div-musculo .porcentaje-musculo::after {
+  content: "%";
+  margin: auto 0;
+}
+
+.pruebas .form .div-musculo .edad-musculo {
+  width: 30%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.pruebas .form .div-musculo .edad-musculo .label-edad {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+.pruebas .form .div-musculo .edad-musculo .label-edad::after {
+  content: '';
+  display: block;
+  background: rgba(123, 123, 123, 0);
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 8px auto;
+}
+
+.pruebas .form .div-musculo .edad-musculo .input-edad {
+  background: none;
+  width: 40%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  color: #7d9ab8;
+  font-style: italic;
+  font-weight: 600;
+  border: 0;
+  border-bottom: 2px solid #3b5472;
+  -moz-appearance: textfield;
+}
+
+.pruebas .form .div-musculo .edad-musculo::after {
+  content: "años";
+  margin: auto 0;
+}
+
+.pruebas .form .div-musculo input[type="button"] {
+  background: none;
+  border: 2px solid #3b5472;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 34px 0 21px 0;
+  padding: 12px 21px;
+  color: #3b5472;
+  font-variant: small-caps;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.pruebas .form .div-musculo input[type="text"] {
+  width: 50%;
+  background: none;
+  border: 0;
+  border-bottom: 2px solid #3b5472;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 800;
+  margin: 0 25%;
 }
 
 .instalaciones {
