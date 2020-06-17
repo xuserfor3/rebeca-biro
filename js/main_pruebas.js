@@ -24,3 +24,12 @@ function calcularMusculo() {
 
     document.getElementById('resultado-musculo').value = resultado.toFixed(2);
 }
+
+// function calcularMusculo() {
+//     var musculo = document.getElementById('musculo').value;
+//     var edadMusculo = document.getElementById('edad-musculo').value;
+
+//     var resultado = (edadMusculo / ((musculo * musculo) / 100) * 100);
+
+//     document.getElementById('resultado-musculo').value = resultado.toFixed(2);
+// }
