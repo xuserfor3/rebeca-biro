@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Nunito sans", sans-serif;
   font-size: 16px;
@@ -126,6 +127,14 @@ body {
   right: 5px;
 }
 
+.menu .navbar .btn-youtube {
+  float: right;
+  text-decoration: none;
+  color: #7d9ab8;
+  font-size: 21px;
+  margin: 30px 0 0 13px;
+}
+
 .menu .navbar .btn-instagram {
   float: right;
   text-decoration: none;
@@ -189,8 +198,10 @@ body {
           justify-content: space-between;
 }
 
-.productos .card-menu {
+.productos .card-menu, .productos .card-complementos, .productos .card-micronutricion {
   width: 32%;
+  margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,11 +210,32 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  position: relative;
+  overflow: hidden;
 }
 
-.productos .card-menu .img {
+.productos .card-menu::after, .productos .card-complementos::after, .productos .card-micronutricion::after {
+  background: #e1e2dc;
+  content: "En alianza con Real Food, llevamos a tu casa un menú 100% balanceado y personalizado que se adecua a tus necesidades nutricionales. Te ayudamos a cumplir con tu plan de alimentación preparándote alimentos saludables, sabrosos que se entregan diariamente en tu casa u oficina!!";
+  display: block;
+  width: auto;
+  height: 85%;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 13px 27px;
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+.productos .card-menu:hover::after, .productos .card-complementos:hover::after, .productos .card-micronutricion:hover::after {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.productos .card-menu .img, .productos .card-complementos .img, .productos .card-micronutricion .img {
   background: url(../../rsrc/img/productos/menu.jpg);
   width: 100%;
   height: 250px;
@@ -214,7 +246,7 @@ body {
   padding: 0;
 }
 
-.productos .card-menu .icono-menu {
+.productos .card-menu .icono-menu, .productos .card-complementos .icono-menu, .productos .card-micronutricion .icono-menu {
   background: url(../../rsrc/ico/Menudomicilio.svg);
   width: 60px;
   height: 60px;
@@ -222,7 +254,7 @@ body {
   padding: 0;
 }
 
-.productos .card-menu .titulo-card {
+.productos .card-menu .titulo-card, .productos .card-complementos .titulo-card, .productos .card-micronutricion .titulo-card {
   width: 100%;
   font-size: 34px;
   line-height: 34px;
@@ -231,7 +263,7 @@ body {
   padding: 0;
 }
 
-.productos .card-menu .btn-menu {
+.productos .card-menu .btn-menu, .productos .card-complementos .btn-menu, .productos .card-micronutricion .btn-menu {
   display: inline-block;
   padding: 16px 30px;
   margin: 34px 0 0 0;
@@ -239,9 +271,11 @@ body {
   border-radius: 8px;
   color: #3b5472;
   text-decoration: none;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
-.productos .card-menu .btn-menu::before {
+.productos .card-menu .btn-menu::before, .productos .card-complementos .btn-menu::before, .productos .card-micronutricion .btn-menu::before {
   content: url(../../rsrc/ico/Carrito.svg);
   display: inline-block;
   width: 20px;
@@ -251,18 +285,20 @@ body {
   padding: 0 3px;
 }
 
-.productos .card-complementos {
-  width: 32%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+.productos .card-complementos::after {
+  background: #e1e2dc;
+  content: "Alimentos de alto diseño: Proteifine - Proteínas naturales de alto valor biológico, combinando leche, huevo, soja y chicharos, garantizando un aporte completo del esquema de aminoacidos esenciales. Con aporte promedio de 15 a 20 gramos de proteína por porción, bajos en carbohidratos y grasas. En presentación individual con una amplia variedad de crepas, tostadas de pan, madalenas, galletas y barritas. Proteifine para alergias e intolerancias - Sin gluten, sin proteína de leche, sin soja.";
+  display: block;
+  width: auto;
+  height: 85%;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 13px 27px;
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
 }
 
 .productos .card-complementos .img {
@@ -301,6 +337,8 @@ body {
   border-radius: 8px;
   color: #3b5472;
   text-decoration: none;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .productos .card-complementos .btn-complementos::before {
@@ -313,18 +351,20 @@ body {
   padding: 0 3px;
 }
 
-.productos .card-micronutricion {
-  width: 32%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+.productos .card-micronutricion::after {
+  background: #e1e2dc;
+  content: "La micronutrición de vanguardia. Últimas tecnologías en innovación nutricional. Los micronutrientes, así llamados por ser requeridos en pequeñas cantidades, no dejan de ser indispensables para el buen funcionamiento de nuestro organismo. En primer lugar, permiten absorber y utilizar adecuadamente los micronutrientes (proteínas, glúcidos y lípidos), que nos proporcionan energía requerida por nuestro organismo para todas sus actividades. Realizan también una gran diversidad de funciones para preservar nuestra salud y mejorar nuestra calidad de vida. La mayoria de esos micronutrientes no son fabricados por nuestro organismo y deben ser aportados por la alimentación.";
+  display: block;
+  width: auto;
+  height: 85%;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 13px 27px;
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
 }
 
 .productos .card-micronutricion .img {
@@ -363,6 +403,8 @@ body {
   border-radius: 8px;
   color: #3b5472;
   text-decoration: none;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .productos .card-micronutricion .btn-micronutricion::before {

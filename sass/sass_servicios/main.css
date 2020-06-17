@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Nunito sans", sans-serif;
   font-size: 16px;
@@ -126,6 +127,14 @@ body {
   right: 5px;
 }
 
+.menu .navbar .btn-youtube {
+  float: right;
+  text-decoration: none;
+  color: #7d9ab8;
+  font-size: 21px;
+  margin: 30px 0 0 13px;
+}
+
 .menu .navbar .btn-instagram {
   float: right;
   text-decoration: none;
@@ -201,8 +210,29 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+.servicios .card-servicios::after, .piepagina .column4 .productos .card-servicios::after, .piepagina .column4 .contacto .card-servicios::after, .piepagina .column4 .blog .card-servicios::after, .servicios .card-programas::after, .piepagina .column4 .productos .card-programas::after, .piepagina .column4 .contacto .card-programas::after, .piepagina .column4 .blog .card-programas::after, .servicios .card-cursos::after, .piepagina .column4 .productos .card-cursos::after, .piepagina .column4 .contacto .card-cursos::after, .piepagina .column4 .blog .card-cursos::after {
+  background: #e1e2dc;
+  content: "Independienmente de cual sea tu situación nutricional, te ayudamos a llegar a tus objetivos específicos de peso y salud, con un programa personalizado que es eficaz, adaptable a tu estilo de vida, fácil de seguir, sin síntomas alternos ni rebote al acabar el tratamiento. Aprenderás al mismo tiempo técnicas de comer conscientemente, y combatir la ansiedad indispensables para mantenimiento de peso a largo plazo.";
+  display: block;
+  width: auto;
+  height: 85%;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 18px 27px;
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+.servicios .card-servicios:hover::after, .piepagina .column4 .productos .card-servicios:hover::after, .piepagina .column4 .contacto .card-servicios:hover::after, .piepagina .column4 .blog .card-servicios:hover::after, .servicios .card-programas:hover::after, .piepagina .column4 .productos .card-programas:hover::after, .piepagina .column4 .contacto .card-programas:hover::after, .piepagina .column4 .blog .card-programas:hover::after, .servicios .card-cursos:hover::after, .piepagina .column4 .productos .card-cursos:hover::after, .piepagina .column4 .contacto .card-cursos:hover::after, .piepagina .column4 .blog .card-cursos:hover::after {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 .servicios .card-servicios .img, .piepagina .column4 .productos .card-servicios .img, .piepagina .column4 .contacto .card-servicios .img, .piepagina .column4 .blog .card-servicios .img, .servicios .card-programas .img, .piepagina .column4 .productos .card-programas .img, .piepagina .column4 .contacto .card-programas .img, .piepagina .column4 .blog .card-programas .img, .servicios .card-cursos .img, .piepagina .column4 .productos .card-cursos .img, .piepagina .column4 .contacto .card-cursos .img, .piepagina .column4 .blog .card-cursos .img {
@@ -241,6 +271,8 @@ body {
   border-radius: 8px;
   color: #3b5472;
   text-decoration: none;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .servicios .card-servicios .btn-consulta::before, .piepagina .column4 .productos .card-servicios .btn-consulta::before, .piepagina .column4 .contacto .card-servicios .btn-consulta::before, .piepagina .column4 .blog .card-servicios .btn-consulta::before, .servicios .card-programas .btn-consulta::before, .piepagina .column4 .productos .card-programas .btn-consulta::before, .piepagina .column4 .contacto .card-programas .btn-consulta::before, .piepagina .column4 .blog .card-programas .btn-consulta::before, .servicios .card-cursos .btn-consulta::before, .piepagina .column4 .productos .card-cursos .btn-consulta::before, .piepagina .column4 .contacto .card-cursos .btn-consulta::before, .piepagina .column4 .blog .card-cursos .btn-consulta::before {
@@ -252,6 +284,22 @@ body {
   padding: 0 5px 0 0;
   position: relative;
   top: 4px;
+}
+
+.servicios .card-programas::after, .piepagina .column4 .productos .card-programas::after, .piepagina .column4 .contacto .card-programas::after, .piepagina .column4 .blog .card-programas::after {
+  background: #e1e2dc;
+  content: "Todos los paquetes incluyen: Consulta presencial o en modalidad en línea. Diagnóstico nutricional. Programa de alimentación personalizado. Asesoría en línea continua. Recetarios. Listas de super. Guías de marcas recomendadas. Herramientas para aprender a comer conscientemente, escuchando a tu cuerpo y las señales que te da de acuerdo a sus necesidades. Herramientas de manejo de ansiedad.";
+  display: block;
+  width: auto;
+  height: 85%;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 18px 27px;
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
 }
 
 .servicios .card-programas .img, .piepagina .column4 .productos .card-programas .img, .piepagina .column4 .contacto .card-programas .img, .piepagina .column4 .blog .card-programas .img {
@@ -281,6 +329,8 @@ body {
   border-radius: 8px;
   color: #3b5472;
   text-decoration: none;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .servicios .card-programas .btn-paquetes::before, .piepagina .column4 .productos .card-programas .btn-paquetes::before, .piepagina .column4 .contacto .card-programas .btn-paquetes::before, .piepagina .column4 .blog .card-programas .btn-paquetes::before {
@@ -292,6 +342,22 @@ body {
   padding: 0 5px 0 0;
   position: relative;
   top: 4px;
+}
+
+.servicios .card-cursos::after, .piepagina .column4 .productos .card-cursos::after, .piepagina .column4 .contacto .card-cursos::after, .piepagina .column4 .blog .card-cursos::after {
+  background: #e1e2dc;
+  content: "Dirigido para empresas o público en general, permitirá adquirir los conocimientos básicos para cuidar su alimentación de manera cotidiana, práctica y aplicable al día a día, buscando un cambio un nutricional que llegue a mejorar calidad de vida de los asistentes. Cursos de nutrición básica a elegir (duración de 2 horas).";
+  display: block;
+  width: auto;
+  height: 85%;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 18px 27px;
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
 }
 
 .servicios .card-cursos .img, .piepagina .column4 .productos .card-cursos .img, .piepagina .column4 .contacto .card-cursos .img, .piepagina .column4 .blog .card-cursos .img {
@@ -321,6 +387,8 @@ body {
   border-radius: 8px;
   color: #3b5472;
   text-decoration: none;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .servicios .card-cursos .btn-cursos::before, .piepagina .column4 .productos .card-cursos .btn-cursos::before, .piepagina .column4 .contacto .card-cursos .btn-cursos::before, .piepagina .column4 .blog .card-cursos .btn-cursos::before {

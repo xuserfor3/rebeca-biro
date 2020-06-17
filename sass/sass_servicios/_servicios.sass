@@ -13,7 +13,23 @@
         display: flex
         flex-wrap: wrap
         justify-content: center
-        align-self: flex-start
+        position: relative
+        overflow: hidden
+        
+    @mixin after($content)
+        background: $thirdColor
+        content: $content
+        display: block
+        width: auto
+        height: 85%
+        position: absolute
+        box-sizing: border-box
+        padding: 18px 27px
+        transform: translate(0, -100%)
+        transition: 0.8s ease
+
+    @mixin afterHover
+        transform: translate(0, 0)
 
     @mixin img-card($img)
         background: $img
@@ -48,11 +64,16 @@
         border-radius: 8px
         color: $color
         text-decoration: none
+        align-self: flex-end
     // --------------------------
 
     // CARD SERVICIOS------------
     .card-servicios
-        @include cards 
+        @include cards
+        &::after
+            @include after('Independienmente de cual sea tu situación nutricional, te ayudamos a llegar a tus objetivos específicos de peso y salud, con un programa personalizado que es eficaz, adaptable a tu estilo de vida, fácil de seguir, sin síntomas alternos ni rebote al acabar el tratamiento. Aprenderás al mismo tiempo técnicas de comer conscientemente, y combatir la ansiedad indispensables para mantenimiento de peso a largo plazo.')
+        &:hover::after
+            @include afterHover
 
         .img
             @include img-card(url(../../rsrc/img/servicios/consulta.jpg))
@@ -78,6 +99,8 @@
     // CARD PROGRAMAS------------------
     .card-programas
         @extend .card-servicios
+        &::after
+            @include after('Todos los paquetes incluyen: Consulta presencial o en modalidad en línea. Diagnóstico nutricional. Programa de alimentación personalizado. Asesoría en línea continua. Recetarios. Listas de super. Guías de marcas recomendadas. Herramientas para aprender a comer conscientemente, escuchando a tu cuerpo y las señales que te da de acuerdo a sus necesidades. Herramientas de manejo de ansiedad.')
             
         .img
             @include img-card(url(../../rsrc/img/servicios/programas.jpg))
@@ -103,6 +126,9 @@
     // CARD CURSOS Y TALLERES--------------
     .card-cursos
         @extend .card-servicios
+        &::after
+            @include after('Dirigido para empresas o público en general, permitirá adquirir los conocimientos básicos para cuidar su alimentación de manera cotidiana, práctica y aplicable al día a día, buscando un cambio un nutricional que llegue a mejorar calidad de vida de los asistentes. Cursos de nutrición básica a elegir (duración de 2 horas).')
+            
 
         .img
             @include img-card(url(../../rsrc/img/servicios/cursos.jpg))
