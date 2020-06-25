@@ -5,6 +5,7 @@ body {
   line-height: 21px;
   color: #3b5472;
   background: url("../../rsrc/texture/marble19201.jpg");
+  background-attachment: fixed;
   background-size: 75%;
   background-position: 130% 0%;
   margin: 0;
@@ -51,7 +52,7 @@ body {
   color: #7d9ab8;
   float: left;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 8px 16px;
   margin: 21px 0 0 0;
 }
@@ -71,7 +72,7 @@ body {
   color: #7d9ab8;
   float: left;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 8px 16px;
   margin: 21px 0 0 0;
 }
@@ -91,7 +92,7 @@ body {
   color: #7d9ab8;
   float: left;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 8px 16px;
   margin: 21px 0 0 0;
 }
@@ -111,7 +112,7 @@ body {
   color: #7d9ab8;
   float: left;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 8px 16px;
   margin: 21px 0 0 0;
 }
@@ -193,10 +194,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .contacto .contacto-box .descripcion {
@@ -219,17 +220,21 @@ body {
   margin: 0;
   padding: 13px 21px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.contacto .contacto-box .formulario .nombre, .contacto .contacto-box .formulario .correo, .contacto .contacto-box .formulario .mensaje {
+.contacto .contacto-box .formulario .nombre,
+.contacto .contacto-box .formulario .correo,
+.contacto .contacto-box .formulario .mensaje {
   color: #3b5472;
   width: 100%;
   margin: 0;
   display: inline-block;
 }
 
-.contacto .contacto-box .formulario input[type="text"], .contacto .contacto-box .formulario input[type="email"], .contacto .contacto-box .formulario textarea[name="mensaje"] {
+.contacto .contacto-box .formulario input[type="text"],
+.contacto .contacto-box .formulario input[type="email"],
+.contacto .contacto-box .formulario textarea[name="mensaje"] {
   width: 100%;
   display: inline-block;
   font-size: 16px;
@@ -238,7 +243,7 @@ body {
   font-weight: 800;
   outline: none;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: transparent;
   border-bottom: 2px solid #3b5472;
   padding: 12px 20px;
@@ -276,7 +281,7 @@ body {
   padding: 13px 21px;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .contacto .contacto-box .info-contacto .txt-wa::before {
@@ -354,10 +359,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .piepagina .column1 {
@@ -366,12 +371,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-line-pack: start;
-      align-content: flex-start;
+  align-content: flex-start;
   z-index: 1;
 }
 
@@ -401,7 +406,7 @@ body {
   height: 20px;
   position: absolute;
   -webkit-transform: translate(-27px, 0px);
-          transform: translate(-27px, 0px);
+  transform: translate(-27px, 0px);
 }
 
 .piepagina .column1 .info-contacto .telefono {
@@ -418,7 +423,7 @@ body {
   height: 20px;
   position: absolute;
   -webkit-transform: translate(-27px, 0px);
-          transform: translate(-27px, 0px);
+  transform: translate(-27px, 0px);
 }
 
 .piepagina .column1 .info-contacto .correo {
@@ -435,7 +440,7 @@ body {
   height: 20px;
   position: absolute;
   -webkit-transform: translate(-27px, 0px);
-          transform: translate(-27px, 0px);
+  transform: translate(-27px, 0px);
 }
 
 .piepagina .column1 .info-contacto .direccion {
@@ -452,7 +457,7 @@ body {
   height: 20px;
   position: absolute;
   -webkit-transform: translate(-27px, 5px);
-          transform: translate(-27px, 5px);
+  transform: translate(-27px, 5px);
 }
 
 .piepagina .column1 .info-contacto .horarios {
@@ -469,7 +474,7 @@ body {
   height: 20px;
   position: absolute;
   -webkit-transform: translate(-27px, 4px);
-          transform: translate(-27px, 4px);
+  transform: translate(-27px, 4px);
 }
 
 .piepagina .column2 {
@@ -478,12 +483,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -ms-flex-line-pack: start;
-      align-content: flex-start;
+  align-content: flex-start;
   z-index: 1;
 }
 
@@ -505,12 +510,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -ms-flex-line-pack: start;
-      align-content: flex-start;
+  align-content: flex-start;
   z-index: 1;
 }
 
@@ -532,25 +537,31 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -ms-flex-line-pack: start;
-      align-content: flex-start;
+  align-content: flex-start;
   z-index: 1;
 }
 
-.piepagina .column4 .facebook, .piepagina .column4 .instagram, .piepagina .column4 .youtube {
+.piepagina .column4 .facebook,
+.piepagina .column4 .instagram,
+.piepagina .column4 .youtube {
   width: 12%;
   margin: 55px 0 26px 0;
   padding: 0;
   color: #ffffff;
 }
 
-.piepagina .column4 .servicios, .piepagina .column4 .productos, .piepagina .column4 .contacto, .piepagina .column4 .blog {
+.piepagina .column4 .servicios,
+.piepagina .column4 .productos,
+.piepagina .column4 .contacto,
+.piepagina .column4 .blog {
   width: 100%;
   color: #ffffff;
   margin: 0 0 8px 0;
 }
+
 /*# sourceMappingURL=mains.css.map */

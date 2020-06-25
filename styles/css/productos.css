@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 body {
   font-family: "Nunito sans", sans-serif;
   font-size: 16px;
@@ -6,6 +7,7 @@ body {
   line-height: 21px;
   color: #3b5472;
   background: url("../../rsrc/texture/marble19201.jpg");
+  background-attachment: fixed;
   background-size: 75%;
   background-position: 130% 0%;
   margin: 0;
@@ -52,7 +54,7 @@ body {
   color: #7d9ab8;
   float: left;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 8px 16px;
   margin: 21px 0 0 0;
 }
@@ -72,7 +74,7 @@ body {
   color: #7d9ab8;
   float: left;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 8px 16px;
   margin: 21px 0 0 0;
 }
@@ -92,7 +94,7 @@ body {
   color: #7d9ab8;
   float: left;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 8px 16px;
   margin: 21px 0 0 0;
 }
@@ -112,7 +114,7 @@ body {
   color: #7d9ab8;
   float: left;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 8px 16px;
   margin: 21px 0 0 0;
 }
@@ -192,13 +194,15 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.productos .card-menu, .productos .card-complementos, .productos .card-micronutricion {
+.productos .card-menu,
+.productos .card-complementos,
+.productos .card-micronutricion {
   width: 32%;
   margin: 0;
   padding: 0;
@@ -206,15 +210,17 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: relative;
   overflow: hidden;
 }
 
-.productos .card-menu::after, .productos .card-complementos::after, .productos .card-micronutricion::after {
+.productos .card-menu::after,
+.productos .card-complementos::after,
+.productos .card-micronutricion::after {
   background: #e1e2dc;
   content: "En alianza con Real Food, llevamos a tu casa un menú 100% balanceado y personalizado que se adecua a tus necesidades nutricionales. Te ayudamos a cumplir con tu plan de alimentación preparándote alimentos saludables, sabrosos que se entregan diariamente en tu casa u oficina!!";
   display: block;
@@ -222,20 +228,24 @@ body {
   height: 85%;
   position: absolute;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 13px 27px;
   -webkit-transform: translate(0, -100%);
-          transform: translate(0, -100%);
+  transform: translate(0, -100%);
   -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
 }
 
-.productos .card-menu:hover::after, .productos .card-complementos:hover::after, .productos .card-micronutricion:hover::after {
+.productos .card-menu:hover::after,
+.productos .card-complementos:hover::after,
+.productos .card-micronutricion:hover::after {
   -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 
-.productos .card-menu .img, .productos .card-complementos .img, .productos .card-micronutricion .img {
+.productos .card-menu .img,
+.productos .card-complementos .img,
+.productos .card-micronutricion .img {
   background: url(../../rsrc/img/productos/menu.jpg);
   width: 100%;
   height: 250px;
@@ -246,7 +256,9 @@ body {
   padding: 0;
 }
 
-.productos .card-menu .icono-menu, .productos .card-complementos .icono-menu, .productos .card-micronutricion .icono-menu {
+.productos .card-menu .icono-menu,
+.productos .card-complementos .icono-menu,
+.productos .card-micronutricion .icono-menu {
   background: url(../../rsrc/ico/Menudomicilio.svg);
   width: 60px;
   height: 60px;
@@ -254,7 +266,9 @@ body {
   padding: 0;
 }
 
-.productos .card-menu .titulo-card, .productos .card-complementos .titulo-card, .productos .card-micronutricion .titulo-card {
+.productos .card-menu .titulo-card,
+.productos .card-complementos .titulo-card,
+.productos .card-micronutricion .titulo-card {
   width: 100%;
   font-size: 34px;
   line-height: 34px;
@@ -263,7 +277,9 @@ body {
   padding: 0;
 }
 
-.productos .card-menu .btn-menu, .productos .card-complementos .btn-menu, .productos .card-micronutricion .btn-menu {
+.productos .card-menu .btn-menu,
+.productos .card-complementos .btn-menu,
+.productos .card-micronutricion .btn-menu {
   display: inline-block;
   padding: 16px 30px;
   margin: 34px 0 0 0;
@@ -272,10 +288,12 @@ body {
   color: #3b5472;
   text-decoration: none;
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
 
-.productos .card-menu .btn-menu::before, .productos .card-complementos .btn-menu::before, .productos .card-micronutricion .btn-menu::before {
+.productos .card-menu .btn-menu::before,
+.productos .card-complementos .btn-menu::before,
+.productos .card-micronutricion .btn-menu::before {
   content: url(../../rsrc/ico/Carrito.svg);
   display: inline-block;
   width: 20px;
@@ -293,10 +311,10 @@ body {
   height: 85%;
   position: absolute;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 13px 27px;
   -webkit-transform: translate(0, -100%);
-          transform: translate(0, -100%);
+  transform: translate(0, -100%);
   -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
 }
@@ -338,7 +356,7 @@ body {
   color: #3b5472;
   text-decoration: none;
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
 
 .productos .card-complementos .btn-complementos::before {
@@ -359,10 +377,10 @@ body {
   height: 85%;
   position: absolute;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 13px 27px;
   -webkit-transform: translate(0, -100%);
-          transform: translate(0, -100%);
+  transform: translate(0, -100%);
   -webkit-transition: 0.8s ease;
   transition: 0.8s ease;
 }
@@ -404,7 +422,7 @@ body {
   color: #3b5472;
   text-decoration: none;
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
 
 .productos .card-micronutricion .btn-micronutricion::before {
@@ -428,10 +446,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .piepagina .column1 {
@@ -440,12 +458,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-line-pack: start;
-      align-content: flex-start;
+  align-content: flex-start;
   z-index: 1;
 }
 
@@ -475,7 +493,7 @@ body {
   height: 20px;
   position: absolute;
   -webkit-transform: translate(-27px, 0px);
-          transform: translate(-27px, 0px);
+  transform: translate(-27px, 0px);
 }
 
 .piepagina .column1 .info-contacto .telefono {
@@ -492,7 +510,7 @@ body {
   height: 20px;
   position: absolute;
   -webkit-transform: translate(-27px, 0px);
-          transform: translate(-27px, 0px);
+  transform: translate(-27px, 0px);
 }
 
 .piepagina .column1 .info-contacto .correo {
@@ -509,7 +527,7 @@ body {
   height: 20px;
   position: absolute;
   -webkit-transform: translate(-27px, 0px);
-          transform: translate(-27px, 0px);
+  transform: translate(-27px, 0px);
 }
 
 .piepagina .column1 .info-contacto .direccion {
@@ -526,7 +544,7 @@ body {
   height: 20px;
   position: absolute;
   -webkit-transform: translate(-27px, 5px);
-          transform: translate(-27px, 5px);
+  transform: translate(-27px, 5px);
 }
 
 .piepagina .column1 .info-contacto .horarios {
@@ -543,7 +561,7 @@ body {
   height: 20px;
   position: absolute;
   -webkit-transform: translate(-27px, 4px);
-          transform: translate(-27px, 4px);
+  transform: translate(-27px, 4px);
 }
 
 .piepagina .column2 {
@@ -552,12 +570,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -ms-flex-line-pack: start;
-      align-content: flex-start;
+  align-content: flex-start;
   z-index: 1;
 }
 
@@ -579,12 +597,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -ms-flex-line-pack: start;
-      align-content: flex-start;
+  align-content: flex-start;
   z-index: 1;
 }
 
@@ -606,25 +624,31 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -ms-flex-line-pack: start;
-      align-content: flex-start;
+  align-content: flex-start;
   z-index: 1;
 }
 
-.piepagina .column4 .facebook, .piepagina .column4 .instagram, .piepagina .column4 .youtube {
+.piepagina .column4 .facebook,
+.piepagina .column4 .instagram,
+.piepagina .column4 .youtube {
   width: 12%;
   margin: 55px 0 26px 0;
   padding: 0;
   color: #ffffff;
 }
 
-.piepagina .column4 .servicios, .piepagina .column4 .productos, .piepagina .column4 .contacto, .piepagina .column4 .blog {
+.piepagina .column4 .servicios,
+.piepagina .column4 .productos,
+.piepagina .column4 .contacto,
+.piepagina .column4 .blog {
   width: 100%;
   color: #ffffff;
   margin: 0 0 8px 0;
 }
+
 /*# sourceMappingURL=main.css.map */

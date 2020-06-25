@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 body {
   font-family: "Nunito sans", sans-serif;
   font-size: 16px;
@@ -52,7 +53,7 @@ body {
   color: #7d9ab8;
   float: left;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 8px 16px;
   margin: 21px 0 0 0;
 }
@@ -72,7 +73,7 @@ body {
   color: #7d9ab8;
   float: left;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 8px 16px;
   margin: 21px 0 0 0;
 }
@@ -92,7 +93,7 @@ body {
   color: #7d9ab8;
   float: left;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 8px 16px;
   margin: 21px 0 0 0;
 }
@@ -112,7 +113,7 @@ body {
   color: #7d9ab8;
   float: left;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 8px 16px;
   margin: 21px 0 0 0;
 }
@@ -243,7 +244,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .tratamiento .cardtratamientos .cardgroup-uno {
@@ -253,25 +254,43 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   border-bottom: 1px solid #3b5472;
 }
 
-.tratamiento .cardtratamientos .cardgroup-uno .card-uno, .tratamiento .cardtratamientos .cardgroup-uno .card-dos, .tratamiento .cardtratamientos .cardgroup-uno .card-tres, .tratamiento .cardtratamientos .cardgroup-uno .card-cuatro, .tratamiento .cardtratamientos .cardgroup-uno .card-cinco, .tratamiento .cardtratamientos .cardgroup-uno .card-seis, .tratamiento .cardtratamientos .cardgroup-uno .card-siete {
+.tratamiento .cardtratamientos .cardgroup-uno .card-uno,
+.tratamiento .cardtratamientos .cardgroup-uno .card-dos,
+.tratamiento .cardtratamientos .cardgroup-uno .card-tres,
+.tratamiento .cardtratamientos .cardgroup-uno .card-cuatro,
+.tratamiento .cardtratamientos .cardgroup-uno .card-cinco,
+.tratamiento .cardtratamientos .cardgroup-uno .card-seis,
+.tratamiento .cardtratamientos .cardgroup-uno .card-siete {
   width: 160px;
   font-size: 0.86rem;
   text-align: center;
   -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   -ms-flex-preferred-size: 50px;
-      flex-basis: 50px;
+  flex-basis: 50px;
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
 
-.tratamiento .cardtratamientos .cardgroup-uno .card-uno .icon-sobrepeso, .tratamiento .cardtratamientos .cardgroup-uno .card-dos .icon-sobrepeso, .tratamiento .cardtratamientos .cardgroup-uno .card-tres .icon-sobrepeso, .tratamiento .cardtratamientos .cardgroup-uno .card-cuatro .icon-sobrepeso, .tratamiento .cardtratamientos .cardgroup-uno .card-cinco .icon-sobrepeso, .tratamiento .cardtratamientos .cardgroup-uno .card-seis .icon-sobrepeso, .tratamiento .cardtratamientos .cardgroup-uno .card-siete .icon-sobrepeso, .tratamiento .cardtratamientos .cardgroup-uno .card-dos .icon-alimentacion, .tratamiento .cardtratamientos .cardgroup-uno .card-tres .icon-intolerancias, .tratamiento .cardtratamientos .cardgroup-uno .card-cuatro .icon-deportistas, .tratamiento .cardtratamientos .cardgroup-uno .card-cinco .icon-cirugia, .tratamiento .cardtratamientos .cardgroup-uno .card-seis .icon-cancer, .tratamiento .cardtratamientos .cardgroup-uno .card-siete .icon-intuitiva {
+.tratamiento .cardtratamientos .cardgroup-uno .card-uno .icon-sobrepeso,
+.tratamiento .cardtratamientos .cardgroup-uno .card-dos .icon-sobrepeso,
+.tratamiento .cardtratamientos .cardgroup-uno .card-tres .icon-sobrepeso,
+.tratamiento .cardtratamientos .cardgroup-uno .card-cuatro .icon-sobrepeso,
+.tratamiento .cardtratamientos .cardgroup-uno .card-cinco .icon-sobrepeso,
+.tratamiento .cardtratamientos .cardgroup-uno .card-seis .icon-sobrepeso,
+.tratamiento .cardtratamientos .cardgroup-uno .card-siete .icon-sobrepeso,
+.tratamiento .cardtratamientos .cardgroup-uno .card-dos .icon-alimentacion,
+.tratamiento .cardtratamientos .cardgroup-uno .card-tres .icon-intolerancias,
+.tratamiento .cardtratamientos .cardgroup-uno .card-cuatro .icon-deportistas,
+.tratamiento .cardtratamientos .cardgroup-uno .card-cinco .icon-cirugia,
+.tratamiento .cardtratamientos .cardgroup-uno .card-seis .icon-cancer,
+.tratamiento .cardtratamientos .cardgroup-uno .card-siete .icon-intuitiva {
   background: url("../rsrc/ico/Sobrepeso.svg");
   width: 50px;
   height: 50px;
@@ -281,13 +300,13 @@ body {
 
 .tratamiento .cardtratamientos .cardgroup-uno .card-dos {
   -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   -ms-flex-preferred-size: 140px;
-      flex-basis: 140px;
+  flex-basis: 140px;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .tratamiento .cardtratamientos .cardgroup-uno .card-dos .icon-alimentacion {
@@ -296,12 +315,12 @@ body {
 
 .tratamiento .cardtratamientos .cardgroup-uno .card-tres {
   -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   -ms-flex-preferred-size: 140px;
-      flex-basis: 140px;
+  flex-basis: 140px;
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
 
 .tratamiento .cardtratamientos .cardgroup-uno .card-tres .icon-intolerancias {
@@ -310,12 +329,12 @@ body {
 
 .tratamiento .cardtratamientos .cardgroup-uno .card-cuatro {
   -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   -ms-flex-preferred-size: 160px;
-      flex-basis: 160px;
+  flex-basis: 160px;
   -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
 }
 
 .tratamiento .cardtratamientos .cardgroup-uno .card-cuatro .icon-deportistas {
@@ -324,12 +343,12 @@ body {
 
 .tratamiento .cardtratamientos .cardgroup-uno .card-cinco {
   -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   -ms-flex-preferred-size: 110px;
-      flex-basis: 110px;
+  flex-basis: 110px;
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
 
 .tratamiento .cardtratamientos .cardgroup-uno .card-cinco .icon-cirugia {
@@ -338,12 +357,12 @@ body {
 
 .tratamiento .cardtratamientos .cardgroup-uno .card-seis {
   -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   -ms-flex-preferred-size: 100px;
-      flex-basis: 100px;
+  flex-basis: 100px;
   -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
 }
 
 .tratamiento .cardtratamientos .cardgroup-uno .card-seis .icon-cancer {
@@ -352,12 +371,12 @@ body {
 
 .tratamiento .cardtratamientos .cardgroup-uno .card-siete {
   -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   -ms-flex-preferred-size: 80px;
-      flex-basis: 80px;
+  flex-basis: 80px;
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
 
 .tratamiento .cardtratamientos .cardgroup-uno .card-siete .icon-intuitiva {
@@ -371,32 +390,47 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   border-top: 1px solid #3b5472;
 }
 
-.tratamiento .cardtratamientos .cardgroup-dos .card-ocho, .tratamiento .cardtratamientos .cardgroup-dos .card-nueve, .tratamiento .cardtratamientos .cardgroup-dos .card-diez, .tratamiento .cardtratamientos .cardgroup-dos .card-once, .tratamiento .cardtratamientos .cardgroup-dos .card-doce, .tratamiento .cardtratamientos .cardgroup-dos .card-trece {
+.tratamiento .cardtratamientos .cardgroup-dos .card-ocho,
+.tratamiento .cardtratamientos .cardgroup-dos .card-nueve,
+.tratamiento .cardtratamientos .cardgroup-dos .card-diez,
+.tratamiento .cardtratamientos .cardgroup-dos .card-once,
+.tratamiento .cardtratamientos .cardgroup-dos .card-doce,
+.tratamiento .cardtratamientos .cardgroup-dos .card-trece {
   width: 160px;
   font-size: 0.86rem;
   text-align: center;
   -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   -ms-flex-preferred-size: 100px;
-      flex-basis: 100px;
+  flex-basis: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
   -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
 }
 
-.tratamiento .cardtratamientos .cardgroup-dos .card-ocho .icon-veganismo, .tratamiento .cardtratamientos .cardgroup-dos .card-nueve .icon-veganismo, .tratamiento .cardtratamientos .cardgroup-dos .card-diez .icon-veganismo, .tratamiento .cardtratamientos .cardgroup-dos .card-once .icon-veganismo, .tratamiento .cardtratamientos .cardgroup-dos .card-doce .icon-veganismo, .tratamiento .cardtratamientos .cardgroup-dos .card-trece .icon-veganismo, .tratamiento .cardtratamientos .cardgroup-dos .card-nueve .icon-mindfuleating, .tratamiento .cardtratamientos .cardgroup-dos .card-diez .icon-desordenmetabolico, .tratamiento .cardtratamientos .cardgroup-dos .card-once .icon-problemadigestivo, .tratamiento .cardtratamientos .cardgroup-dos .card-doce .icon-cetosis, .tratamiento .cardtratamientos .cardgroup-dos .card-trece .icon-enfermedadautoinmune {
+.tratamiento .cardtratamientos .cardgroup-dos .card-ocho .icon-veganismo,
+.tratamiento .cardtratamientos .cardgroup-dos .card-nueve .icon-veganismo,
+.tratamiento .cardtratamientos .cardgroup-dos .card-diez .icon-veganismo,
+.tratamiento .cardtratamientos .cardgroup-dos .card-once .icon-veganismo,
+.tratamiento .cardtratamientos .cardgroup-dos .card-doce .icon-veganismo,
+.tratamiento .cardtratamientos .cardgroup-dos .card-trece .icon-veganismo,
+.tratamiento .cardtratamientos .cardgroup-dos .card-nueve .icon-mindfuleating,
+.tratamiento .cardtratamientos .cardgroup-dos .card-diez .icon-desordenmetabolico,
+.tratamiento .cardtratamientos .cardgroup-dos .card-once .icon-problemadigestivo,
+.tratamiento .cardtratamientos .cardgroup-dos .card-doce .icon-cetosis,
+.tratamiento .cardtratamientos .cardgroup-dos .card-trece .icon-enfermedadautoinmune {
   background: url("../rsrc/ico/Veganismo.svg");
   width: 50px;
   height: 50px;
@@ -406,12 +440,12 @@ body {
 
 .tratamiento .cardtratamientos .cardgroup-dos .card-nueve {
   -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   -ms-flex-preferred-size: 125px;
-      flex-basis: 125px;
+  flex-basis: 125px;
   -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
 }
 
 .tratamiento .cardtratamientos .cardgroup-dos .card-nueve .icon-mindfuleating {
@@ -420,12 +454,12 @@ body {
 
 .tratamiento .cardtratamientos .cardgroup-dos .card-diez {
   -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   -ms-flex-preferred-size: 130px;
-      flex-basis: 130px;
+  flex-basis: 130px;
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
 
 .tratamiento .cardtratamientos .cardgroup-dos .card-diez .icon-desordenmetabolico {
@@ -434,12 +468,12 @@ body {
 
 .tratamiento .cardtratamientos .cardgroup-dos .card-once {
   -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   -ms-flex-preferred-size: 150px;
-      flex-basis: 150px;
+  flex-basis: 150px;
   -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
 }
 
 .tratamiento .cardtratamientos .cardgroup-dos .card-once .icon-problemadigestivo {
@@ -448,12 +482,12 @@ body {
 
 .tratamiento .cardtratamientos .cardgroup-dos .card-doce {
   -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   -ms-flex-preferred-size: 160px;
-      flex-basis: 160px;
+  flex-basis: 160px;
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
 
 .tratamiento .cardtratamientos .cardgroup-dos .card-doce .icon-cetosis {
@@ -462,12 +496,12 @@ body {
 
 .tratamiento .cardtratamientos .cardgroup-dos .card-trece {
   -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   -ms-flex-preferred-size: 120px;
-      flex-basis: 120px;
+  flex-basis: 120px;
   -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
 }
 
 .tratamiento .cardtratamientos .cardgroup-dos .card-trece .icon-enfermedadautoinmune {
@@ -511,8 +545,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .pruebas .form .div-imc {
@@ -524,15 +558,15 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: 1px solid #f5f5f5;
   border-radius: 8px;
   -webkit-box-shadow: 0 13px 21px 0 rgba(15, 15, 15, 0.1);
-          box-shadow: 0 13px 21px 0 rgba(15, 15, 15, 0.1);
+  box-shadow: 0 13px 21px 0 rgba(15, 15, 15, 0.1);
 }
 
 .pruebas .form .div-imc .titulo-imc {
@@ -548,17 +582,17 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: relative;
 }
 
 .pruebas .form .div-imc .estatura-imc .label-pseudo {
   width: 100%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -580,7 +614,7 @@ body {
   background: none;
   width: 40%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
   color: #7d9ab8;
   font-style: italic;
@@ -602,17 +636,17 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: relative;
 }
 
 .pruebas .form .div-imc .peso-imc .label-pseudo {
   width: 100%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -634,7 +668,7 @@ body {
   background: none;
   width: 40%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
   color: #7d9ab8;
   font-style: italic;
@@ -654,7 +688,7 @@ body {
   border: 2px solid #3b5472;
   border-radius: 8px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 34px 0 21px 0;
   padding: 12px 21px;
   color: #3b5472;
@@ -670,7 +704,7 @@ body {
   border: 0;
   border-bottom: 2px solid #3b5472;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
   font-size: 16px;
   font-weight: 800;
@@ -686,15 +720,15 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: 1px solid #f5f5f5;
   border-radius: 8px;
   -webkit-box-shadow: 0 13px 21px 0 rgba(15, 15, 15, 0.1);
-          box-shadow: 0 13px 21px 0 rgba(15, 15, 15, 0.1);
+  box-shadow: 0 13px 21px 0 rgba(15, 15, 15, 0.1);
 }
 
 .pruebas .form .div-grasa .titulo-grasa {
@@ -710,16 +744,16 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   position: relative;
 }
 
 .pruebas .form .div-grasa .sexo-grasa .label-sexo {
   width: 100%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -735,7 +769,7 @@ body {
   height: 50px;
   position: absolute;
   -webkit-transform: translate(-28px, 21px);
-          transform: translate(-28px, 21px);
+  transform: translate(-28px, 21px);
 }
 
 .pruebas .form .div-grasa .sexo-grasa .input-hombre {
@@ -750,7 +784,7 @@ body {
   height: 50px;
   position: absolute;
   -webkit-transform: translate(28px, 21px);
-          transform: translate(28px, 21px);
+  transform: translate(28px, 21px);
 }
 
 .pruebas .form .div-grasa .porcentaje-grasa {
@@ -760,17 +794,17 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: relative;
 }
 
 .pruebas .form .div-grasa .porcentaje-grasa .label-grasa {
   width: 100%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -787,7 +821,7 @@ body {
   background: none;
   width: 40%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
   color: #7d9ab8;
   font-style: italic;
@@ -809,17 +843,17 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: relative;
 }
 
 .pruebas .form .div-grasa .edad-grasa .label-edad {
   width: 100%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -836,7 +870,7 @@ body {
   background: none;
   width: 40%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
   color: #7d9ab8;
   font-style: italic;
@@ -856,7 +890,7 @@ body {
   border: 2px solid #3b5472;
   border-radius: 8px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 34px 0 21px 0;
   padding: 12px 21px;
   color: #3b5472;
@@ -872,7 +906,7 @@ body {
   border: 0;
   border-bottom: 2px solid #3b5472;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
   font-size: 16px;
   font-weight: 800;
@@ -888,15 +922,15 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border: 1px solid #f5f5f5;
   border-radius: 8px;
   -webkit-box-shadow: 0 13px 21px 0 rgba(15, 15, 15, 0.1);
-          box-shadow: 0 13px 21px 0 rgba(15, 15, 15, 0.1);
+  box-shadow: 0 13px 21px 0 rgba(15, 15, 15, 0.1);
 }
 
 .pruebas .form .div-musculo .titulo-musculo {
@@ -912,16 +946,16 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   position: relative;
 }
 
 .pruebas .form .div-musculo .sexo-musculo .label-sexo {
   width: 100%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -937,7 +971,7 @@ body {
   height: 50px;
   position: absolute;
   -webkit-transform: translate(-28px, 21px);
-          transform: translate(-28px, 21px);
+  transform: translate(-28px, 21px);
 }
 
 .pruebas .form .div-musculo .sexo-musculo .input-hombre {
@@ -952,7 +986,7 @@ body {
   height: 50px;
   position: absolute;
   -webkit-transform: translate(28px, 21px);
-          transform: translate(28px, 21px);
+  transform: translate(28px, 21px);
 }
 
 .pruebas .form .div-musculo .porcentaje-musculo {
@@ -962,17 +996,17 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: relative;
 }
 
 .pruebas .form .div-musculo .porcentaje-musculo .label-porcentaje {
   width: 100%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -989,7 +1023,7 @@ body {
   background: none;
   width: 40%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
   color: #7d9ab8;
   font-style: italic;
@@ -1011,17 +1045,17 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: relative;
 }
 
 .pruebas .form .div-musculo .edad-musculo .label-edad {
   width: 100%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -1038,7 +1072,7 @@ body {
   background: none;
   width: 40%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
   color: #7d9ab8;
   font-style: italic;
@@ -1058,7 +1092,7 @@ body {
   border: 2px solid #3b5472;
   border-radius: 8px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 34px 0 21px 0;
   padding: 12px 21px;
   color: #3b5472;
@@ -1074,7 +1108,7 @@ body {
   border: 0;
   border-bottom: 2px solid #3b5472;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
   font-size: 16px;
   font-weight: 800;
@@ -1164,16 +1198,16 @@ body {
   width: 379px;
   height: 400px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0 13px;
   float: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
 
 .instalaciones .galeria .descripcion .txt {
@@ -1196,7 +1230,7 @@ body {
   text-align: center;
   font-size: 18px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .testimonios {
@@ -1205,10 +1239,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .testimonios .sub-titulo {
@@ -1308,13 +1342,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .testimonios .fila-coment1 .testimonio1 {
@@ -1323,13 +1357,13 @@ body {
   margin: 55px 0;
   padding: 0 21px 13px 21px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  -ms-flex-order: 1;
+  order: 1;
   border-radius: 8px;
   -webkit-box-shadow: 0 13px 34px rgba(59, 84, 114, 0.1);
-          box-shadow: 0 13px 34px rgba(59, 84, 114, 0.1);
+  box-shadow: 0 13px 34px rgba(59, 84, 114, 0.1);
 }
 
 .testimonios .fila-coment1 .testimonio1 .nombre {
@@ -1347,7 +1381,7 @@ body {
   height: 30px;
   margin: 0 auto 8px auto;
   -webkit-transform: translate(0, -34px);
-          transform: translate(0, -34px);
+  transform: translate(0, -34px);
   font-family: 'Times New Roman';
   font-size: 89px;
 }
@@ -1364,13 +1398,13 @@ body {
   margin: 55px 0;
   padding: 0 21px 13px 21px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
+  -ms-flex-order: 3;
+  order: 3;
   border-radius: 8px;
   -webkit-box-shadow: 0 13px 34px rgba(59, 84, 114, 0.1);
-          box-shadow: 0 13px 34px rgba(59, 84, 114, 0.1);
+  box-shadow: 0 13px 34px rgba(59, 84, 114, 0.1);
 }
 
 .testimonios .fila-coment1 .testimonio2 .nombre {
@@ -1388,7 +1422,7 @@ body {
   height: 30px;
   margin: 0 auto 8px auto;
   -webkit-transform: translate(0, -34px);
-          transform: translate(0, -34px);
+  transform: translate(0, -34px);
   font-family: 'Times New Roman';
   font-size: 89px;
 }
@@ -1405,13 +1439,13 @@ body {
   margin: 55px 0;
   padding: 0 21px 13px 21px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  -ms-flex-order: 2;
+  order: 2;
   border-radius: 8px;
   -webkit-box-shadow: 0 13px 34px rgba(59, 84, 114, 0.1);
-          box-shadow: 0 13px 34px rgba(59, 84, 114, 0.1);
+  box-shadow: 0 13px 34px rgba(59, 84, 114, 0.1);
 }
 
 .testimonios .fila-coment1 .testimonio3 .nombre {
@@ -1429,7 +1463,7 @@ body {
   height: 30px;
   margin: 0 auto 8px auto;
   -webkit-transform: translate(0, -34px);
-          transform: translate(0, -34px);
+  transform: translate(0, -34px);
   font-family: 'Times New Roman';
   font-size: 89px;
 }
@@ -1449,13 +1483,13 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .testimonios .fila-coment2 .testimonio4 {
@@ -1464,13 +1498,13 @@ body {
   margin: 55px 0;
   padding: 0 21px 13px 21px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
+  -ms-flex-order: 3;
+  order: 3;
   border-radius: 8px;
   -webkit-box-shadow: 0 13px 34px rgba(59, 84, 114, 0.1);
-          box-shadow: 0 13px 34px rgba(59, 84, 114, 0.1);
+  box-shadow: 0 13px 34px rgba(59, 84, 114, 0.1);
 }
 
 .testimonios .fila-coment2 .testimonio4 .nombre {
@@ -1488,7 +1522,7 @@ body {
   height: 30px;
   margin: 0 auto 8px auto;
   -webkit-transform: translate(0, -34px);
-          transform: translate(0, -34px);
+  transform: translate(0, -34px);
   font-family: 'Times New Roman';
   font-size: 89px;
 }
@@ -1505,13 +1539,13 @@ body {
   margin: 55px 0;
   padding: 0 21px 13px 21px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  -ms-flex-order: 2;
+  order: 2;
   border-radius: 8px;
   -webkit-box-shadow: 0 13px 34px rgba(59, 84, 114, 0.1);
-          box-shadow: 0 13px 34px rgba(59, 84, 114, 0.1);
+  box-shadow: 0 13px 34px rgba(59, 84, 114, 0.1);
 }
 
 .testimonios .fila-coment2 .testimonio5 .nombre {
@@ -1529,7 +1563,7 @@ body {
   height: 30px;
   margin: 0 auto 8px auto;
   -webkit-transform: translate(0, -34px);
-          transform: translate(0, -34px);
+  transform: translate(0, -34px);
   font-family: 'Times New Roman';
   font-size: 89px;
 }
@@ -1546,13 +1580,13 @@ body {
   margin: 55px 0;
   padding: 0 21px 13px 21px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  -ms-flex-order: 1;
+  order: 1;
   border-radius: 8px;
   -webkit-box-shadow: 0 13px 34px rgba(59, 84, 114, 0.1);
-          box-shadow: 0 13px 34px rgba(59, 84, 114, 0.1);
+  box-shadow: 0 13px 34px rgba(59, 84, 114, 0.1);
 }
 
 .testimonios .fila-coment2 .testimonio6 .nombre {
@@ -1570,7 +1604,7 @@ body {
   height: 30px;
   margin: 0 auto 8px auto;
   -webkit-transform: translate(0, -34px);
-          transform: translate(0, -34px);
+  transform: translate(0, -34px);
   font-family: 'Times New Roman';
   font-size: 89px;
 }
@@ -1592,10 +1626,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .piepagina .column1 {
@@ -1604,12 +1638,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-line-pack: start;
-      align-content: flex-start;
+  align-content: flex-start;
   z-index: 1;
 }
 
@@ -1639,7 +1673,7 @@ body {
   height: 20px;
   position: absolute;
   -webkit-transform: translate(-27px, 0px);
-          transform: translate(-27px, 0px);
+  transform: translate(-27px, 0px);
 }
 
 .piepagina .column1 .info-contacto .telefono {
@@ -1656,7 +1690,7 @@ body {
   height: 20px;
   position: absolute;
   -webkit-transform: translate(-27px, 0px);
-          transform: translate(-27px, 0px);
+  transform: translate(-27px, 0px);
 }
 
 .piepagina .column1 .info-contacto .correo {
@@ -1673,7 +1707,7 @@ body {
   height: 20px;
   position: absolute;
   -webkit-transform: translate(-27px, 0px);
-          transform: translate(-27px, 0px);
+  transform: translate(-27px, 0px);
 }
 
 .piepagina .column1 .info-contacto .direccion {
@@ -1690,7 +1724,7 @@ body {
   height: 20px;
   position: absolute;
   -webkit-transform: translate(-27px, 5px);
-          transform: translate(-27px, 5px);
+  transform: translate(-27px, 5px);
 }
 
 .piepagina .column1 .info-contacto .horarios {
@@ -1707,7 +1741,7 @@ body {
   height: 20px;
   position: absolute;
   -webkit-transform: translate(-27px, 4px);
-          transform: translate(-27px, 4px);
+  transform: translate(-27px, 4px);
 }
 
 .piepagina .column2 {
@@ -1716,12 +1750,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -ms-flex-line-pack: start;
-      align-content: flex-start;
+  align-content: flex-start;
   z-index: 1;
 }
 
@@ -1743,12 +1777,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -ms-flex-line-pack: start;
-      align-content: flex-start;
+  align-content: flex-start;
   z-index: 1;
 }
 
@@ -1770,25 +1804,31 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -ms-flex-line-pack: start;
-      align-content: flex-start;
+  align-content: flex-start;
   z-index: 1;
 }
 
-.piepagina .column4 .facebook, .piepagina .column4 .instagram, .piepagina .column4 .youtube {
+.piepagina .column4 .facebook,
+.piepagina .column4 .instagram,
+.piepagina .column4 .youtube {
   width: 12%;
   margin: 55px 0 26px 0;
   padding: 0;
   color: #ffffff;
 }
 
-.piepagina .column4 .servicios, .piepagina .column4 .productos, .piepagina .column4 .contacto, .piepagina .column4 .blog {
+.piepagina .column4 .servicios,
+.piepagina .column4 .productos,
+.piepagina .column4 .contacto,
+.piepagina .column4 .blog {
   width: 100%;
   color: #ffffff;
   margin: 0 0 8px 0;
 }
+
 /*# sourceMappingURL=main.css.map */
